@@ -1,0 +1,22 @@
+.portfolio {
+    padding-top: 50vh;
+    background-color: #fffffff1;
+}
+
+.portfolio-slider-outer{
+    margin-bottom: 50vh;
+    padding-left: 20vw;
+    padding-right: 10vw;
+}
+
+.portfolio-slider-inner {
+    transform: translateY(-15vh);
+}
+
+.portfolio-slider-outer:last-of-type {
+    margin-bottom: 0;
+}
+
+.portfolio-slider-inner .alice-carousel__wrapper {
+    border-radius: 1vw;
+}
