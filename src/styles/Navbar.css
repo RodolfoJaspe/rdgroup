@@ -33,7 +33,7 @@
     font-size: 2rem;
     transition: 1s;
     color: rgb(255, 255, 255);
-    /* border-bottom: 2px solid red; */
+    border-bottom: 2px solid red;
 }
 
 .nav-item:hover {

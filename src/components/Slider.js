@@ -19,8 +19,8 @@ export default function Slider({images}) {
         items={pictures}
         className="slider"
         autoPlay
-        autoPlayInterval={1000}
-        animationDuration={800}
+        autoPlayInterval={2000}
+        animationDuration={1500}
         infinite
         keyboardNavigation
         animationType="linear" 
