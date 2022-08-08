@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Chub Gothic';
+    src: url('ChubGothic.eot');
+    src: url('ChubGothic.eot?#iefix') format('embedded-opentype'),
+        url('ChubGothic.woff2') format('woff2'),
+        url('ChubGothic.woff') format('woff'),
+        url('ChubGothic.ttf') format('truetype'),
+        url('ChubGothic.svg#ChubGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

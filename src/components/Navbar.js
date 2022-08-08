@@ -14,19 +14,19 @@ function Navbar() {
     <div className='navbar'>
         <div className={click ? "nav-menu active" : "nav-menu"}>
             <div>
-                <Link to='home' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                <Link to='home' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-1} duration={1500}>H o m e</Link>
             </div>
             <div>
-                <Link to='about' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+                <Link to='about' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>A b o u t</Link>
             </div>
             <div>
-                <Link to='portfolio' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link>
+                <Link to='portfolio' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>P o r t f o l i o</Link>
             </div>
             {/* <div>
                 <Link to='videos' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-400} duration={500}>Videos</Link>
             </div> */}
             <div>
-                <Link to='contact' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500}>Contact Us</Link>
+                <Link to='contact' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>c o n t a c t</Link>
             </div>
         </div>    
     </div>

@@ -8,7 +8,12 @@ function Home() {
 
   return (
         <div className='home'>
-            <img src={logo.url} className='logo' alt="logo image"/>
+            <div className='logo-slogan'>
+                <img src={logo.url} className='logo' alt="logo image"/>
+                <div className='slogan'>
+                    <p>r i g h t </p><p>d e s i g n</p>
+                </div>  
+            </div>
         </div>
   )
 }

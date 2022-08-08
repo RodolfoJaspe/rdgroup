@@ -3,7 +3,7 @@
   display:flex;
   /* align-items: center; */
   flex-direction: column;
-  font-family: Louis George Cafe;
+  font-family: chub Gothic;
 }
 
 .main-content {
@@ -90,6 +90,19 @@ button {
         url('../Assets/fonts/louisgeorge/LouisGeorgeCafe.woff') format('woff'),
         url('../Assets/fonts/louisgeorge/LouisGeorgeCafe.ttf') format('truetype'),
         url('../Assets/fonts/louisgeorge/LouisGeorgeCafe.svg#LouisGeorgeCafe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chub Gothic';
+    src: url('../Assets/fonts/chubgothic/ChubGothic.eot');
+    src: url('../Assets/fonts/chubgothic/ChubGothic.eot?#iefix') format('embedded-opentype'),
+        url('../Assets/fonts/chubgothic/ChubGothic.woff2') format('woff2'),
+        url('../Assets/fonts/chubgothic/ChubGothic.woff') format('woff'),
+        url('../Assets/fonts/chubgothic/ChubGothic.ttf') format('truetype'),
+        url('../Assets/fonts/chubgothic/ChubGothic.svg#ChubGothic') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

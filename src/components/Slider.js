@@ -1,7 +1,8 @@
 import React from 'react';
 import "../styles/Slider.css";
 import AliceCarousel from 'react-alice-carousel';
-// import 'react-alice-carousel/lib/alice-carousel.css';
+import NextArrow from "../Assets/icons/rightArrowWhite.png"
+import PrevArrow from "../Assets/icons/leftArrowWhite.png"
 
 export default function Slider({images}) {
 
@@ -12,7 +13,15 @@ export default function Slider({images}) {
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
      
     )) 
-    console.log(pictures)
+    
+    const renderNextButton = ({ isDisabled }) => {
+        return <div className='next-arrow'><img src={NextArrow} alt="next-arrow"/></div>
+      };
+    
+    const renderPrevButton = ({ isDisabled }) => {
+    return <div className='prev-arrow'><img src={PrevArrow} alt="prev-arrow"/></div>
+    };
+
   return (
     <AliceCarousel 
         mouseTracking 
@@ -25,6 +34,9 @@ export default function Slider({images}) {
         keyboardNavigation
         animationType="linear" 
         controlsStrategy="alternate"
+        renderPrevButton={renderPrevButton}
+        renderNextButton={renderNextButton}
+        disableDotsControls={true}
         />
   )
 }

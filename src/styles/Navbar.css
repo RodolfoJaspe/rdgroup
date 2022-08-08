@@ -3,14 +3,15 @@
     width: 100vw;
     position:fixed;
     top:0%;
-    font-size:1.5rem;
-    font-weight: 600;
+    font-size:1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position:fixed;
     z-index: 99;
     background-color: #c9c9c9f1;
+    font-family: Chub Gothic;
+
 }
 
 .nav-menu {
@@ -18,26 +19,26 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width:90%;
-    margin:0;
+    width:100%;
+    /* padding: 0 13vw; */
 }
 
 .nav-item {
     padding-bottom:5px;
     transition: 1s;
     cursor:pointer;
-    color: rgb(255, 255, 255);
+    color: rgb(220, 220, 220);
+    text-shadow: 1px 1px 1px black;
 }
 
 .nav-item.active {
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: 1s;
     color: rgb(255, 255, 255);
-    border-bottom: 2px solid red;
 }
 
 .nav-item:hover {
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: 1s;
     color: rgb(255, 255, 255);
 

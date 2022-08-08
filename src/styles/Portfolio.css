@@ -4,13 +4,14 @@
 }
 
 .portfolio-slider-outer{
-    margin-bottom: 50vh;
+    margin-bottom: 60vh;
     padding-left: 20vw;
     padding-right: 10vw;
+    height: 52vh;
 }
 
 .portfolio-slider-inner {
-    transform: translateY(-15vh);
+    transform: translateY(-40vh);
 }
 
 .portfolio-slider-outer:last-of-type {
@@ -18,5 +19,28 @@
 }
 
 .portfolio-slider-inner .alice-carousel__wrapper {
-    border-radius: 1vw;
+    border: 5px solid rgb(225, 225, 225);
+}
+
+/* .portfolio-slider-inner img{
+    height: 70vh;
+} */
+
+.portfolio-slider-inner h2{
+    font-family: Louis George Cafe;
+    color: rgb(154, 154, 154);
+    font-size: 2rem;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    /* background-color: red; */
+    align-items: center;
+}
+.portfolio-title img{
+    background: blue;
+    height: 35px;
+    margin-right: 10px; 
 }

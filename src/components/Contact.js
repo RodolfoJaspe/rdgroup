@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react'
 import '../styles/Contact.css';
 import {pageImages} from "../Assets/images.js";
 import emailjs from '@emailjs/browser';
+import fb from "../Assets/icons/fb.png";
+import insta from "../Assets/icons/insta.png";
 
 function Contact() {
     
@@ -25,18 +27,29 @@ function Contact() {
   return (
     <div className='contact'>
         <div className='banner-contact-div'>
-            <div className='contact-content'>
-                <form ref={form} onSubmit={sendEmail} className='form'>
-                    <input placeholder='Name' className='input' type="text" name="name" />
-                    <input placeholder='Email' className='input' type="email" name="email" />
-                    <input placeholder='Subject' className='input' type="subject" name="subject" />
-                    <textarea placeholder='Message' className='input message' name="message" />
-                    <div className='submit-button-div'>
-                        <input type="submit" value="Send" />  
-                    </div>
-                </form>
+            <div className='contact-info'>
+                <h2>RD Group</h2>
+                <p>street address<br/>Zip City, State</p>
+                <h3>888-888-8888</h3>
             </div>
+            <form ref={form} onSubmit={sendEmail} className='form'>
+                <input placeholder='Name' className='input' type="text" name="name" />
+                <input placeholder='Email' className='input' type="email" name="email" />
+                <input placeholder='Subject' className='input' type="subject" name="subject" />
+                <textarea placeholder='Message' className='input message' name="message" />
+                <div className='submit-button-div'>
+                    <input type="submit" value="Send" />  
+                </div>
+            </form>
         </div>
+        <div className='footer'>
+            <div className='socials-logo'>
+                <img src={fb} alt="facebook"/>
+            </div>
+            <div className='socials-logo'>
+                <img src={insta} alt="insta" />                
+            </div>
+        </div>  
     </div>
   )
 }

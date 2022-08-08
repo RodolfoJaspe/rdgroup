@@ -1,22 +1,51 @@
 .about{
-    width:100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     z-index: 1;
     background-color: #c9c9c9f1;
+    font-family: Louis George Cafe;
 }
 
 .about-inner-div {
-    padding: 10vw;
+    display: flex; 
+    /* justify-content: space-evenly; */
+    /* background-color: red; */
+    padding: 5vw;
 }
 
+.company-story {
+    /* background-color: blue; */
+    width: 60%;
+    text-align: justify;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.juan-story {
+    /* background-color: green; */
+    width: 30%;
+}
 
+.juan-story p {
+    /* background-color: orange; */
+    padding: 10px;
+    text-align: justify;
+}
 
+.image-div {
+    /* background-color: pink; */
+    padding: 10px;
+}
 
-
-
-
+.image-div img {
+    width: 15vw;
+    height: 20vw;
+    object-fit: cover;
+    float: left;
+    margin: 40px 10px 10px 0;
+}
 
