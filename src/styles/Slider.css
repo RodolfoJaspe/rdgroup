@@ -6,7 +6,20 @@
 .portfolio .slider-image {
     height: 70vh;
     width:100%;
-  }
+}
+
+.about .slider-image-div {
+    background-color: red;
+}
+
+.portfolio .slider-image-div h3{
+    position: absolute;
+    bottom: 1vh;
+    right: 2vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: Louis George Cafe;
+}
 
 .alice-carousel .animated {
     -webkit-animation-fill-mode: both;

@@ -20,6 +20,7 @@
 
 .portfolio-slider-inner .alice-carousel__wrapper {
     border: 5px solid rgb(225, 225, 225);
+    height: 70vh;
 }
 
 /* .portfolio-slider-inner img{

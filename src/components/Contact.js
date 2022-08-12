@@ -9,6 +9,10 @@ function Contact() {
     
     const headshot = pageImages.find(image => image.id === 3)
 
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -44,12 +48,18 @@ function Contact() {
         </div>
         <div className='footer'>
             <div className='socials-logo'>
-                <img src={fb} alt="facebook"/>
+                <img 
+                    src={fb} 
+                    alt="facebook"
+                    onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
             </div>
             <div className='socials-logo'>
-                <img src={insta} alt="insta" />                
+                <img 
+                    src={insta} 
+                    alt="insta" 
+                    onClick={() => openInNewTab('https://www.instagram.com/rd.group.llc/')}/>                
             </div>
-        </div>  
+        </div>
     </div>
   )
 }

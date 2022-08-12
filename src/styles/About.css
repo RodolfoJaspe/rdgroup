@@ -8,6 +8,10 @@
     font-family: Louis George Cafe;
 }
 
+.about .alice-carousel__wrapper {
+    height: 50vh;
+}
+
 .about-inner-div {
     display: flex; 
     /* justify-content: space-evenly; */

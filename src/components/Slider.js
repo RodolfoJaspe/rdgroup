@@ -9,9 +9,10 @@ export default function Slider({images}) {
     const handleDragStart = (e) => (e.preventDefault());
 
     const pictures = images.map(image => (
-       
+        <div className='slider-image-div'>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
-     
+            <h3>{image.description}</h3>
+        </div>
     )) 
     
     const renderNextButton = ({ isDisabled }) => {
@@ -27,8 +28,8 @@ export default function Slider({images}) {
         mouseTracking 
         items={pictures}
         className="slider"
-        autoPlay
-        autoPlayInterval={2000}
+        // autoPlay
+        // autoPlayInterval={2000}
         animationDuration={1500}
         infinite
         keyboardNavigation
