@@ -8,6 +8,10 @@
     font-family: Louis George Cafe;
 }
 
+.about .indented-p {
+    text-indent: 40px;
+}
+
 .about .alice-carousel__wrapper {
     height: 50vh;
 }
@@ -31,7 +35,7 @@
 
 .juan-story {
     /* background-color: green; */
-    width: 30%;
+    width: 35%;
 }
 
 .juan-story p {
