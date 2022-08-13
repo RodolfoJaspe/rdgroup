@@ -61,6 +61,11 @@
     font-size: larger;
 }
 
+.about-bottom h1 {
+    font-size: 2rem;
+    color: rgb(67, 67, 67);
+}
+
 .products-and-services {
     display: flex;
     flex-direction: row;
@@ -72,4 +77,5 @@
     width: 33%;
     text-align: center;
 }
+
 

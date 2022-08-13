@@ -14,7 +14,7 @@ export default function Portfolio() {
                <Slider images={filteredImages}/> 
             </div> 
             <div className='about-bottom'>
-                <h1>Products and Services</h1>
+                <h1>PRODUCTS AND SERVICES</h1>
                 <div className='products-and-services'>
                     <div className='products-and-services-child'>
                         <Link 

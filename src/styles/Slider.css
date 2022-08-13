@@ -23,6 +23,7 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     font-family: Louis George Cafe;
+    font-size: 1.5rem;
 }
 
 .alice-carousel .animated {
@@ -129,13 +130,13 @@
 
   .alice-carousel__next-btn img{
     height: 4vh;
-    transform: translateX(-2vw);
+    transform: translateX(-2vw) translateY(8vh);
     opacity: .7;
   }
 
   .alice-carousel__prev-btn img{
     height: 4vh;
-    transform: translateX(2vw);
+    transform: translateX(2vw) translateY(8vh);
     opacity: .7;
   }
 
