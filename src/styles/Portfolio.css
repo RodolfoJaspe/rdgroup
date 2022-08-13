@@ -1,5 +1,5 @@
 .portfolio {
-    padding-top: 50vh;
+    /* padding-top: 20vh; */
     background-color: #fffffff1;
 }
 
@@ -8,6 +8,7 @@
     padding-left: 20vw;
     padding-right: 10vw;
     height: 52vh;
+    margin-top: 50vh;
 }
 
 .portfolio-slider-inner {
@@ -23,9 +24,10 @@
     height: 70vh;
 }
 
-/* .portfolio-slider-inner img{
-    height: 70vh;
-} */
+.products-and-services-child a:hover {
+    cursor: pointer;
+    color: white;
+}
 
 .portfolio-slider-inner h2{
     font-family: Louis George Cafe;
@@ -45,3 +47,29 @@
     height: 35px;
     margin-right: 10px; 
 }
+
+.about-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #bebebed5;
+    width: 100%;
+    padding: 7vh 0;
+    height: 36vh;
+    font-family: Louis George Cafe;
+    font-size: larger;
+}
+
+.products-and-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.products-and-services-child {
+    width: 33%;
+    text-align: center;
+}
+

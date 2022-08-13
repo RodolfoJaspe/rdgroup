@@ -4,12 +4,9 @@
     align-items: center;
     justify-content: space-evenly;
     z-index: 1;
-    background-color: #c9c9c9f1;
+    background-color: #e7e7e7f6;
     font-family: Louis George Cafe;
-}
-
-.about .indented-p {
-    text-indent: 40px;
+    padding: 10vh 0;
 }
 
 .about .alice-carousel__wrapper {
@@ -18,16 +15,16 @@
 
 .about-inner-div {
     display: flex; 
-    /* justify-content: space-evenly; */
+    justify-content: center;
     /* background-color: red; */
-    padding: 5vw;
+    padding: 0 20vw;
 }
 
 .company-story {
     /* background-color: blue; */
     width: 60%;
     text-align: justify;
-    margin-right: 5vw;
+    margin-right: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,7 +32,7 @@
 
 .juan-story {
     /* background-color: green; */
-    width: 35%;
+    width: 40%;
 }
 
 .juan-story p {
@@ -50,10 +47,13 @@
 }
 
 .image-div img {
-    width: 15vw;
-    height: 20vw;
+    width: 13vw;
+    height: 18vw;
     object-fit: cover;
     float: left;
     margin: 40px 10px 10px 0;
 }
+
+
+
 
