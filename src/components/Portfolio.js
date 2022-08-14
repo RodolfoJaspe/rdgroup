@@ -10,48 +10,64 @@ export default function Portfolio() {
     console.log(filteredImages)
   return (
     <div className='portfolio'>
-            <div className='first-slider'>
-               <Slider images={filteredImages}/> 
-            </div> 
-            <div className='about-bottom'>
-                <h1>PRODUCTS AND SERVICES</h1>
-                <div className='products-and-services'>
-                    <div className='products-and-services-child'>
-                        <Link 
-                            to='portfolio'
-                            smooth={true}
-                            offset={1050}
-                            duration={1000}>
-                            <h2>RD Projects & Design:</h2>
-                        </Link>
-                        
-                        <p>Commercial & Residential Design</p>
-                    </div>
-                    <div className='products-and-services-child'>
-                        <Link 
-                            to='portfolio'
-                            smooth={true}
-                            offset={2200}
-                            duration={1200}>
-                            <h2>RD Construction & development:</h2>
-                        </Link>
-                        <p>Turnkey commercial or residential project development </p>
-                    </div>
-                    <div className='products-and-services-child'>
-                        <Link 
-                            to='portfolio'
-                            smooth={true}
-                            offset={3380}
-                            duration={2000}>
-                            <h2>RD Products:</h2>
-                        </Link>
-                        <p>On of a kind designer product specially curated to enhance any design </p>
+        <div className='first-slider'>
+            <Slider images={filteredImages}/> 
+        </div> 
+        <div className='products-and-services'>
+            <div className='h1-div'>
+                <h1>SERVICES AND PRODUCTS</h1>
+            </div>
+            <div className='services-outer'>
+                <div className='service'>
+                    <Link 
+                        to='portfolio'
+                        smooth={true}
+                        offset={1050}
+                        duration={1000}
+                        className='title'>
+                        <div className='square red-square'></div>
+                        <h2>RD Projects & Design:</h2>
+                    </Link>
+                    <div className='p-div'>
+                        <p>
+                            Commercial & Residential Design
+                        </p>
                     </div>
                 </div>
-                {/* <h2>THE COMPETITIVE ADVANTAGE</h2>
-                <p>The combination of and experience architect and designer with vast resources and access to hand selected construction materials.</p> */}
-                
+                <div className='service'>
+                    <Link 
+                        to='portfolio'
+                        smooth={true}
+                        offset={2200}
+                        duration={1200}className='title'>
+                        <div className='square yellow-square'></div>
+                        <h2>RD Construction & development:</h2>
+                    </Link>
+                    <div className='p-div'>
+                        <p>
+                            Turnkey commercial or residential project development 
+                        </p>
+                    </div>
+                </div>
+                <div className='service'>
+                    <Link 
+                        to='portfolio'
+                        smooth={true}
+                        offset={3380}
+                        duration={2000}className='title'>
+                        <div className='square blue-square'></div>
+                        <h2>RD Products:</h2>
+                    </Link>
+                    <div className='p-div'>
+                       <p>
+                            On of a kind designer product specially curated to enhance any design
+                        </p> 
+                    </div>
+                    
+                </div> 
             </div>
+            
+        </div>
         {portfolio.map(category => (
             <div className='portfolio-slider-outer' style={{background:`${category.color}`}}>
                 <div className='portfolio-slider-inner'>

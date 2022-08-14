@@ -133,11 +133,9 @@
 @media(max-width: 500px) {
     .contact-info {
         font-size: smaller;
-        background-color: red;
         width: 40vw;
     }
     .contact-info h3{
         font-size: smaller;
-        background-color: yellow;
     }
 }
