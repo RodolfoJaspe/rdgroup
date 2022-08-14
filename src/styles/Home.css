@@ -10,14 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:100%;
+    width: 100vw;
 }
 
 .logo{
     object-position:top;
     object-fit: contain;
     margin-top: 15vh;
-    width: 50%;
+    width: 50vw;
 }
 
 .slogan {
@@ -25,6 +25,43 @@
     display: flex;
     justify-content: space-between;
     font-size: 4.2vw;
-    width: 50%;
+    width: 50.5vw;
 }
+
+@media(max-width: 1300px) and (orientation: landscape) {
+    .logo {
+        width: 65vw;
+    }
+}
+@media(max-width: 1100px) and (orientation: landscape) {
+    .logo {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 1000px) and (orientation: portrait) {
+    .logo {
+        margin-top: 20vh;
+        width: 80vw;
+    }
+    .slogan {
+        font-size: 7vw;
+        width: 80vw;
+    }
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+    .logo {
+        margin-top: 30vh;
+    }
+}
+
+@media(max-height: 500px) and (orientation: landscape) {
+    .logo {
+        margin-top: 20vh;
+        width: 40vw;
+    }
+}
+
+
 

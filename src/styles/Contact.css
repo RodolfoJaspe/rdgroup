@@ -49,7 +49,7 @@
 }
 
 .input {
-    width: 100%;
+    width: 35vw;
     font-family: Louis George Cafe;
     border-radius: .1rem;
     border: none;
@@ -128,4 +128,16 @@
 .socials-logo:hover {
     background-color: rgb(103, 103, 103);
     transform: scale(1.2);
+}
+
+@media(max-width: 500px) {
+    .contact-info {
+        font-size: smaller;
+        background-color: red;
+        width: 40vw;
+    }
+    .contact-info h3{
+        font-size: smaller;
+        background-color: yellow;
+    }
 }

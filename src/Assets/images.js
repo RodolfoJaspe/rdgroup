@@ -35,10 +35,10 @@ description: 'Project description',        url: "https://drive.google.com/uc?exp
         title: "logo",
 
 description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=1c5qd_A6dFYWe20N1NSH92vXr7RbDO2EF"},
-    {   id: 10,
-        title: "logo",
+//     {   id: 10,
+//         title: "logo",
 
-description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=121mwejsAc7YtNETH1Ffwbg2I7_LZkr3O"},
+// description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=121mwejsAc7YtNETH1Ffwbg2I7_LZkr3O"},
         
     ];
 

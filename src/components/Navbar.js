@@ -22,9 +22,6 @@ function Navbar() {
             <div>
                 <Link to='about' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>A b o u t</Link>
             </div>
-            {/* <div>
-                <Link to='videos' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-400} duration={500}>Videos</Link>
-            </div> */}
             <div>
                 <Link to='contact' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>c o n t a c t</Link>
             </div>

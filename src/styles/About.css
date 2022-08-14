@@ -17,7 +17,8 @@
     display: flex; 
     justify-content: center;
     /* background-color: red; */
-    padding: 0 20vw;
+    width:100vw;
+    /* padding: 0 20vw; */
 }
 
 .company-story {
