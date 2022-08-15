@@ -5,23 +5,12 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.928);
-    padding-top: 30vh;
+    padding-top: 10vh;
     color:rgb(71, 71, 71);
-}
-.contact .headshot-div {
-    height: 100%;
-    border-left: 3px solid white;
-}
-
-.headshot-div img {
-    cursor: pointer;
-    height: 100%;
-    width: 40vh;
 }
 
 .banner-contact-div{
     width:100%;
-    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -35,7 +24,8 @@
     justify-content: space-evenly;
     font-family: Louis George Cafe;;
     font-size: larger;
-    
+    width: 40vw;
+    /* background-color: pink; */
 }
 
 .form {
@@ -43,9 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    /* background-color: pink; */
-    width:40%;
-    height:100%;
+    /* background-color: lightblue; */
 }
 
 .input {
@@ -56,6 +44,8 @@
     padding:10px 5px;
     background-color: #cacaca;
     border: 1px solid rgb(146, 146, 146);
+    margin: 1vh 0;
+    /* background-color: lightcoral; */
 }
 
 .input:hover {
@@ -130,12 +120,29 @@
     transform: scale(1.2);
 }
 
-@media(max-width: 500px) {
-    .contact-info {
-        font-size: smaller;
+@media(max-width: 900px) {
+    .input {
         width: 40vw;
     }
-    .contact-info h3{
-        font-size: smaller;
+    .contact-info {
+        width: 55vw;
+    }
+}
+
+@media(max-width: 500px) {
+    .banner-contact-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        width: 80vw;
+    }
+    .form {
+        width: 100%;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .input {
+        width: 80vw;
     }
 }
