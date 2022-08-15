@@ -1,14 +1,10 @@
 import React from 'react';
-// import { pageImages } from '../Assets/images';
 import '../styles/About.css';
 import Slider from './Slider';
 
 function About() {
-    // const filteredImages = pageImages.filter(image => image.id !== 1)
-    // console.log(filteredImages)
   return (
     <div className='about'>
-        {/* <Slider images={filteredImages}/> */}
         <div className='about-inner-div'>
             <div className='company-story'>
                 <h1> MISSION</h1>
@@ -41,26 +37,6 @@ function About() {
                 </p>
             </div>
         </div>
-        {/* <div className='about-bottom'>
-                <h1>Products and Services</h1>
-                <div className='products-and-services'>
-                    <div className='products-and-services-child'>
-                        <h4>RD Projects & Design:</h4>
-                        <p>Commercial & Residential Design</p>
-                    </div>
-                    <div className='products-and-services-child'>
-                        <h4>RD Construction & development:</h4>
-                        <p>Turnkey commercial or residential project development </p>
-                    </div>
-                    <div className='products-and-services-child'>
-                        <h4>RD Products:</h4>
-                        <p>On of a kind designer product specially curated to enhance any design </p>
-                    </div>
-                </div>
-                <h2>THE COMPETITIVE ADVANTAGE</h2>
-                <p>The combination of and experience architect and designer with vast resources and access to hand selected construction materials.</p>
-                
-            </div> */}
     </div>
   )
 }

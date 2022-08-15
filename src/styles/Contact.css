@@ -133,9 +133,10 @@
     .banner-contact-div {
         flex-direction: column;
         align-items: center;
+        font-size: larger;
     }
     .contact-info {
-        width: 80vw;
+        width: 90vw;
     }
     .form {
         width: 100%;
@@ -143,6 +144,6 @@
         margin-top: 10vh;
     }
     .input {
-        width: 80vw;
+        width: 90vw;
     }
 }

@@ -6,7 +6,7 @@
     z-index: 1;
     background-color: #e7e7e7f6;
     font-family: Louis George Cafe;
-    padding: 10vh 0;
+    font-size: large;
 }
 
 .about .alice-carousel__wrapper {
@@ -18,11 +18,12 @@
     justify-content: center;
     /* background-color: red; */
     width:100vw;
+    margin: 10vh 0;
 }
 
 .company-story {
     /* background-color: blue; */
-    width: 50%;
+    width: 40%;
     text-align: justify;
     margin-right: 2vw;
     display: flex;
@@ -30,28 +31,86 @@
     justify-content: space-evenly;
 }
 
+.company-story h1 {
+    margin-top:0;
+}
+
 .juan-story {
     /* background-color: green; */
-    width: 40%;
+    width: 30%;
 }
 
 .juan-story p {
     /* background-color: orange; */
-    padding: 10px;
+    margin: 0;
     text-align: justify;
 }
 
-.image-div {
-    /* background-color: pink; */
-    padding: 10px;
-}
-
 .image-div img {
-    width: 13vw;
-    height: 18vw;
+    width: 16vw;
+    height: 22vw;
     object-fit: cover;
     float: left;
-    margin: 40px 10px 10px 0;
+    margin: 0 10px 10px 0;
+    border-radius: 10px; 
+}
+
+@media(max-width: 1600px) {
+    .image-div img {
+        width: 20vw;
+        height: 28vw; 
+    }
+    .juan-story {
+        width: 35%;
+    }
+}
+
+@media(max-width: 1100px) {
+    .about {
+        font-size: larger;
+    }
+    .image-div img {
+        width: 22vw;
+        height: 30vw; 
+    }
+}
+@media(max-width: 850px) {
+    .company-story {
+        width: 46%;
+    }
+    .juan-story {
+        width: 50%;
+    }
+    .image-div img {
+        width: 30vw;
+        height: 40vw;
+    }
+}
+
+@media(max-width: 500px){
+    .about-inner-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .company-story {
+        width:90%;
+        margin: 0 5vw;
+        justify-content: center;
+    }
+    .juan-story {
+        width: 90%;
+        margin: 10vh 5vw 0 5vw;
+    }
+    .image-div img {
+        width: 50vw;
+        height: 70vw;
+    }
+}
+
+@media(max-width: 900px) and (orientation: landscape) {
+    .about {
+        padding-top: 10vh;
+    }
 }
 
 
