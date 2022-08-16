@@ -14,7 +14,7 @@ function Navbar() {
     <div className='navbar'>
         <div className={click ? "nav-menu active" : "nav-menu"}>
             <div>
-                <Link to='home' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={-1} duration={1500}>H o m e</Link>
+                <Link to='home' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>H o m e</Link>
             </div>
             <div>
                 <Link to='portfolio' className='nav-item' onClick={closeMenu} spy={true} smooth={true} offset={0} duration={1500}>P o r t f o l i o</Link>
