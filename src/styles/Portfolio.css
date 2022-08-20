@@ -5,6 +5,7 @@
 .first-slider .slider-image{
     height: 50vh;
     width:100%; 
+    object-fit: cover;
 }
 
 .first-slider {
@@ -60,41 +61,48 @@
 
 .products-and-services {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    background: #e7e7e7f6;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
     font-family: Louis George Cafe;
-    padding-top: 4vh;
+    height: 60vh;
 }
 .products-and-services .h1-div {
-    width:95%;
-    text-align: left;
-    margin-left: 0;
-    margin-bottom: 4vh;
+    position: absolute;
+    left: -10vw;
+    width: 60vh;
+    height: 5vw;
+    /* background-color: lightgreen; */
+    transform: rotate(-90deg);
+    white-space:nowrap;
 }
-.products-and-services .h1-div h1 {
-    text-align: left;
-    color: rgb(67, 67, 67);
-    margin: 0;
+
+.products-and-services .h1-div .h1 {
+    color: white;
+    text-shadow: -3px 1px 5px black;
+    font-size: 5.5vh;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    /* background-color: lightcoral; */
 }
 
 .services-outer {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
-    width: 50vw;
     justify-content: space-evenly;
-    margin-left: 10vw;
     /* background-color: pink; */
+    position: relative;
+    left: 100px;
 }
 
 .service {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 4vh;
-    /* background-color: green; */
+    margin: 3vh 0 1vh 0;
+    /* background-color: lightgoldenrodyellow; */
 }
 
 .products-and-services .p-div {
@@ -102,80 +110,138 @@
 }
 
 .p-div p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 1vh;
+    color: rgb(103, 103, 103);
+    margin-left: 18px;
+    font-weight: 800;
 }
 .title {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: rgb(54, 54, 54)
 }
 
 .title h2 {
-    margin: 0;
+    margin: 0 20px ;
 }
 .title:hover {
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: -1px 2px 1px black;
     cursor: pointer;
 }
 
-.square {
-    box-shadow: -3px 3px gray;
-    transition: .5s;
+.blue-square-off {
+    /* box-shadow: -3px 3px gray; */
+    transition: 1s;
     border-radius: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 0, 120);
 }
-
-.title:hover .square{
-    box-shadow: -3px 3px white;
-    transition: .5s;
+.red-square-off {
+    /* box-shadow: -3px 3px gray; */
+    transition: 1s;
+    border-radius: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(129, 0, 0);
+}
+.yellow-square-off {
+    /* box-shadow: -3px 3px gray; */
+    transition: 1s;
+    border-radius: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(129, 129, 0);
 }
 
 .red-square {
-    background-color: #ff0000de;
-    margin-right: 11px;
-    height: 22px;
-    width: 22px;
+    transition: .5s;
+    /* border-radius: 50%; */
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    /* box-shadow:-1px -1px 10px rgba(255, 0, 0, 0.5), 1px 1px 10px rgba(255, 0, 0, 0.5), 1px -1px 10px rgba(255, 0, 0, 0.5), -1px 1px 10px rgba(255, 0, 0, 0.5); */
 }
 .yellow-square {
-    background-color: #ffff1ebd;
-    margin-right: 11px;
-    height: 22px;
-    width: 22px;
+    transition: .5s;
+    /* border-radius: 50%; */
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    /* box-shadow:-1px -1px 10px rgba(255, 255, 0, 1), 1px 1px 10px rgba(255, 255, 0, 1), 1px -1px 10px rgba(255, 255, 0, 1), -1px 1px 10px rgba(255, 255, 0, 1); */
 }
 .blue-square {
-    background-color: #00009cc7;
-    margin-right: 11px;
-    height: 22px;
-    width: 22px;
+    transition: .5s;
+    /* border-radius: 50%; */
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    /* box-shadow:-1px -1px 10px rgba(0, 0, 255, 0.5), 1px 1px 10px rgba(0, 0, 255, 0.5), 1px -1px 10px rgba(0, 0, 255, 0.5), -1px 1px 10px rgba(0, 0, 255, 0.5); */
+}
+
+.right-bar {
+    position: absolute;
+    right:0;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: .5vw;
+}
+
+.right-bar-red {
+    height: 20vh;
+    background-color: red;
+    /* width: .5vw; */
+}
+.right-bar-yellow {
+    height: 20vh;
+    background-color: yellow;
+    /* width: .5vw; */
+}
+.right-bar-blue {
+    height: 20vh;
+    background-color: blue;
+    /* width: .5vw; */
 }
 
 
-@media (max-width: 1300px) {
-    .portfolio .slider-image-div h3 {
-        margin-bottom: 0;
-        font-size: 1.2rem;
+@media (max-width: 1600px) {
+    .portfolio .services-outer {
+        left: 0px
     } 
 }
 
 @media (max-width: 1300px) and (orientation: landscape) {
     .services-outer {
-        width: 60vw;
+        left: -300px;
+        width: 65vw;
+        margin-left: 5vw;
     }
     .portfolio-slider-outer{
         padding-left: 10vw;
         padding-right: 5vw;
+    }
+    .products-and-services .h1-div .h1 {
+        margin-top: -8vw;
     }
 }
 
 @media (max-width: 1050px) and (orientation: landscape) {
     .services-outer {
         margin-left: 5vw;
-        width: 80vw;
+        width: 70vw;
+    }
+    .products-and-services .h1-div .h1 {
+        margin-top: 0;
     }
 }
 
 @media(max-width: 900px) and (orientation: portrait) {
+
     .portfolio-slider-outer{
         padding-left: 10vw;
         padding-right: 5vw;
@@ -222,34 +288,18 @@
       transform: translateY(28vh);
       height: 2vh;
     }
+
+    .products-and-services .h1-div .h1 {
+        margin-top: -200px;
+        
+    }
     .services-outer {
-        margin-left: 5vw;
-        width: 80vw;
+        margin-left: 16vw;        
     }
-    /* .about-bottom {
-        height: 15vh;
-    }
-    .products-and-services {
-        width: 100%;
-    }
-    .about-bottom h1 {
-        font-size: 1.5rem;
-    }
-    .products-and-services-child h2 {
-        font-size: 1.5rem;
-    }
-    .products-and-services-child p {
-        font-size: 1rem;
-    } */
+
 }
 
 @media(max-width: 900px) and (orientation: landscape) {
-    .products-and-services h1 {
-        font-size: 1.5rem;
-    }
-    .service h2 {
-        font-size: 1.5rem;
-    }
     .portfolio-slider-outer{
         height: 70vh;
     }
@@ -278,6 +328,44 @@
     .portfolio-slider-inner {
         transform: translateY(-30vh);
     }
+    
+    .products-and-services {
+        height: 70vh;
+    }
+    .products-and-services .h1-div{
+        width: 70vh;
+    }
+    .products-and-services .h1-div .h1{
+        font-size: 6.3vh;
+        margin-top: -2vw;
+    }
+    .services-outer {
+        font-size: smaller;
+        /* background-color: red ; */
+        width: 95%;
+    }
+    .service {
+        flex-direction: row;
+        /* height: 20vh; */
+        /* background-color: blue; */
+        width: 100%;
+        margin:1vh;
+    }
+    .service .title{
+        width: 40%;
+        /* background-color: green; */
+        padding: 0;
+        font-size: 1rem;
+    }
+    .products-and-services .p-div {
+        width: 60%;
+        padding-left:0;
+    }
+    .p-div p{
+        /* background-color: orange; */
+        padding: 0; 
+        font-size: 1.1rem;
+    }
 }
 
 @media(max-width: 700px) and (orientation: portrait) {
@@ -286,14 +374,17 @@
         padding-right: 2vw;
     }
     .services-outer {
-        margin-left: 0;
+        margin-left: 15vw;
         width: 95vw;
     }
-    .products-and-services h1 {
-        font-size: 1.3rem;
+    .products-and-services .h1-div .h1 {
+        margin-top: -200px;
     }
     .service h2 {
         font-size: 1.3rem;
+    }
+    .right-bar{
+        width: 1vw;
     }
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { portfolio } from '../Assets/images';
 import Slider from './Slider';
 import "../styles/Portfolio.css";
@@ -7,72 +7,94 @@ import { Link } from 'react-scroll';
 
 export default function Portfolio() {
     const filteredImages = pageImages.filter(image => image.id !== 1)
-    console.log(filteredImages)
     
-    const ScrollTo = (window, companyBranch) => {
-        let {innerWidth, innerHeight} = window
+    const ScrollTo = (companyBranch) => {
+        
+        // let {innerWidth, innerHeight} = window
         let scrollTo = 0
 
         //portrait phone
 
-        if(innerWidth <= 600 && innerHeight > innerWidth && companyBranch == "design"){
+        if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "design"){
             scrollTo = 550
-        }else if(innerWidth <= 600 && innerHeight > innerWidth && companyBranch == "construction"){
+        }else if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "construction"){
             scrollTo = 960
-        }else if(innerWidth <= 600 && innerHeight > innerWidth && companyBranch == "products"){
+        }else if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "products"){
             scrollTo = 1500
         }
 
         //landscape phone
-        else if(innerWidth <= 900 && innerHeight < innerWidth && companyBranch == "design"){
+        else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "design"){
             scrollTo = 550
-        }else if(innerWidth <= 900 && innerHeight < innerWidth && companyBranch == "construction"){
+        }else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "construction"){
             scrollTo = 960
-        }else if(innerWidth <= 900 && innerHeight < innerWidth && companyBranch == "products"){
+        }else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "products"){
             scrollTo = 1400
         }
         
 
         //portrait tablet
-        else if(innerWidth <= 800 && innerHeight > innerWidth && companyBranch == "design"){
+        else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "design"){
             scrollTo = 700
-        }else if(innerWidth <= 800 && innerHeight > innerWidth && companyBranch == "construction"){
+        }else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "construction"){
             scrollTo = 1320
-        }else if(innerWidth <= 800 && innerHeight > innerWidth && companyBranch == "products"){
+        }else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "products"){
             scrollTo = 1900
         }
 
         //landscape tablet
-        else if(innerWidth <= 1100 && innerHeight < innerWidth && companyBranch == "design"){
+        else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "design"){
             scrollTo = 800
-        }else if(innerWidth <= 1100 && innerHeight < innerWidth && companyBranch == "construction"){
+        }else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "construction"){
             scrollTo = 1620
-        }else if(innerWidth <= 1100 && innerHeight < innerWidth && companyBranch == "products"){
+        }else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "products"){
             scrollTo = 2430
         }
         // laptop
         
-        else if(innerWidth <= 1600 && companyBranch == "design"){
+        else if(window.innerWidth <= 1600 && companyBranch === "design"){
             scrollTo = 800 
-        }else if(innerWidth <= 1600 && companyBranch == "construction"){
+        }else if(window.innerWidth <= 1600 && companyBranch === "construction"){
             scrollTo = 1650 
-        }else if(innerWidth <= 1600 && companyBranch == "products"){
+        }else if(window.innerWidth <= 1600 && companyBranch === "products"){
             scrollTo = 2500 
         }
         // desktop
         
-        else if(innerWidth > 1600 && companyBranch == "design"){
+        else if(window.innerWidth > 1600 && companyBranch === "design"){
             scrollTo = 1050
-        } else if(innerWidth > 1600 && companyBranch == "construction"){
+        } else if(window.innerWidth > 1600 && companyBranch === "construction"){
             scrollTo = 2250
-        } else if(innerWidth > 1600 && companyBranch == "products"){
+        } else if(window.innerWidth > 1600 && companyBranch === "products"){
             scrollTo = 3400
         } 
 
-        console.log(`width: ${window.innerWidth}, height: ${innerHeight}`)
-        console.log(scrollTo)
         return scrollTo
     } 
+
+    const [redState, setRedState] = useState(false)
+    const [yellowState, setYellowState] = useState(false)
+    const [blueState, setBlueState] = useState(false)
+
+    const handleMouseEnter = (color) => {
+        if(color === "red"){
+           setRedState(true) 
+        } else if (color === "yellow"){
+            setYellowState(true)
+        } else if(color === "blue"){
+            setBlueState(true)
+        }
+    }
+
+    const handleMouseLeave = (color) => {
+        if(color === "red"){
+           setRedState(false) 
+        } else if (color === "yellow"){
+            setYellowState(false)
+        } else if(color === "blue"){
+            setBlueState(false)
+        }
+    }
 
   return (
     <div className='portfolio'>
@@ -81,18 +103,22 @@ export default function Portfolio() {
         </div> 
         <div className='products-and-services'>
             <div className='h1-div'>
-                <h1>SERVICES AND PRODUCTS</h1>
+                <h1 className='h1'>SERVICES & PRODUCTS</h1>
             </div>
             <div className='services-outer'>
                 <div className='service'>
                     <Link 
                         to='portfolio'
                         smooth={true}
-                        offset={ScrollTo(window, "design")}
+                        offset={ScrollTo("design")}
                         duration={1000}
-                        className='title'>
-                        <div className='square red-square'></div>
-                        <h2>RD Projects & Design:</h2>
+                        className='title design'
+                        onMouseEnter={()=>handleMouseEnter("red")}
+                        onMouseLeave ={()=>handleMouseLeave("red")}>
+                            <div className='square-outer'>
+                                <div className={redState?'red-square' : 'red-square-off'}></div>
+                            </div>
+                            <h2>RD Projects & Design:</h2>
                     </Link>
                     <div className='p-div'>
                         <p>
@@ -104,10 +130,15 @@ export default function Portfolio() {
                     <Link 
                         to='portfolio'
                         smooth={true}
-                        offset={ScrollTo(window,"construction")}
-                        duration={1200}className='title'>
-                        <div className='square yellow-square'></div>
-                        <h2>RD Construction & development:</h2>
+                        offset={ScrollTo("construction")}
+                        duration={1200}
+                        className='title construction'
+                        onMouseEnter={()=>handleMouseEnter("yellow")}
+                        onMouseLeave ={()=>handleMouseLeave("yellow")}>
+                            <div className='square-outer'>
+                                <div className={yellowState?'yellow-square' : 'yellow-square-off'}></div>
+                            </div>
+                            <h2>RD Construction & development:</h2>
                     </Link>
                     <div className='p-div'>
                         <p>
@@ -119,10 +150,15 @@ export default function Portfolio() {
                     <Link 
                         to='portfolio'
                         smooth={true}
-                        offset={ScrollTo(window,"products")}
-                        duration={2000}className='title'>
-                        <div className='square blue-square'></div>
-                        <h2>RD Products:</h2>
+                        offset={ScrollTo("products")}
+                        duration={2000}
+                        className='title products'
+                        onMouseEnter={()=>handleMouseEnter("blue")}
+                        onMouseLeave ={()=>handleMouseLeave("blue")}>
+                            <div className='square-outer'>   
+                                <div className={blueState?'blue-square' : 'blue-square-off'}></div>
+                            </div>
+                            <h2>RD Products:</h2>
                     </Link>
                     <div className='p-div'>
                        <p>
@@ -132,8 +168,13 @@ export default function Portfolio() {
                     
                 </div> 
             </div>
-            
+            <div className='right-bar'>
+                <div className='right-bar-red'></div>
+                <div className='right-bar-yellow'></div>
+                <div className='right-bar-blue'></div>
+            </div>
         </div>
+        
         {portfolio.map(category => (
             <div className='portfolio-slider-outer' style={{background:`${category.color}`}}>
                 <div className='portfolio-slider-inner'>

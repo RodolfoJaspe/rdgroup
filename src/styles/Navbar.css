@@ -9,7 +9,7 @@
     justify-content: space-evenly;
     position:fixed;
     z-index: 99;
-    background-color: #c9c9c9f1;
+    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
     font-family: Chub Gothic;
 }
 
@@ -30,6 +30,7 @@
 
 .nav-item.active {
     font-size: 1.8rem;
+    font-weight: 900;
     transition: 1s;
     color: rgb(255, 255, 255);
 }

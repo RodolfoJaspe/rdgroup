@@ -6,11 +6,11 @@ description: 'Project description',        url: "https://drive.google.com/uc?exp
     {   id: 2,
         title: "logo",
 
-description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=1unrST_-CqkA6U_4--oR1m932_17VQgM_"},
+description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=1MkerSt4NrhChMV1z1jH5OLP6YkCHg_kS"},
     {   id: 3,
         title: "logo",
 
-description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=1B1hJ3e4ek5IQO9RcETj-jwT4mq-RRbx0"},
+description: 'Project description',        url: "https://drive.google.com/uc?export=view&id=1whWax4xerv8cp-sh5Z0tR8HClntjHD5e"},
     {   id: 4,
         title: "logo",
 
@@ -49,7 +49,7 @@ description: 'Project description',        url: "https://drive.google.com/uc?exp
             id: 1,
             title: "P&D 1",
             description: 'Project description',
-            url: "https://drive.google.com/uc?export=view&id=1CEnnw3BwNEGhNbYtok6biTs8ByDfbrio"
+            url: "https://drive.google.com/uc?export=view&id=1qVIoBipfFgPfKpzelOxY0lHQ6pnCSq6z"
         },{
             id: 2,
             title: "P&D 2",
