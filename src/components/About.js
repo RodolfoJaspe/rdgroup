@@ -27,13 +27,13 @@ function About() {
                    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQGRi7gOFkzzPg/profile-displayphoto-shrink_400_400/0/1516972987542?e=1665619200&v=beta&t=nJsGmoi_eA3hFYvqLIBrFbno3Za3CCzo7AVceD1wD6I' alt='juan manuel' /> 
                 </div>
                 <p>
-                "We are taking your ideas and creating the best design that will last you through time" <br/> Juan Morales CEO.
-                </p>
-                <p>
                     A passion to educate our clients, create their own vision and leave a design that last through time.
                 </p>
                 <p>    
                     After the clients know us, they become a part of that group of top people with our designs, products and visions.
+                </p>
+                <p>
+                "We are taking your ideas and creating the best design that will last you through time" <br/> Juan Morales CEO.
                 </p>
             </div>
         </div>

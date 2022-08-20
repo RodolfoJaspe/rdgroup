@@ -103,7 +103,7 @@ export default function Portfolio() {
         </div> 
         <div className='products-and-services'>
             <div className='h1-div'>
-                <h1 className='h1'>SERVICES & PRODUCTS</h1>
+                <h1 className='h1'>WHAT WE DO</h1>
             </div>
             <div className='services-outer'>
                 <div className='service'>
@@ -111,6 +111,7 @@ export default function Portfolio() {
                         to='portfolio'
                         smooth={true}
                         offset={ScrollTo("design")}
+                        delay={300}
                         duration={1000}
                         className='title design'
                         onMouseEnter={()=>handleMouseEnter("red")}
@@ -131,6 +132,7 @@ export default function Portfolio() {
                         to='portfolio'
                         smooth={true}
                         offset={ScrollTo("construction")}
+                        delay={300}
                         duration={1200}
                         className='title construction'
                         onMouseEnter={()=>handleMouseEnter("yellow")}
@@ -151,6 +153,7 @@ export default function Portfolio() {
                         to='portfolio'
                         smooth={true}
                         offset={ScrollTo("products")}
+                        delay={300}
                         duration={2000}
                         className='title products'
                         onMouseEnter={()=>handleMouseEnter("blue")}

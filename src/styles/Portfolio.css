@@ -45,7 +45,7 @@
 .portfolio-slider-inner h2{
     font-family: Louis George Cafe;
     color: rgb(154, 154, 154);
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
 .portfolio-title {
@@ -61,6 +61,7 @@
 
 .products-and-services {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
@@ -68,24 +69,18 @@
     height: 60vh;
 }
 .products-and-services .h1-div {
-    position: absolute;
-    left: -10vw;
-    width: 60vh;
+    position: relative;
+    left: -25vw;
+    top: -148px;
     height: 5vw;
-    /* background-color: lightgreen; */
-    transform: rotate(-90deg);
-    white-space:nowrap;
 }
 
 .products-and-services .h1-div .h1 {
-    color: white;
-    text-shadow: -3px 1px 5px black;
-    font-size: 5.5vh;
-    font-weight: 900;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12vh;
     display: flex;
     align-items: center;
-    margin-left: 5px;
-    /* background-color: lightcoral; */
+    font-family: Chub Gothic;
 }
 
 .services-outer {
@@ -94,7 +89,6 @@
     justify-content: space-evenly;
     /* background-color: pink; */
     position: relative;
-    left: 100px;
 }
 
 .service {
@@ -193,17 +187,17 @@
 }
 
 .right-bar-red {
-    height: 20vh;
+    height: 33.33%;
     background-color: red;
     /* width: .5vw; */
 }
 .right-bar-yellow {
-    height: 20vh;
+    height: 33.33%;
     background-color: yellow;
     /* width: .5vw; */
 }
 .right-bar-blue {
-    height: 20vh;
+    height: 33.33%;
     background-color: blue;
     /* width: .5vw; */
 }
@@ -213,9 +207,16 @@
     .portfolio .services-outer {
         left: 0px
     } 
+    .products-and-services .h1-div {
+        top: -100px;
+    }
 }
 
 @media (max-width: 1300px) and (orientation: landscape) {
+    .products-and-services .h1-div {
+        left: -20vw;
+        top: -55px;
+    }
     .services-outer {
         left: -300px;
         width: 65vw;
@@ -225,9 +226,6 @@
         padding-left: 10vw;
         padding-right: 5vw;
     }
-    .products-and-services .h1-div .h1 {
-        margin-top: -8vw;
-    }
 }
 
 @media (max-width: 1050px) and (orientation: landscape) {
@@ -235,13 +233,22 @@
         margin-left: 5vw;
         width: 70vw;
     }
-    .products-and-services .h1-div .h1 {
-        margin-top: 0;
+    .products-and-services .h1-div{
+        left: -20vw;
+        top: -76px;
+    }
+    .portfolio-slider-inner h2 {
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 1050px) and (max-height: 600px) {
+    .products-and-services .h1-div{
+        left: -20vw;
+        top: 46px;
     }
 }
 
 @media(max-width: 900px) and (orientation: portrait) {
-
     .portfolio-slider-outer{
         padding-left: 10vw;
         padding-right: 5vw;
@@ -261,7 +268,7 @@
     .portfolio-slider-inner h2{
         font-family: Louis George Cafe;
         color: rgb(154, 154, 154);
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
     .portfolio-title {  
         display: flex;
@@ -269,7 +276,7 @@
         align-items: center;
     }
     .portfolio-slider-inner {
-        transform: translateY(-11vh);
+        transform: translateY(-15vh);
     }
 
 
@@ -289,9 +296,12 @@
       height: 2vh;
     }
 
-    .products-and-services .h1-div .h1 {
-        margin-top: -200px;
-        
+    .products-and-services .h1-div {
+        top: -115px;
+        left: -80px
+    }
+    .products-and-services .h1-div .h1{
+        font-size: 8vh
     }
     .services-outer {
         margin-left: 16vw;        
@@ -299,7 +309,7 @@
 
 }
 
-@media(max-width: 900px) and (orientation: landscape) {
+@media(max-width: 950px) and (orientation: landscape) {
     .portfolio-slider-outer{
         height: 70vh;
     }
@@ -313,7 +323,7 @@
     .portfolio-slider-inner h2{
         font-family: Louis George Cafe;
         color: rgb(154, 154, 154);
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .portfolio-title {
@@ -333,10 +343,11 @@
         height: 70vh;
     }
     .products-and-services .h1-div{
-        width: 70vh;
+        left: -150px;
+        top: -15px;
     }
     .products-and-services .h1-div .h1{
-        font-size: 6.3vh;
+        font-size: 20vh;
         margin-top: -2vw;
     }
     .services-outer {
@@ -368,6 +379,9 @@
         position: relative;
         top: 8px;
     }
+    .right-bar {
+        height: 70vh;
+    }
 }
 
 @media(max-width: 700px) and (orientation: portrait) {
@@ -376,8 +390,7 @@
         padding-right: 2vw;
     }
     .services-outer {
-        margin-left: 15vw;
-        width: 95vw;
+        margin-left: 1vw;
     }
     .products-and-services .h1-div .h1 {
         margin-top: -200px;
@@ -388,13 +401,16 @@
     .right-bar{
         width: 1vw;
     }
+    .portfolio-slider-inner {
+        transform: translateY(-10vh);
+    }
 }
 
 @media(max-width: 500px) {
     .portfolio-title h2 {
         font-size: 1rem;
     }
-    
+
     .service p {
         font-size: 1rem;
     }
@@ -410,5 +426,25 @@
       transform: translateY(27vh);
       width: 30px;
       height: 55px;
+    }
+    .products-and-services {
+        height: 70vh;
+    }
+    .products-and-services .h1-div .h1{
+        font-size: 6.4vh;
+    }
+    .products-and-services .h1-div {
+        top: 153px;
+        left: 0;
+    }
+    .right-bar {
+        height: 70vh;
+    }
+}
+
+@media(max-width:400px) and (min-height:700px) {
+    .products-and-services .h1-div{
+        top: 105px;
+        left: 0
     }
 }

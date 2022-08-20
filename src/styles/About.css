@@ -107,6 +107,7 @@
     }
 }
 
+
 @media(max-width: 900px) and (orientation: landscape) {
     .about {
         padding-top: 10vh;
