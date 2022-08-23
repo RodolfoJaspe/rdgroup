@@ -55,6 +55,10 @@
     border-radius: 10px; 
 }
 
+.about .signature {
+    font-family: Louis George Cafe;
+}
+
 @media(max-width: 1600px) {
     .image-div img {
         width: 20vw;

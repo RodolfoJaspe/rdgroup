@@ -6,6 +6,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import {useEffect, useState} from 'react';
 import Menu from './Menu';
+import How from './How';
 
 
 function App() {
@@ -30,10 +31,10 @@ function App() {
         <Home />
         <div className='main-content'>
             <Portfolio />
+            <How />
             <About />
             <Contact />
         </div>
-        
     </div>
   );
 }

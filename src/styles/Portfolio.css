@@ -126,54 +126,24 @@
     cursor: pointer;
 }
 
-.blue-square-off {
-    /* box-shadow: -3px 3px gray; */
-    transition: 1s;
-    border-radius: 2px;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(0, 0, 120);
-}
-.red-square-off {
-    /* box-shadow: -3px 3px gray; */
-    transition: 1s;
-    border-radius: 2px;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(129, 0, 0);
-}
-.yellow-square-off {
-    /* box-shadow: -3px 3px gray; */
-    transition: 1s;
-    border-radius: 2px;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(129, 129, 0);
-}
-
 .red-square {
     transition: .5s;
-    /* border-radius: 50%; */
     background-color: red;
     height: 30px;
     width: 30px;
-    /* box-shadow:-1px -1px 10px rgba(255, 0, 0, 0.5), 1px 1px 10px rgba(255, 0, 0, 0.5), 1px -1px 10px rgba(255, 0, 0, 0.5), -1px 1px 10px rgba(255, 0, 0, 0.5); */
+
 }
 .yellow-square {
     transition: .5s;
-    /* border-radius: 50%; */
     background-color: yellow;
     height: 30px;
     width: 30px;
-    /* box-shadow:-1px -1px 10px rgba(255, 255, 0, 1), 1px 1px 10px rgba(255, 255, 0, 1), 1px -1px 10px rgba(255, 255, 0, 1), -1px 1px 10px rgba(255, 255, 0, 1); */
 }
 .blue-square {
     transition: .5s;
-    /* border-radius: 50%; */
     background-color: blue;
     height: 30px;
     width: 30px;
-    /* box-shadow:-1px -1px 10px rgba(0, 0, 255, 0.5), 1px 1px 10px rgba(0, 0, 255, 0.5), 1px -1px 10px rgba(0, 0, 255, 0.5), -1px 1px 10px rgba(0, 0, 255, 0.5); */
 }
 
 .right-bar {
@@ -393,7 +363,7 @@
         margin-left: 1vw;
     }
     .products-and-services .h1-div .h1 {
-        margin-top: -200px;
+        margin-top: -225px;
     }
     .service h2 {
         font-size: 1.8rem;

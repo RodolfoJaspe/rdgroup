@@ -10,7 +10,6 @@ export default function Portfolio() {
     
     const ScrollTo = (companyBranch) => {
         
-        // let {innerWidth, innerHeight} = window
         let scrollTo = 0
 
         //portrait phone
@@ -72,30 +71,6 @@ export default function Portfolio() {
         return scrollTo
     } 
 
-    const [redState, setRedState] = useState(false)
-    const [yellowState, setYellowState] = useState(false)
-    const [blueState, setBlueState] = useState(false)
-
-    const handleMouseEnter = (color) => {
-        if(color === "red"){
-           setRedState(true) 
-        } else if (color === "yellow"){
-            setYellowState(true)
-        } else if(color === "blue"){
-            setBlueState(true)
-        }
-    }
-
-    const handleMouseLeave = (color) => {
-        if(color === "red"){
-           setRedState(false) 
-        } else if (color === "yellow"){
-            setYellowState(false)
-        } else if(color === "blue"){
-            setBlueState(false)
-        }
-    }
-
   return (
     <div className='portfolio'>
         <div className='first-slider'>
@@ -114,16 +89,15 @@ export default function Portfolio() {
                         delay={300}
                         duration={1000}
                         className='title design'
-                        onMouseEnter={()=>handleMouseEnter("red")}
-                        onMouseLeave ={()=>handleMouseLeave("red")}>
+                        >
                             <div className='square-outer'>
-                                <div className={redState?'red-square' : 'red-square-off'}></div>
+                                <div className='red-square'></div>
                             </div>
                             <h2>RD Projects & Design:</h2>
                     </Link>
                     <div className='p-div'>
                         <p>
-                            Commercial & Residential Design
+                        Architectural and engineer drawing services, Rendering, 3D Modeling, and plans and permits execution 
                         </p>
                     </div>
                 </div>
@@ -135,10 +109,9 @@ export default function Portfolio() {
                         delay={300}
                         duration={1200}
                         className='title construction'
-                        onMouseEnter={()=>handleMouseEnter("yellow")}
-                        onMouseLeave ={()=>handleMouseLeave("yellow")}>
+                        >
                             <div className='square-outer'>
-                                <div className={yellowState?'yellow-square' : 'yellow-square-off'}></div>
+                                <div className='yellow-square'></div>
                             </div>
                             <h2>RD Construction & development:</h2>
                     </Link>
@@ -156,16 +129,15 @@ export default function Portfolio() {
                         delay={300}
                         duration={2000}
                         className='title products'
-                        onMouseEnter={()=>handleMouseEnter("blue")}
-                        onMouseLeave ={()=>handleMouseLeave("blue")}>
+                        >
                             <div className='square-outer'>   
-                                <div className={blueState?'blue-square' : 'blue-square-off'}></div>
+                                <div className='blue-square'></div>
                             </div>
                             <h2>RD Products:</h2>
                     </Link>
                     <div className='p-div'>
                        <p>
-                            On of a kind designer product specially curated to enhance any design
+                       State of the art designer-products specially curated to enhance any space
                         </p> 
                     </div>
                     
