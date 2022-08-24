@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import {getDesigns, addDesign, deleteDesign} from "../../actions/admin/designActions";
-import {getConstructions, addConstruction, deleteConstruction} from "../../actions/admin/constructionActions";
-import {getProducts, addProduct, deleteProduct} from "../../actions/admin/productsActions";
-import {getFirstSliders, addFirstSlider, deleteFirstSlider} from "../../actions/admin/firstSliderActions";
+import {getDesigns, addDesign, deleteDesign, changeOrderDesign
+} from "../../actions/admin/designActions";
+import {getConstructions, addConstruction, deleteConstruction, changeOrderConstruction} from "../../actions/admin/constructionActions";
+import {getProducts, addProduct, deleteProduct, changeOrderProducts} from "../../actions/admin/productsActions";
+import {getFirstSliders, addFirstSlider, deleteFirstSlider, changeOrderFirstSlider} from "../../actions/admin/firstSliderActions";
 import { connect } from 'react-redux';
 import AdminImages from './AdminImages';
 import "../../styles/admin/Dashboard.css";
@@ -24,7 +25,11 @@ function Dashboard({
     deleteDesign,
     deleteConstruction,
     deleteProduct,
-    deleteFirstSlider
+    deleteFirstSlider,
+    changeOrderFirstSlider,
+    changeOrderDesign,
+    changeOrderConstruction,
+    changeOrderProducts
 }) {
 
     useEffect(() => {
@@ -37,19 +42,26 @@ function Dashboard({
     <div className='dashboard'>
         <div className='category'>
             <h2>First Slider</h2>
-            <AdminImages images={firstSlider} addImage={addFirstSlider} user_id={user_id} deleteImage={deleteFirstSlider} />  
+            <AdminImages images={firstSlider} addImage={addFirstSlider} user_id={user_id} deleteImage={deleteFirstSlider} 
+            changeOrder={changeOrderFirstSlider}/>  
         </div>
         <div className='category'>
             <h2>Design</h2>
-            <AdminImages images={designs} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}/>  
+            <AdminImages images={designs} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}
+            changeOrder={changeOrderDesign}
+            />  
         </div>
         <div className='category'>
             <h2>Construction</h2>
-            <AdminImages images={constructions} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}/>  
+            <AdminImages images={constructions} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}
+            changeOrder={changeOrderConstruction}
+            />  
         </div>
         <div className='category'>
             <h2>Products</h2>
-            <AdminImages images={products} addImage={addProduct} user_id={user_id} deleteImage={deleteProduct}/>  
+            <AdminImages images={products} addImage={addProduct} user_id={user_id} deleteImage={deleteProduct}
+            changeOrder={changeOrderProducts}
+            />  
         </div>
     </div>
   )
@@ -77,5 +89,9 @@ export default connect(mapStateToProps, {
     deleteDesign,
     deleteConstruction,
     deleteProduct,
-    deleteFirstSlider
+    deleteFirstSlider,
+    changeOrderFirstSlider,
+    changeOrderDesign,
+    changeOrderConstruction,
+    changeOrderProducts
 }) (Dashboard)

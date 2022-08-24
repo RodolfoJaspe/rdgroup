@@ -13,35 +13,39 @@ export const DELETE_CONSTRUCTION_START = "DELETE_CONSTRUCTION_START";
 export const DELETE_CONSTRUCTION_SUCCESS = "DELETE_CONSTRUCTION_SUCCESS";
 export const DELETE_CONSTRUCTION_FAILURE = "DELETE_CONSTRUCTION_FAILURE";
 
+export const CHANGE_ORDER_CONSTRUCTION_START = "CHANGE_ORDER_CONSTRUCTION_START";
+export const CHANGE_ORDER_CONSTRUCTION_SUCCESS = "CHANGE_ORDER_CONSTRUCTION_SUCCESS";
+export const CHANGE_ORDER_CONSTRUCTION_FAILURE = "CHANGE_ORDER_CONSTRUCTION_FAILURE";
+
 const headers = {
     Accept: "application/json"
 }
 
 export const getConstructions = (user_id) => dispatch => {
     dispatch({type: GET_CONSTRUCTIONS_START});
-    console.log(user_id)
     axios.get(`${currentUrl}/api/constructions/${user_id}`,{headers})
         .then(
             res => {
-                console.log(res.data)
+                // console.log(res.data)
                 const sortedConstructions = res.data.sort((a, b) => {
-                    return b.id - a.id;
+                    return b.order_number - a.order_number;
                 });
                 console.log(sortedConstructions)
                 dispatch({type:GET_CONSTRUCTIONS_SUCCESS, payload: sortedConstructions})
             }
         ).catch(err => {
-            console.log(err)
+            // console.log(err)
             dispatch({type: GET_CONSTRUCTIONS_FAILURE})
         })
 }
 
 export const addConstruction = (image) => dispatch => {
     dispatch({type : ADD_CONSTRUCTION_START})
-    console.log(image)
-        axios.post(`${currentUrl}/api/constructions/`,image)
+    const editedImage = {...image, order_number: image.order_number}
+    // console.log(editedImage)
+        axios.post(`${currentUrl}/api/constructions/`,editedImage)
             .then(res => {
-                console.log(res)
+                // console.log(res)
                 dispatch({type: ADD_CONSTRUCTION_SUCCESS, payload: res.data})
             })
             .catch(err => {
@@ -54,11 +58,24 @@ export const deleteConstruction = (id) => dispatch => {
     dispatch({type : DELETE_CONSTRUCTION_START})
     axios.delete(`${currentUrl}/api/constructions/${id}`, headers)
         .then(res => {
-            console.log(res)
+            // console.log(res)
             dispatch({type: DELETE_CONSTRUCTION_SUCCESS, payload:res.data})
         })
         .catch(err => {
-            console.log(err)
+            // console.log(err)
             dispatch({type: DELETE_CONSTRUCTION_FAILURE})
+        })
+}
+
+export const changeOrderConstruction = (id, changes) => dispatch => {
+    // console.log(`id:${id} changes:${changes.order_number}`)
+    dispatch({type: CHANGE_ORDER_CONSTRUCTION_START})
+    axios.put(`${currentUrl}/api/constructions/${id}`, changes)
+        .then(res => {
+            // console.log(res)
+            dispatch({type: CHANGE_ORDER_CONSTRUCTION_SUCCESS, payload: res.data})
+        })
+        .catch(err => {
+            dispatch({type: CHANGE_ORDER_CONSTRUCTION_FAILURE})
         })
 }
