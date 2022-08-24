@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-// import "../../styles/admin/AdminImages.css";
+import "../../styles/admin/AdminImages.css";
 
 export default function AdminImages({images, addImage, deleteImage, user_id}) {
 

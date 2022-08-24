@@ -5,17 +5,26 @@ import {getProducts, addProduct, deleteProduct} from "../../actions/admin/produc
 import {getFirstSliders, addFirstSlider, deleteFirstSlider} from "../../actions/admin/firstSliderActions";
 import { connect } from 'react-redux';
 import AdminImages from './AdminImages';
+import "../../styles/admin/Dashboard.css";
 
 function Dashboard({
     user_id,
     designs,
     constructions,
     products,
-    firstSliders,
-    getDesigns,
+    firstSlider,
     getConstructions,
+    getDesigns,
     getProducts,
     getFirstSliders,
+    addConstruction,
+    addDesign,
+    addFirstSlider,
+    addProduct,
+    deleteDesign,
+    deleteConstruction,
+    deleteProduct,
+    deleteFirstSlider
 }) {
 
     useEffect(() => {
@@ -25,20 +34,20 @@ function Dashboard({
         getFirstSliders(user_id)
     },[])
   return (
-    <div>
-        <div>
+    <div className='dashboard'>
+        <div className='category'>
             <h2>First Slider</h2>
-            <AdminImages images={firstSliders} addImage={addFirstSlider} user_id={user_id} deleteImage={deleteFirstSlider} />  
+            <AdminImages images={firstSlider} addImage={addFirstSlider} user_id={user_id} deleteImage={deleteFirstSlider} />  
         </div>
-        <div>
+        <div className='category'>
             <h2>Design</h2>
             <AdminImages images={designs} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}/>  
         </div>
-        <div>
+        <div className='category'>
             <h2>Construction</h2>
             <AdminImages images={constructions} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}/>  
         </div>
-        <div>
+        <div className='category'>
             <h2>Products</h2>
             <AdminImages images={products} addImage={addProduct} user_id={user_id} deleteImage={deleteProduct}/>  
         </div>
@@ -49,8 +58,8 @@ function Dashboard({
 const mapStateToProps = state => {
     return {
         user_id: state.userReducer.user_id,
-        design: state.designReducer.images,
-        construction: state.constructionReducer.images,
+        designs: state.designReducer.images,
+        constructions: state.constructionReducer.images,
         products: state.productsReducer.images,
         firstSlider: state.firstSliderReducer.images
     }
