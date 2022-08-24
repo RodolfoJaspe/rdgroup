@@ -37,9 +37,15 @@
     width: 20%;
 }
 
-.step:hover img{
+.step:hover img {
     transition: .5s;
     transform: scale(1.1);
+}
+
+.step:hover h2 {
+    transition: .5s;
+    text-shadow: -1px 1px 1px black;
+    color: white
 }
 
 .step img{
@@ -51,6 +57,7 @@
 .step h2{
     cursor: pointer;
     font-size: 2rem;
+    transition: .5s;
 }
 
 .step p{
