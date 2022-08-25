@@ -29,7 +29,7 @@ export const getDesigns = (user_id) => dispatch => {
             res => {
                 // console.log(res.data)
                 const sortedDesigns = res.data.sort((a, b) => {
-                    return b.order_number - a.order_number;
+                    return a.order_number - b.order_number;
                 });
                 // console.log(sortedDesigns)
                 dispatch({type:GET_DESIGNS_SUCCESS, payload: sortedDesigns})

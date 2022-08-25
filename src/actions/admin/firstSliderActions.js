@@ -28,7 +28,7 @@ export const getFirstSliders = (user_id) => dispatch => {
             res => {
                 console.log(res.data)
                 const sortedFirstFliders = res.data.sort((a, b) => {
-                    return b.order_number - a.order_number;
+                    return a.order_number - b.order_number;
                 });
                 // console.log(sortedFirstFliders)
                 dispatch({type:GET_FIRSTSLIDERS_SUCCESS, payload: sortedFirstFliders})

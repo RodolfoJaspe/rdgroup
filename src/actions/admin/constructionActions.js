@@ -28,7 +28,7 @@ export const getConstructions = (user_id) => dispatch => {
             res => {
                 // console.log(res.data)
                 const sortedConstructions = res.data.sort((a, b) => {
-                    return b.order_number - a.order_number;
+                    return a.order_number - b.order_number;
                 });
                 console.log(sortedConstructions)
                 dispatch({type:GET_CONSTRUCTIONS_SUCCESS, payload: sortedConstructions})

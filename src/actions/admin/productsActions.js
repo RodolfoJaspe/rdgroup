@@ -28,7 +28,7 @@ export const getProducts = (user_id) => dispatch => {
             res => {
                 // console.log(res.data)
                 const sortedProducts = res.data.sort((a, b) => {
-                    return b.order_number - a.order_number;
+                    return a.order_number - b.order_number;
                 });
                 // console.log(sortedProducts)
                 dispatch({type:GET_PRODUCTS_SUCCESS, payload: sortedProducts})
