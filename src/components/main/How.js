@@ -1,9 +1,9 @@
 import React from 'react';
-import "../styles/How.css";
-import form from "../Assets/icons/form.png";
-import review from "../Assets/icons/review.png";
-import quote from "../Assets/icons/quote.svg";
-import work from "../Assets/icons/work.png";
+import "../../styles/main/How.css";
+import form from "../../Assets/icons/form.png";
+import review from "../../Assets/icons/review.png";
+import quote from "../../Assets/icons/quote.svg";
+import work from "../../Assets/icons/work.png";
 import { Link } from 'react-scroll';
 
 export default function How() {

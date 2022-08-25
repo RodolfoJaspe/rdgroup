@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import Navbar from './Navbar';
-import menu from "../Assets/icons/menu.png";
-import close from "../Assets/icons/close.png";
-import "../styles/Menu.css";
-import "../styles/Navbar.css";
+import menu from "../../Assets/icons/menu.png";
+import close from "../../Assets/icons/close.png";
+import "../../styles/main/Menu.css";
+import "../../styles/main/Navbar.css";
 import {Link} from 'react-scroll'
 
 export default function Menu() {

@@ -1,4 +1,4 @@
-import '../styles/App.css';
+import '../../styles/main/App.css';
 import Contact from './Contact';
 import Home from './Home';
 import Navbar from './Navbar';

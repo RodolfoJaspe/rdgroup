@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import { portfolio } from '../Assets/images';
+import { portfolio } from '../../Assets/images';
 import Slider from './Slider';
-import "../styles/Portfolio.css";
-import { pageImages } from '../Assets/images';
+import "../../styles/main/Portfolio.css";
+import { pageImages } from '../../Assets/images';
 import { Link } from 'react-scroll';
 
 export default function Portfolio() {

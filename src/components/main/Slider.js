@@ -1,8 +1,8 @@
 import React from 'react';
-import "../styles/Slider.css";
+import "../../styles/main/Slider.css";
 import AliceCarousel from 'react-alice-carousel';
-import NextArrow from "../Assets/icons/rightArrowWhite.png"
-import PrevArrow from "../Assets/icons/leftArrowWhite.png"
+import NextArrow from "../../Assets/icons/rightArrowWhite.png"
+import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
 
 export default function Slider({images}) {
 
@@ -28,8 +28,8 @@ export default function Slider({images}) {
         mouseTracking 
         items={pictures}
         className="slider"
-        // autoPlay
-        // autoPlayInterval={2000}
+        autoPlay
+        autoPlayInterval={2000}
         animationDuration={1500}
         infinite
         keyboardNavigation

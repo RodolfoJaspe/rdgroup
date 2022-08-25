@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
-import '../styles/Contact.css';
-import {pageImages} from "../Assets/images.js";
+import '../../styles/main/Contact.css';
+import {pageImages} from "../../Assets/images.js";
 import emailjs from '@emailjs/browser';
-import fb from "../Assets/icons/fb.png";
-import insta from "../Assets/icons/insta.png";
+import fb from "../../Assets/icons/fb.png";
+import insta from "../../Assets/icons/insta.png";
 
 function Contact() {
     

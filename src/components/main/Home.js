@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Home.css';
-import {pageImages} from "../Assets/images.js";
+import '../../styles/main/Home.css';
+import {pageImages} from "../../Assets/images.js";
 
 function Home() {
 
