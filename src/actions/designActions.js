@@ -1,5 +1,5 @@
 import axios from "axios";
-import { currentUrl } from "../../Assets/urls";
+import { currentUrl } from "../Assets/urls";
 
 export const GET_DESIGNS_START = "GET_DESIGNS_START";
 export const GET_DESIGNS_SUCCESS = "GET_DESIGNS_SUCCESS";

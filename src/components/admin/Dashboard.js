@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import {getDesigns, addDesign, deleteDesign, changeOrderDesign
-} from "../../actions/admin/designActions";
-import {getConstructions, addConstruction, deleteConstruction, changeOrderConstruction} from "../../actions/admin/constructionActions";
-import {getProducts, addProduct, deleteProduct, changeOrderProducts} from "../../actions/admin/productsActions";
-import {getFirstSliders, addFirstSlider, deleteFirstSlider, changeOrderFirstSlider} from "../../actions/admin/firstSliderActions";
+} from "../../actions/designActions";
+import {getConstructions, addConstruction, deleteConstruction, changeOrderConstruction} from "../../actions/constructionActions";
+import {getProducts, addProduct, deleteProduct, changeOrderProducts} from "../../actions/productsActions";
+import {getFirstSliders, addFirstSlider, deleteFirstSlider, changeOrderFirstSlider} from "../../actions/firstSliderActions";
 import { connect } from 'react-redux';
 import AdminImages from './AdminImages';
 import "../../styles/admin/Dashboard.css";

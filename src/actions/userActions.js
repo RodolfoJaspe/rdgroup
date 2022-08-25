@@ -1,5 +1,5 @@
 import axios from "axios";
-import { currentUrl } from "../../Assets/urls";
+import { currentUrl } from "../Assets/urls";
 
 export const DELETE_USER_START="DELETE_USER_START";
 export const DELETE_USER_SUCCESS="DELETE_USER_SUCCESS";

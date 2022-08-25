@@ -62,7 +62,7 @@ console.log(images)
         </div>
         <div className='admin-image-list'>
             {images?images.map(image => (
-                <div className='image-div'>
+                <div className='image-div' key={image.id}>
                     <h1>{image.order_number}</h1>
                     <p>{image.title}</p>
                     <img src={image.url} alt={image.title}/>

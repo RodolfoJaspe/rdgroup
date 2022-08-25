@@ -5,10 +5,10 @@ import "../../styles/main/Portfolio.css";
 import { pageImages } from '../../Assets/images';
 import { Link } from 'react-scroll';
 import ScrollTo from '../helpers/ScrollTo';
-import { getFirstSliders } from '../../actions/admin/firstSliderActions';
-import { getDesigns } from '../../actions/admin/designActions';
-import { getConstructions } from '../../actions/admin/constructionActions';
-import { getProducts } from '../../actions/admin/productsActions';
+import { getFirstSliders } from '../../actions/firstSliderActions';
+import { getDesigns } from '../../actions/designActions';
+import { getConstructions } from '../../actions/constructionActions';
+import { getProducts } from '../../actions/productsActions';
 import { connect } from 'react-redux';
 
 function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firstSlider,designs,constructions,products}) {

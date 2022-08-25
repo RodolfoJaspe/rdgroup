@@ -1,5 +1,5 @@
 import axios from "axios";
-import { currentUrl } from "../../Assets/urls";
+import { currentUrl } from "../Assets/urls";
 
 export const GET_FIRSTSLIDERS_START = "GET_FIRSTSLIDERS_START";
 export const GET_FIRSTSLIDERS_SUCCESS = "GET_FIRSTSLIDERS_SUCCESS";

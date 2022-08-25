@@ -9,7 +9,7 @@ export default function Slider({images}) {
     const handleDragStart = (e) => (e.preventDefault());
     console.log(images)
     const pictures = images.map(image => (
-        <div className='slider-image-div'>
+        <div className='slider-image-div' key={image.id}>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
             <h3>{image.title}</h3>
         </div>

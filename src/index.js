@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './components/admin/Login';
 import Dashboard from './components/admin/Dashboard';
-import { rootReducer } from './reducers/admin';
+import { rootReducer } from './reducers';
 import  { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';

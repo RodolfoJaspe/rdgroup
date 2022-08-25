@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as yup from 'yup';
 import { connect } from 'react-redux';
-import { login, clearLoginError } from "../../actions/admin/userActions";
+import { login, clearLoginError } from "../../actions/userActions";
 import { useNavigate } from 'react-router-dom';
 
 function Login({login, clearLoginError, loginError}) {
