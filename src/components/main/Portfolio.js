@@ -1,80 +1,30 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { portfolio } from '../../Assets/images';
 import Slider from './Slider';
 import "../../styles/main/Portfolio.css";
 import { pageImages } from '../../Assets/images';
 import { Link } from 'react-scroll';
+import ScrollTo from '../helpers/ScrollTo';
+import { getFirstSliders } from '../../actions/admin/firstSliderActions';
+import { getDesigns } from '../../actions/admin/designActions';
+import { getConstructions } from '../../actions/admin/constructionActions';
+import { getProducts } from '../../actions/admin/productsActions';
+import { connect } from 'react-redux';
 
-export default function Portfolio() {
-    const filteredImages = pageImages.filter(image => image.id !== 1)
-    
-    const ScrollTo = (companyBranch) => {
-        
-        let scrollTo = 0
-
-        //portrait phone
-
-        if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "design"){
-            scrollTo = 550
-        }else if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "construction"){
-            scrollTo = 960
-        }else if(window.innerWidth <= 600 && window.innerHeight > window.innerWidth && companyBranch === "products"){
-            scrollTo = 1500
-        }
-
-        //landscape phone
-        else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "design"){
-            scrollTo = 550
-        }else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "construction"){
-            scrollTo = 960
-        }else if(window.innerWidth <= 900 && window.innerHeight < window.innerWidth && companyBranch === "products"){
-            scrollTo = 1400
-        }
-        
-
-        //portrait tablet
-        else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "design"){
-            scrollTo = 700
-        }else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "construction"){
-            scrollTo = 1320
-        }else if(window.innerWidth <= 800 && window.innerHeight > window.innerWidth && companyBranch === "products"){
-            scrollTo = 1900
-        }
-
-        //landscape tablet
-        else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "design"){
-            scrollTo = 800
-        }else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "construction"){
-            scrollTo = 1620
-        }else if(window.innerWidth <= 1100 && window.innerHeight < window.innerWidth && companyBranch === "products"){
-            scrollTo = 2430
-        }
-        // laptop
-        
-        else if(window.innerWidth <= 1600 && companyBranch === "design"){
-            scrollTo = 800 
-        }else if(window.innerWidth <= 1600 && companyBranch === "construction"){
-            scrollTo = 1650 
-        }else if(window.innerWidth <= 1600 && companyBranch === "products"){
-            scrollTo = 2500 
-        }
-        // desktop
-        
-        else if(window.innerWidth > 1600 && companyBranch === "design"){
-            scrollTo = 1050
-        } else if(window.innerWidth > 1600 && companyBranch === "construction"){
-            scrollTo = 2250
-        } else if(window.innerWidth > 1600 && companyBranch === "products"){
-            scrollTo = 3400
-        } 
-
-        return scrollTo
-    } 
+function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firstSlider,designs,constructions,products}) {
+    useEffect(()=>{
+        getFirstSliders(1)
+        getDesigns(1)
+        getConstructions(1)
+        getProducts(1)
+    },[])
+    // const filteredImages = pageImages.filter(image => image.id !== 1)
 
   return (
     <div className='portfolio'>
         <div className='first-slider'>
-            <Slider images={filteredImages}/> 
+            {/* <Slider images={filteredImages}/>  */}
+            <Slider images={firstSlider}/>
         </div> 
         <div className='products-and-services'>
             <div className='h1-div'>
@@ -150,7 +100,7 @@ export default function Portfolio() {
             </div>
         </div>
         
-        {portfolio.map(category => (
+        {/* {portfolio.map(category => (
             <div className='portfolio-slider-outer' style={{background:`${category.color}`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
@@ -160,7 +110,46 @@ export default function Portfolio() {
                     <Slider images={category.images} />  
                 </div>
             </div>
-        ))}
+        ))} */}
+            <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
+                <div className='portfolio-slider-inner'>
+                    <div className='portfolio-title'>
+                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <h2>Projects & Designs</h2>
+                    </div>
+                    <Slider images={designs} />  
+                </div>
+            </div>
+            <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
+                <div className='portfolio-slider-inner'>
+                    <div className='portfolio-title'>
+                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <h2>Constructions & Developments</h2>
+                    </div>
+                    <Slider images={constructions} />  
+                </div>
+            </div>
+            <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>
+                <div className='portfolio-slider-inner'>
+                    <div className='portfolio-title'>
+                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <h2>Products</h2>
+                    </div>
+                    <Slider images={products} />  
+                </div>
+            </div>
+
     </div>
   )
 }
+
+const mapStateToProps = state => {
+    return {
+        firstSlider : state.firstSliderReducer.images,
+        designs : state.designReducer.images,
+        constructions : state.constructionReducer.images,
+        products: state.productsReducer.images
+    }
+}
+
+export default connect(mapStateToProps, {getFirstSliders,getDesigns,getConstructions,getProducts})(Portfolio)

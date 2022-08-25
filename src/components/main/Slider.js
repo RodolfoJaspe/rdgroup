@@ -7,13 +7,13 @@ import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
 export default function Slider({images}) {
 
     const handleDragStart = (e) => (e.preventDefault());
-
+    console.log(images)
     const pictures = images.map(image => (
         <div className='slider-image-div'>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
-            <h3>{image.description}</h3>
+            <h3>{image.title}</h3>
         </div>
-    )) 
+    ))
     
     const renderNextButton = ({ isDisabled }) => {
         return <div className='next-arrow'><img src={NextArrow} alt="next-arrow"/></div>
