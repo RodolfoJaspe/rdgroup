@@ -3,16 +3,16 @@
     flex-direction: column;
 }
 
-.admin-image-list {
+.admin-image-outer .admin-image-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.admin-image-form input{
+.admin-image-outer .admin-image-form input{
     width:45%;
 }
 
-.admin-image-list img{
+.admin-image-outer .admin-image-list img{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -20,13 +20,13 @@
     margin: 5px;
 }
 
-.image-div {
+.admin-image-outer .image-div {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-::placeholder {
+.admin-image-outer ::placeholder {
     color: gray;
     font-size: 1rem;
 }

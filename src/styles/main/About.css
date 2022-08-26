@@ -54,7 +54,9 @@
     margin: 0 10px 10px 0;
     border-radius: 10px; 
 }
-
+.bio-div {
+    text-align: justify;
+}
 .about .signature {
     font-family: Louis George Cafe;
 }

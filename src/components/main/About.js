@@ -26,15 +26,18 @@ function About() {
                 <div className='image-div'>
                    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQGRi7gOFkzzPg/profile-displayphoto-shrink_400_400/0/1516972987542?e=1665619200&v=beta&t=nJsGmoi_eA3hFYvqLIBrFbno3Za3CCzo7AVceD1wD6I' alt='juan manuel' /> 
                 </div>
-                <p>
-                Juan Manuel Morales CEO
-                </p><br/>
-                <p>    
-                Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International Univerity of Art and Design with a Post graduate degree in Interior design in 1995.
-                </p><br/>
-                <p>
-                ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><b className='signature'>Juan Manuel Morales</b> 
-                </p>
+                <div className='bio-div'>
+                    <p>
+                    Juan Manuel Morales CEO
+                    </p><br/>
+                    <p>    
+                    Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International Univerity of Art and Design with a Post graduate degree in Interior design in 1995.
+                    </p><br/>
+                    <p>
+                    ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><b className='signature'>Juan Manuel Morales</b> 
+                    </p>
+                </div>
+                
             </div>
         </div>
     </div>
