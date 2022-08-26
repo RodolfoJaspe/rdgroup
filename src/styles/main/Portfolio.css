@@ -63,32 +63,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
     font-family: Louis George Cafe;
-    height: 60vh;
 }
 .products-and-services .h1-div {
-    position: relative;
-    left: -25vw;
-    top: -148px;
-    height: 5vw;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    height: 0;
 }
 
 .products-and-services .h1-div .h1 {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 12vh;
-    display: flex;
-    align-items: center;
+    font-size: 7vw;
     font-family: Chub Gothic;
+    transform: translateY(-100%);
+    margin-left: 2vw;
 }
 
 .services-outer {
+    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
+    width: 99.5%;
+    border-right: .5vw solid;
+    border-image:   linear-gradient(to bottom, red 33%,yellow 33%, yellow 66%,blue 66%) 3;
+}
+.services-inner{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background-color: pink; */
-    position: relative;
+    margin: 8vw 5vw;
+    
 }
 
 .service {
@@ -146,52 +149,7 @@
     width: 30px;
 }
 
-.right-bar {
-    position: absolute;
-    right:0;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: .5vw;
-}
-
-.right-bar-red {
-    height: 33.33%;
-    background-color: red;
-    /* width: .5vw; */
-}
-.right-bar-yellow {
-    height: 33.33%;
-    background-color: yellow;
-    /* width: .5vw; */
-}
-.right-bar-blue {
-    height: 33.33%;
-    background-color: blue;
-    /* width: .5vw; */
-}
-
-
-@media (max-width: 1600px) {
-    .portfolio .services-outer {
-        left: 0px
-    } 
-    .products-and-services .h1-div {
-        top: -100px;
-    }
-}
-
 @media (max-width: 1300px) and (orientation: landscape) {
-    .products-and-services .h1-div {
-        left: -20vw;
-        top: -55px;
-    }
-    .services-outer {
-        left: -300px;
-        width: 65vw;
-        margin-left: 5vw;
-    }
     .portfolio-slider-outer{
         padding-left: 10vw;
         padding-right: 5vw;
@@ -199,24 +157,12 @@
 }
 
 @media (max-width: 1050px) and (orientation: landscape) {
-    .services-outer {
-        margin-left: 5vw;
-        width: 70vw;
-    }
-    .products-and-services .h1-div{
-        left: -20vw;
-        top: -76px;
-    }
+
     .portfolio-slider-inner h2 {
         font-size: 2.6rem;
     }
 }
-@media (max-width: 1050px) and (max-height: 600px) {
-    .products-and-services .h1-div{
-        left: -20vw;
-        top: 46px;
-    }
-}
+
 
 @media(max-width: 900px) and (orientation: portrait) {
     .portfolio-slider-outer{
@@ -266,15 +212,12 @@
       height: 2vh;
     }
 
-    .products-and-services .h1-div {
-        top: -115px;
-        left: -80px
-    }
-    .products-and-services .h1-div .h1{
-        font-size: 8vh
+    .products-and-services .h1-div .h1 {
+        font-size: 10vw;
     }
     .services-outer {
-        margin-left: 16vw;        
+        border-right: 1vw solid;
+        width: 99%;  
     }
 
 }
@@ -312,19 +255,16 @@
     .products-and-services {
         height: 70vh;
     }
-    .products-and-services .h1-div{
-        left: -150px;
-        top: -15px;
+
+    .products-and-services .h1-div .h1 {
+        font-size: 8vw;
     }
-    .products-and-services .h1-div .h1{
-        font-size: 20vh;
-        margin-top: -2vw;
-    }
+
     .services-outer {
-        font-size: smaller;
-        /* background-color: red ; */
-        width: 95%;
+        border-right: 1vw solid;
+        width: 99%;  
     }
+
     .service {
         flex-direction: row;
         /* height: 20vh; */
@@ -349,9 +289,7 @@
         position: relative;
         top: 8px;
     }
-    .right-bar {
-        height: 70vh;
-    }
+
 }
 
 @media(max-width: 700px) and (orientation: portrait) {
@@ -359,17 +297,16 @@
         padding-left: 4vw;
         padding-right: 2vw;
     }
-    .services-outer {
-        margin-left: 1vw;
+    .products-and-services .h1-div{
+        text-align: center;
+
     }
-    .products-and-services .h1-div .h1 {
-        margin-top: -225px;
+    .products-and-services .h1-div .h1{
+        font-size: 14vw;
+        margin-left: 0
     }
     .service h2 {
         font-size: 1.8rem;
-    }
-    .right-bar{
-        width: 1vw;
     }
     .portfolio-slider-inner {
         transform: translateY(-10vh);
@@ -400,21 +337,13 @@
     .products-and-services {
         height: 70vh;
     }
-    .products-and-services .h1-div .h1{
-        font-size: 6.4vh;
-    }
-    .products-and-services .h1-div {
-        top: 153px;
-        left: 0;
-    }
-    .right-bar {
-        height: 70vh;
-    }
-}
 
-@media(max-width:400px) and (min-height:700px) {
     .products-and-services .h1-div{
-        top: 105px;
-        left: 0
+        text-align: center;
+
+    }
+    .products-and-services .h1-div .h1{
+        font-size: 14vw;
+        margin-left: 0
     }
 }

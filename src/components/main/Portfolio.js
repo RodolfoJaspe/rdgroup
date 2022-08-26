@@ -31,74 +31,72 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                 <h1 className='h1'>WHAT WE DO</h1>
             </div>
             <div className='services-outer'>
-                <div className='service'>
-                    <Link 
-                        to='portfolio'
-                        smooth={true}
-                        offset={ScrollTo("design")}
-                        delay={300}
-                        duration={1000}
-                        className='title design'
-                        >
-                            <div className='square-outer'>
-                                <div className='red-square'></div>
-                            </div>
-                            <h2>RD Projects & Design:</h2>
-                    </Link>
-                    <div className='p-div'>
-                        <p>Commercial & residential Desing</p>
+                <div className='services-inner'>
+                    <div className='service'>
+                        <Link 
+                            to='portfolio'
+                            smooth={true}
+                            offset={ScrollTo("design")}
+                            delay={300}
+                            duration={1000}
+                            className='title design'
+                            >
+                                <div className='square-outer'>
+                                    <div className='red-square'></div>
+                                </div>
+                                <h2>RD Projects & Design:</h2>
+                        </Link>
+                        <div className='p-div'>
+                            <p>Commercial & residential Desing</p>
+                            <p>
+                            Architectural and engineer drawing services, Rendering, 3D Modeling, and plans and permits execution 
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div className='service'>
+                        <Link 
+                            to='portfolio'
+                            smooth={true}
+                            offset={ScrollTo("construction")}
+                            delay={300}
+                            duration={1200}
+                            className='title construction'
+                            >
+                                <div className='square-outer'>
+                                    <div className='yellow-square'></div>
+                                </div>
+                                <h2>RD Construction & development:</h2>
+                        </Link>
+                        <div className='p-div'>
+                            <p>
+                                Turnkey commercial or residential project development 
+                            </p>
+                        </div>
+                    </div>
+                    <div className='service'>
+                        <Link 
+                            to='portfolio'
+                            smooth={true}
+                            offset={ScrollTo("products")}
+                            delay={300}
+                            duration={2000}
+                            className='title products'
+                            >
+                                <div className='square-outer'>   
+                                    <div className='blue-square'></div>
+                                </div>
+                                <h2>RD Products:</h2>
+                        </Link>
+                        <div className='p-div'>
                         <p>
-                        Architectural and engineer drawing services, Rendering, 3D Modeling, and plans and permits execution 
-                        </p>
+                        State of the art designer-products specially curated to enhance any space
+                            </p> 
+                        </div>
                         
-                    </div>
+                    </div>                     
                 </div>
-                <div className='service'>
-                    <Link 
-                        to='portfolio'
-                        smooth={true}
-                        offset={ScrollTo("construction")}
-                        delay={300}
-                        duration={1200}
-                        className='title construction'
-                        >
-                            <div className='square-outer'>
-                                <div className='yellow-square'></div>
-                            </div>
-                            <h2>RD Construction & development:</h2>
-                    </Link>
-                    <div className='p-div'>
-                        <p>
-                            Turnkey commercial or residential project development 
-                        </p>
-                    </div>
-                </div>
-                <div className='service'>
-                    <Link 
-                        to='portfolio'
-                        smooth={true}
-                        offset={ScrollTo("products")}
-                        delay={300}
-                        duration={2000}
-                        className='title products'
-                        >
-                            <div className='square-outer'>   
-                                <div className='blue-square'></div>
-                            </div>
-                            <h2>RD Products:</h2>
-                    </Link>
-                    <div className='p-div'>
-                       <p>
-                       State of the art designer-products specially curated to enhance any space
-                        </p> 
-                    </div>
-                    
-                </div> 
-            </div>
-            <div className='right-bar'>
-                <div className='right-bar-red'></div>
-                <div className='right-bar-yellow'></div>
-                <div className='right-bar-blue'></div>
+
             </div>
         </div>
         

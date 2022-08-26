@@ -3,31 +3,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5)),#fffffff1;
+    /* background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5)),#fffffff1; */
+    background-color: #fffffff1;
     font-family: Louis George Cafe;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .how .h1-div{
-    font-family: Chub Gothic;
-    position: relative;
-    top: -20%;
-    left:-20%;
-    font-size: 6vh;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    height: 0;
 }
 
 .how h1 {
-    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 7vw;
+    font-family: Chub Gothic;
+    transform: translateY(-100%);
+    margin-left: 2vw;
+    background-color: transparent;
+}
+
+.steps-outer {
+    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
+    width: 99.5%;
+    border-right: .5vw solid;
+    border-image:   linear-gradient(to bottom, red 33%,yellow 33%, yellow 66%,blue 66%) 3;
 }
 
 .steps {
-    width: 90%;
     display: flex;
     justify-content: space-around;
-    position: relative;
-    top: -15%;
+    margin: 8vw 5vw;
 }
 
 .step {
@@ -65,18 +73,33 @@
     font-size: 1.3rem;
 }
 
-@media(max-width: 500px) {
-    .how {
-        height: 70vh;
+@media(max-width: 900px) and (orientation: portrait) {
+    .how h1 {
+        font-size: 10vw;
     }
+    .steps-outer {
+        border-right: 1vw solid;
+        width: 99%;        
+    }
+}
+@media(max-width: 950px) and (orientation: landscape) {
+    .how .h1 {
+        font-size: 8vw;
+    }
+    .steps-outer {
+        border-right: 1vw solid;
+        width: 99%;        
+    }
+}
+@media(max-width: 700px) and (orientation: portrait) {
     .how .h1-div{
-        font-size: 3vh;
-        top: -7%;
-        left:-1%;
+        text-align: center;
     }
-
+    .how .h1{
+        font-size: 13vw;
+        margin-left: 0
+    }
     .steps {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -86,9 +109,7 @@
     .step {
         width: 50%;
     }
-    .right-bar {
-        height: 70vh;
-    }
 
 }
+
 
