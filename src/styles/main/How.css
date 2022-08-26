@@ -3,9 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5)),#fffffff1; */
+    /* background-color: red; */
     background-color: #fffffff1;
     font-family: Louis George Cafe;
+    border-top: 20vh solid transparent;
     /* height: 60vh; */
 }
 
@@ -17,12 +18,14 @@
 }
 
 .how h1 {
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: rgba(0, 0, 0, 0.5);
     font-size: 7vw;
     font-family: Chub Gothic;
     transform: translateY(-100%);
     margin-left: 2vw;
     background-color: transparent;
+    z-index: 99;
 }
 
 .steps-outer {
