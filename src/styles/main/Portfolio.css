@@ -156,10 +156,10 @@
     }
 }
 
-@media (max-width: 1050px) and (orientation: landscape) {
+@media (max-width: 1050px) {
 
     .portfolio-slider-inner h2 {
-        font-size: 2.6rem;
+        font-size: 4vw;
     }
 }
 
@@ -184,7 +184,7 @@
     .portfolio-slider-inner h2{
         font-family: Louis George Cafe;
         color: rgb(154, 154, 154);
-        font-size: 2.5rem;
+        /* font-size: 3.5vw; */
     }
     .portfolio-title {  
         display: flex;
