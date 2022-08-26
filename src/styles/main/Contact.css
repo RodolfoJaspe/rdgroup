@@ -72,7 +72,6 @@
 .submit-button-div input {
     padding: .3rem 1.5rem;
     border-radius: .2rem;
-    border: none;
     transition: .3s;
     background-color: rgba(66, 66, 66, 0.853);
     color: white;
@@ -95,6 +94,16 @@
     background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
     width: 100vw;
     margin-top: 10vh;
+}
+
+.fl-tx {
+    position:absolute;
+    left:5vw;
+}
+
+.fl-tx h2 {
+    color: white;
+    font-size: 2rem;
 }
 
 .footer img{
@@ -122,12 +131,38 @@
     transform: scale(1.2);
 }
 
+.subject {
+    width: 35vw;
+    border-radius: .1rem;
+    padding:10px 5px;
+    background-color: #cacaca;
+    border: 1px solid rgb(146, 146, 146);
+    margin: 2vh 0;
+}
+
+.subject label{
+    font-family: Louis George Cafe;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    margin-right: 1vw;
+}
+
 @media(max-width: 900px) {
     .input {
         width: 40vw;
     }
+    .subject {
+        width: 40vw;
+    }
     .contact-info {
         width: 55vw;
+    }
+    .fl-tx {
+        left:2vw;
+    }
+    .fl-tx h2{
+        font-size: 1.5rem;
     }
 }
 
@@ -146,6 +181,9 @@
         margin-top: 10vh;
     }
     .input {
+        width: 90vw;
+    }
+    .subject {
         width: 90vw;
     }
 }

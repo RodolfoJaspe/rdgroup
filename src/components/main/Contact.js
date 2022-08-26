@@ -32,14 +32,24 @@ function Contact() {
     <div className='contact'>
         <div className='banner-contact-div'>
             <div className='contact-info'>
-                <h2>RD Group</h2>
+                <h2>RD Group Headquarters</h2>
                 <p>4400 Memorial drive, <br/>Suite 2066<br/>Houston, TX 77007<br/><br/>juanmanuel@rdgroup-usa.com</p>
                 <h3>713-815-1803</h3>
             </div>
             <form ref={form} onSubmit={sendEmail} className='form'>
                 <input placeholder='Name' className='input' type="text" name="name" />
                 <input placeholder='Email' className='input' type="email" name="email" />
-                <input placeholder='Subject' className='input' type="subject" name="subject" />
+                {/* <input placeholder='Subject' className='input' type="subject" name="subject" /> */}
+                <div className='subject'>
+                    <label for="subject">Subject :</label>
+                        <select name="subject" id="subject" required>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="design">Design</option>
+                            <option value="construction">Construction</option>
+                            <option value="products">Products</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 <textarea placeholder='Message' className='input message' name="message" />
                 <div className='submit-button-div'>
                     <input type="submit" value="Send" />  
@@ -47,6 +57,11 @@ function Contact() {
             </form>
         </div>
         <div className='footer'>
+            <div className='fl-tx'>
+                <h2>
+                    FLORIDA / TEXAS
+                </h2>
+            </div>
             <div className='socials-logo'>
                 <img 
                     src={fb} 

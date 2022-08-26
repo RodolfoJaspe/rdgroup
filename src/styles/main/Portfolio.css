@@ -38,7 +38,7 @@
 }
 
 .portfolio-slider-inner .alice-carousel__wrapper {
-    border: 5px solid rgb(225, 225, 225);
+    /* border: 5px solid rgb(225, 225, 225); */
     height: 70vh;
 }
 
@@ -76,7 +76,7 @@
     color: rgba(255, 255, 255, 0.7);
     font-size: 7vw;
     font-family: Chub Gothic;
-    transform: translateY(-100%);
+    transform: translateY(-112%);
     margin-left: 2vw;
 }
 
@@ -178,7 +178,7 @@
         height: 30vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
-        border: 3px solid rgb(225, 225, 225);
+        /* border: 3px solid rgb(225, 225, 225); */
         height: 30vh;
     }
     .portfolio-slider-inner h2{
@@ -230,7 +230,7 @@
         height: 70vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
-        border: 3px solid rgb(225, 225, 225);
+        /* border: 3px solid rgb(225, 225, 225); */
         height: 70vh;
     }
     .portfolio-slider-inner h2{

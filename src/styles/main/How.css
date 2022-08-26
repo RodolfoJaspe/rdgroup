@@ -22,7 +22,7 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 7vw;
     font-family: Chub Gothic;
-    transform: translateY(-100%);
+    transform: translateY(-112%);
     margin-left: 2vw;
     background-color: transparent;
     z-index: 99;
@@ -46,17 +46,12 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
+    text-align: center;
 }
 
 .step:hover img {
     transition: .5s;
     transform: scale(1.1);
-}
-
-.step:hover h2 {
-    transition: .5s;
-    text-shadow: -1px 1px 1px black;
-    color: white
 }
 
 .step img{
@@ -73,7 +68,13 @@
 
 .step p{
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+.step:hover p{
+    transition: .5s;
+    /* transform: scale(1.2); */
+    color: white;
 }
 
 @media(max-width: 900px) and (orientation: portrait) {
