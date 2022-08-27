@@ -99,11 +99,13 @@
 .fl-tx {
     position:absolute;
     left:5vw;
+    display: flex;
 }
 
 .fl-tx h2 {
     color: white;
     font-size: 2rem;
+    margin: 0 1vw;
 }
 
 .footer img{
@@ -177,6 +179,13 @@
     }
 }
 
+@media(max-width: 600px) {
+    .fl-tx {
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+}
+
 @media(max-width: 500px) {
     .banner-contact-div {
         flex-direction: column;
@@ -196,5 +205,11 @@
     }
     .subject {
         width: 90vw;
+    }
+    .fl-tx {
+        left:1vw;
+    }
+    .fl-tx h2{
+        font-size: 5vw;
     }
 }

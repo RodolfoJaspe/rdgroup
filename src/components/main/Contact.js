@@ -59,8 +59,10 @@ function Contact() {
         <div className='footer'>
             <div className='fl-tx'>
                 <h2>
-                    FLORIDA / TEXAS
+                    FLORIDA
                 </h2>
+                <h2>/</h2>
+                <h2>TEXAS</h2>
             </div>
             <div className='socials-logo'>
                 <img 
