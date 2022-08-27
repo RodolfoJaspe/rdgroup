@@ -140,12 +140,23 @@
     margin: 2vh 0;
 }
 
+.subject:hover {
+    background-color: #d9d9d9;
+    cursor: pointer;
+    color:rgb(60, 60, 60);
+    border: 1px solid rgb(60, 60, 60);
+}
+
 .subject label{
     font-family: Louis George Cafe;
     font-size: 1.1rem;
     font-weight: 800;
     color: white;
     margin-right: 1vw;
+}
+
+.subject select {
+    border: none;
 }
 
 @media(max-width: 900px) {
