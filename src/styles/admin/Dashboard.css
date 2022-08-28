@@ -1,3 +1,15 @@
 .dashboard {
-    background-color: lightblue;
+    background-color: black;
+}
+.category1 {
+    background-color: rgb(237, 194, 194);
+}
+.category2 {
+    background-color: rgb(207, 237, 237);
+}
+.category3 {
+    background-color: rgb(237, 206, 210);
+}
+.category4 {
+    background-color: rgb(203, 232, 203);
 }

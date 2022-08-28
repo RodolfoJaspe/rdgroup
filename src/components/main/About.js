@@ -7,8 +7,9 @@ function About() {
     <div className='about'>
         <div className='about-inner-div'>
             <div className='company-story'>
-                <h1> MISSION</h1>
-                <h3>Right Design accompanies you to make your project a reality, we put our direction and design your vision</h3>
+                <h2> MISSION</h2>
+                <p>RD Group accompanies you to make your project a reality, we put our direction and design your vision.. Like our slogan says.. </p>
+                <h3>..RD the Right Design ...Your design !!!</h3>
                 <h2>WHY</h2>
                 <p>
                     We believe in creating a design that stands the test of time.
@@ -27,14 +28,11 @@ function About() {
                    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQGRi7gOFkzzPg/profile-displayphoto-shrink_400_400/0/1516972987542?e=1665619200&v=beta&t=nJsGmoi_eA3hFYvqLIBrFbno3Za3CCzo7AVceD1wD6I' alt='juan manuel' /> 
                 </div>
                 <div className='bio-div'>
-                    <p>
-                    Juan Manuel Morales CEO
-                    </p><br/>
                     <p>    
                     Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International Univerity of Art and Design with a Post graduate degree in Interior design in 1995.
                     </p><br/>
                     <p>
-                    ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><b className='signature'>Juan Manuel Morales</b> 
+                    ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><br/><b className='signature'>Juan Manuel Morales CEO</b> 
                     </p>
                 </div>
                 

@@ -40,24 +40,24 @@ function Dashboard({
     },[])
   return (
     <div className='dashboard'>
-        <div className='category'>
+        <div className='category1'>
             <h2>First Slider</h2>
             <AdminImages images={firstSlider} addImage={addFirstSlider} user_id={user_id} deleteImage={deleteFirstSlider} 
             changeOrder={changeOrderFirstSlider}/>  
         </div>
-        <div className='category'>
+        <div className='category2'>
             <h2>Design</h2>
             <AdminImages images={designs} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}
             changeOrder={changeOrderDesign}
             />  
         </div>
-        <div className='category'>
+        <div className='category3' >
             <h2>Construction</h2>
             <AdminImages images={constructions} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}
             changeOrder={changeOrderConstruction}
             />  
         </div>
-        <div className='category'>
+        <div className='category4'>
             <h2>Products</h2>
             <AdminImages images={products} addImage={addProduct} user_id={user_id} deleteImage={deleteProduct}
             changeOrder={changeOrderProducts}
