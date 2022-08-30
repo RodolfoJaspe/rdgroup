@@ -87,6 +87,9 @@
     }
 }
 @media(max-width: 950px) and (orientation: landscape) {
+    .how {
+        border-top: 30vh solid transparent;
+    }
     .how .h1 {
         font-size: 8vw;
     }
@@ -100,7 +103,7 @@
         text-align: center;
     }
     .how .h1{
-        font-size: 13vw;
+        font-size: 12vw;
         margin-left: 0
     }
     .steps {

@@ -23,7 +23,6 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
   return (
     <div className='portfolio'>
         <div className='first-slider'>
-            {/* <Slider images={filteredImages}/>  */}
             <Slider images={firstSlider}/>
         </div> 
         <div className='products-and-services'>
@@ -99,18 +98,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
 
             </div>
         </div>
-        
-        {/* {portfolio.map(category => (
-            <div className='portfolio-slider-outer' style={{background:`${category.color}`}}>
-                <div className='portfolio-slider-inner'>
-                    <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
-                        <h2>{category.category}</h2>
-                    </div>
-                    <Slider images={category.images} />  
-                </div>
-            </div>
-        ))} */}
+        <div className='portfolio-main'>
             <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
@@ -138,6 +126,8 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                     <Slider images={products} />  
                 </div>
             </div>
+        </div>
+
 
     </div>
   )

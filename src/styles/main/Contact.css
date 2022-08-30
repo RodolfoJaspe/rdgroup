@@ -213,3 +213,8 @@
         font-size: 5vw;
     }
 }
+@media(max-width: 950px) and (orientation: landscape) {
+    .footer {
+        height: 20vh;
+    }
+}

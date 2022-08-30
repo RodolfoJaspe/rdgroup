@@ -25,7 +25,7 @@
     transition: 1s;
     cursor:pointer;
     color: rgb(220, 220, 220);
-    text-shadow: 1px 1px 1px black;
+    text-shadow: -1px 1px 1px black;
 }
 
 .nav-item.active {
@@ -59,6 +59,6 @@
 }
 @media(max-height: 500px) and (orientation: landscape) {
     .navbar{
-        height:18vh;
+        height:15vh;
     }
 }

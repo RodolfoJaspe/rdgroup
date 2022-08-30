@@ -21,12 +21,17 @@
     opacity: 0;
 }
 
+.portfolio-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vh;
+}
+
 .portfolio-slider-outer{
     height: 52vh;    
     padding-left: 20vw;
     padding-right: 10vw;
-    margin-top: 50vh;
-    margin-bottom: 60vh;
+    margin-bottom: 50vh;
 }
 
 .portfolio-slider-inner {
@@ -149,6 +154,12 @@
     width: 30px;
 }
 
+@media (min-width: 1200px) and (max-height:800px){
+.portfolio-slider-inner {
+    transform: translateY(-45vh);
+}
+}
+
 @media (max-width: 1300px) and (orientation: landscape) {
     .portfolio-slider-outer{
         padding-left: 10vw;
@@ -165,11 +176,13 @@
 
 
 @media(max-width: 900px) and (orientation: portrait) {
+    .portfolio-main {
+        margin-top: 30vh;
+    }
     .portfolio-slider-outer{
         padding-left: 10vw;
         padding-right: 5vw;
         margin-bottom: 30vh;
-        margin-top: 30vh;
     }
     .portfolio-slider-outer{
         height: 30vh;
@@ -223,15 +236,18 @@
 }
 
 @media(max-width: 950px) and (orientation: landscape) {
+    .portfolio-main {
+        margin-top: 100vh;
+    }
     .portfolio-slider-outer{
-        height: 70vh;
+        height: 80vh;
     }
     .portfolio-slider-outer .slider-image {
-        height: 70vh;
+        height: 80vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
         border: 3px solid rgb(225, 225, 225);
-        height: 70vh;
+        height: 80vh;
     }
     .portfolio-slider-inner h2{
         font-family: Louis George Cafe;
@@ -249,7 +265,7 @@
         margin-right: 10px; 
     }
     .portfolio-slider-inner {
-        transform: translateY(-30vh);
+        transform: translateY(-40vh);
     }
     
     .products-and-services {
@@ -293,9 +309,12 @@
 }
 
 @media(max-width: 700px) and (orientation: portrait) {
+    .portfolio-slider-inner .alice-carousel__wrapper {
+        border: 1px solid gray;
+    }
     .portfolio-slider-outer{
-        padding-left: 4vw;
-        padding-right: 2vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
     .products-and-services .h1-div{
         text-align: center;
@@ -309,15 +328,18 @@
         font-size: 1.8rem;
     }
     .portfolio-slider-inner {
-        transform: translateY(-10vh);
+        transform: translateY(-8vh);
+    }
+    .portfolio .slider-image-div h3 {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    .portfolio-title h2 {
+        font-size: 1.2rem;
     }
 }
 
 @media(max-width: 500px) {
-    .portfolio-title h2 {
-        font-size: 1rem;
-    }
-
     .service p {
         font-size: 1rem;
     }
@@ -345,5 +367,11 @@
     .products-and-services .h1-div .h1{
         font-size: 14vw;
         margin-left: 0
+    }
+}
+
+@media(max-width: 300px){
+    .portfolio-title h2 {
+        font-size: 1rem;
     }
 }
