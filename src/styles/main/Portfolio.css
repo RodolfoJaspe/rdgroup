@@ -223,6 +223,7 @@
     .portfolio .alice-carousel__next-btn img{
       transform: translateY(28vh);
       height: 2vh;
+      width: 2vh;
     }
 
     .products-and-services .h1-div .h1 {

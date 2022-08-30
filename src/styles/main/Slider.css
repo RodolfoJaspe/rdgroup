@@ -111,23 +111,30 @@
   }
 
   .alice-carousel__next-btn img{
-    height: 4vh;
+    height: 3vh;
+    width: 3vh;
     transform: translateX(-2vw) translateY(8vh);
     opacity: .7;
     background-image: radial-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.05));
-    padding: 1vw 1.5vw;
+    /* padding: 1vw 1.5vw; */
     border-radius: 50%;
     transition: 1s;
+    border: 1px solid white;
+    object-fit: contain;
+    padding: 1vw 1vw;
   }
 
   .alice-carousel__prev-btn img{
-    height: 4vh;
+    height: 3vh;
+    width: 3vh;
     transform: translateX(2vw) translateY(8vh);
     opacity: .7;
     background-image: radial-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.05));
-    padding: 1vw 1.5vw;
+    padding: 1vw 1vw;
     border-radius: 50%;
     transition: 1s;
+    object-fit: contain;
+    border: 1px solid white;
   }
 
   .alice-carousel__prev-btn img:hover,
