@@ -10,7 +10,6 @@
 
 .banner-contact-div{
     width:100%;
-    /* background-color: lightblue; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -26,7 +25,6 @@
     font-family: Louis George Cafe;;
     font-size: larger;
     width: 40vw;
-    /* background-color: pink; */
 }
 
 .form {
@@ -34,7 +32,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    /* background-color: lightcoral; */
 }
 
 .input {
@@ -46,7 +43,6 @@
     background-color: #cacaca;
     border: 1px solid rgb(146, 146, 146);
     margin: 2vh 0;
-    /* background-color: lightcoral; */
 }
 
 .input:hover {
@@ -66,7 +62,7 @@
 .submit-button-div{
     width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .submit-button-div input {
@@ -86,14 +82,17 @@
     border: 1px solid rgb(60, 60, 60);
 }
 
+.footer-outer {
+    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
+    margin-top: 10vh;
+    width: 100%;
+}
+
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 10vh;
-    background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
-    width: 100vw;
-    margin-top: 10vh;
+    margin-right: 6vw;
 }
 
 .fl-tx {
@@ -177,6 +176,9 @@
     .fl-tx h2{
         font-size: 1.5rem;
     }
+    .footer {
+        margin-right: 0;
+    }
 }
 
 @media(max-width: 600px) {
@@ -196,7 +198,6 @@
         width: 90vw;
     }
     .form {
-        width: 100%;
         align-items: center;
         margin-top: 10vh;
     }
@@ -211,10 +212,5 @@
     }
     .fl-tx h2{
         font-size: 5vw;
-    }
-}
-@media(max-width: 950px) and (orientation: landscape) {
-    .footer {
-        height: 20vh;
     }
 }

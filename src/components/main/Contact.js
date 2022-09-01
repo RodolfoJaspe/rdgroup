@@ -32,9 +32,9 @@ function Contact() {
     <div className='contact'>
         <div className='banner-contact-div'>
             <div className='contact-info'>
-                <h2>RD Group Headquarters</h2>
+                <h2>RD Group</h2>
                 <p>4400 Memorial drive, <br/>Suite 2066<br/>Houston, TX 77007<br/><br/>juanmanuel@rdgroup-usa.com</p>
-                <h3>713-815-1803</h3>
+                <p>713.815.1803</p>
             </div>
             <form ref={form} onSubmit={sendEmail} className='form'>
                 <input placeholder='Name' className='input' type="text" name="name" />
@@ -56,25 +56,27 @@ function Contact() {
                 </div>
             </form>
         </div>
-        <div className='footer'>
-            <div className='fl-tx'>
-                <h2>
-                    FLORIDA
-                </h2>
-                <h2>/</h2>
-                <h2>TEXAS</h2>
-            </div>
-            <div className='socials-logo'>
-                <img 
-                    src={fb} 
-                    alt="facebook"
-                    onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
-            </div>
-            <div className='socials-logo'>
-                <img 
-                    src={insta} 
-                    alt="insta" 
-                    onClick={() => openInNewTab('https://www.instagram.com/rd.group.llc/')}/>                
+        <div className='footer-outer'>
+            <div className='footer'>
+                <div className='fl-tx'>
+                    <h2>
+                        TEXAS
+                    </h2>
+                    <h2>/</h2>
+                    <h2>FLORIDA</h2>
+                </div>
+                <div className='socials-logo'>
+                    <img 
+                        src={fb} 
+                        alt="facebook"
+                        onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
+                </div>
+                <div className='socials-logo'>
+                    <img 
+                        src={insta} 
+                        alt="insta" 
+                        onClick={() => openInNewTab('https://www.instagram.com/rd.group.llc/')}/>                
+                </div>
             </div>
         </div>
     </div>

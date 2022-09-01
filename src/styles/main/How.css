@@ -78,10 +78,6 @@
     .how h1 {
         font-size: 10vw;
     }
-    .steps-outer {
-        border-right: 1vw solid;
-        width: 99%;        
-    }
 }
 @media(max-width: 950px) and (orientation: landscape) {
     .how {
@@ -89,10 +85,6 @@
     }
     .how .h1 {
         font-size: 8vw;
-    }
-    .steps-outer {
-        border-right: 1vw solid;
-        width: 99%;        
     }
     .step p{
         font-size: .8rem;

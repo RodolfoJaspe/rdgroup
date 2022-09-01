@@ -227,10 +227,6 @@
     .products-and-services .h1-div .h1 {
         font-size: 10vw;
     }
-    .services-outer {
-        border-right: 1vw solid;
-        width: 99%;  
-    }
 
 }
 
@@ -286,11 +282,6 @@
 
     .products-and-services .h1-div .h1 {
         font-size: 8vw;
-    }
-
-    .services-outer {
-        border-right: 1vw solid;
-        width: 99%;  
     }
 
     .service {
@@ -369,9 +360,6 @@
       transform: translateY(27vh);
       width: 30px;
       height: 55px;
-    }
-    .products-and-services {
-        height: 70vh;
     }
 
     .products-and-services .h1-div{

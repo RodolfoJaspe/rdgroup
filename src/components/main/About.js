@@ -17,11 +17,12 @@ function About() {
                     Our main focus is to utilize your vision and ideas to generate and create the best design that lasts through time.
                 </p>
                 <h2>HOW</h2>
-                <p>    
-                    Matching our clients' beliefs with the design and project.<br/>
-                    Constantly evolving and responding to industry products and design.<br/>
-                    Using products specifically for the project. <br/>Ensuring our clients' desires   
-                </p>
+                <ul>
+                    <li>Matching our clients' beliefs with the design and project.</li>
+                    <li>Constantly evolving and responding to industry products and design.</li>
+                    <li>Using products specifically for the project.</li>
+                    <li>Ensuring our clients' desires.</li>
+                </ul>
             </div>
             <div className='juan-story'>
                 <div className='image-div'>
