@@ -220,8 +220,9 @@
     .portfolio .alice-carousel__prev-btn img,
     .portfolio .alice-carousel__next-btn img{
       transform: translateY(27vh);
-      height: 3vh;
-      width: 3vh;
+      height: 2vh;
+      width: 2vh;
+      padding: 2vw 2vw;
     }
 
     .products-and-services .h1-div .h1 {
@@ -260,8 +261,9 @@
     }
     .portfolio .alice-carousel__prev-btn img,
     .portfolio .alice-carousel__next-btn img{
-        width: 5vh;
-        height: 5vh;
+        width: 6vh;
+        height: 6vh;
+        padding: 2vw 2vw;
     }
     .portfolio-title {
         display: flex;

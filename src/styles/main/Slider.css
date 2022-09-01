@@ -16,7 +16,12 @@
     text-shadow: -1px 1px black;
     font-family: Louis George Cafe;
     font-size: 1.5rem;
-    }
+    
+}
+
+.portfolio .slider-image-div h3:last-of-type {
+    transform: translateX(1000vw);
+}
 
 .alice-carousel .animated {
     -webkit-animation-fill-mode: both;
