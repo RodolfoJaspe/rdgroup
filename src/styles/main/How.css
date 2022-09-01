@@ -68,7 +68,7 @@
 
 .step p{
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: 1s;
 }
 .step:hover p{
@@ -97,13 +97,19 @@
         border-right: 1vw solid;
         width: 99%;        
     }
+    .step p{
+        font-size: 1rem;
+    }
 }
 @media(max-width: 700px) and (orientation: portrait) {
+    .step p{
+        font-size: 1rem;
+    }
     .how .h1-div{
         text-align: center;
     }
     .how .h1{
-        font-size: 12vw;
+        font-size: 13vw;
         margin-left: 0
     }
     .steps {

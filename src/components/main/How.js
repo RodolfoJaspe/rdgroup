@@ -21,8 +21,8 @@ export default function How() {
                     offset={0}
                     duration={800}>
                     {/* <h2>1</h2> */}
-                    <p>Fill out the form</p>
                     <img src={form} alt='form-logo'/>
+                    <p>Fill out the form</p>
                 </Link>
                 <Link className='step'
                     to='contact'
@@ -30,8 +30,9 @@ export default function How() {
                     offset={0}
                     duration={800}>
                     {/* <h2>2</h2> */}
-                    <p>We review your inquiry</p>
+   
                     <img src={review} alt='form-logo'/>
+                    <p>We review your inquiry</p>
                 </Link>
                 <Link 
                     className='step'
@@ -40,8 +41,9 @@ export default function How() {
                     offset={0}
                     duration={800}>
                     {/* <h2>3</h2> */}
-                    <p>Get the quote</p>
+                
                     <img src={quote} alt='form-logo'/>
+                    <p>Get the quote</p>
                 </Link>
                 <Link 
                     className='step'
@@ -50,8 +52,9 @@ export default function How() {
                     offset={0}
                     duration={800}>
                     {/* <h2>4</h2> */}
-                    <p>Project execution</p>
+              
                     <img src={work} alt='form-logo'/>
+                    <p>Project execution</p>
                 </Link>
             </div>
         </div>
