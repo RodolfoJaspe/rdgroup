@@ -41,9 +41,7 @@
 }
 
 .juan-story p {
-    /* background-color: orange; */
     margin: 0;
-    text-align: justify;
 }
 
 .image-div img {
@@ -54,7 +52,7 @@
     margin: 0 10px 10px 0;
 }
 .bio-div {
-    text-align: justify;
+    /* text-align: justify; */
 }
 .about .signature {
     font-family: Louis George Cafe;
@@ -82,6 +80,9 @@
         width: 22vw;
         height: 30vw; 
     }
+    .bio-div {
+        text-align: left;
+    }
 }
 @media(max-width: 850px) {
     .company-story {
@@ -89,6 +90,7 @@
     }
     .juan-story {
         width: 50%;
+
     }
     .image-div img {
         width: 30vw;

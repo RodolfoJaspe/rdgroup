@@ -39,7 +39,6 @@ function Contact() {
             <form ref={form} onSubmit={sendEmail} className='form'>
                 <input placeholder='Name' className='input' type="text" name="name" />
                 <input placeholder='Email' className='input' type="email" name="email" />
-                {/* <input placeholder='Subject' className='input' type="subject" name="subject" /> */}
                 <div className='subject'>
                     <label for="subject">Subject :</label>
                         <select name="subject" id="subject" required>
