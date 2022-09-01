@@ -353,6 +353,9 @@
 }
 
 @media(max-width: 500px) {
+    .portfolio-slider-outer {
+        height: 40vh;
+    }
     .service p {
         font-size: 1rem;
     }
