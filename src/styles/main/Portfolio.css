@@ -221,9 +221,9 @@
     
     .portfolio .alice-carousel__prev-btn img,
     .portfolio .alice-carousel__next-btn img{
-      transform: translateY(28vh);
-      height: 2vh;
-      width: 2vh;
+      transform: translateY(27vh);
+      height: 3vh;
+      width: 3vh;
     }
 
     .products-and-services .h1-div .h1 {
@@ -258,13 +258,17 @@
 
     .portfolio .alice-carousel__prev-btn,
     .portfolio .alice-carousel__next-btn {
-      display: inline-block;
-      box-sizing: border-box;
-      width: 50%;
-      padding: 10px 5px;
-      transform: translateY(-50vh);
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 10px 5px;
+        transform: translateY(-55vh);
     }
-    
+    .portfolio .alice-carousel__prev-btn img,
+    .portfolio .alice-carousel__next-btn img{
+        width: 5vh;
+        height: 5vh;
+    }
     .portfolio-title {
         display: flex;
         flex-direction: row;
@@ -334,14 +338,17 @@
         font-size: 1.8rem;
     }
     .portfolio-slider-inner {
-        transform: translateY(-8vh);
+        transform: translateY(-11vh);
     }
     .portfolio .slider-image-div h3 {
         margin-bottom: 0;
         font-size: 1rem;
     }
     .portfolio-title h2 {
-        font-size: 1.2rem;
+        font-size: 5.8vw;
+    }
+    .portfolio-title img {
+        margin-right: 5px;
     }
 }
 
