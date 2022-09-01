@@ -87,9 +87,7 @@
 
 .services-outer {
     background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
-    width: 99.5%;
-    border-right: .5vw solid;
-    border-image:   linear-gradient(to bottom, red 33%,yellow 33%, yellow 66%,blue 66%) 3;
+    width: 100%;
 }
 .services-inner{
     display: flex;

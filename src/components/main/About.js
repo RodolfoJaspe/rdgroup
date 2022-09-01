@@ -9,7 +9,7 @@ function About() {
             <div className='company-story'>
                 <h2> MISSION</h2>
                 <p>RD Group accompanies you to make your project a reality, we put our direction and design your vision.. Like our slogan says.. </p>
-                <h3>..RD, the Right Design ..Your design !!!</h3>
+                <h3>..RD, the Right Design ..Your design</h3>
                 <h2>WHY</h2>
                 <p>
                     We believe in creating a design that stands the test of time.
