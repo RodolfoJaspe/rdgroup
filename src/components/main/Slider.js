@@ -28,9 +28,9 @@ export default function Slider({images}) {
         mouseTracking 
         items={pictures}
         className="slider"
-        // autoPlay
-        // autoPlayInterval={2000}
-        // animationDuration={1500}
+        autoPlay
+        autoPlayInterval={2000}
+        animationDuration={1500}
         infinite
         keyboardNavigation
         animationType="linear" 
