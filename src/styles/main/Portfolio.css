@@ -64,6 +64,10 @@
     margin-right: 10px; 
 }
 
+.portfolio .slider-image-div .product {
+    transform: translateX(1000vw);
+}
+
 .products-and-services {
     display: flex;
     flex-direction: column;

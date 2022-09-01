@@ -19,10 +19,6 @@
     
 }
 
-.portfolio .slider-image-div h3:last-of-type {
-    transform: translateX(1000vw);
-}
-
 .alice-carousel .animated {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
