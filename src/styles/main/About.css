@@ -42,6 +42,7 @@
 
 .juan-story p {
     margin: 0;
+    line-height: 1.2;
 }
 
 .image-div img {
@@ -55,7 +56,11 @@
     /* text-align: justify; */
 }
 .about .signature {
-    font-family: Louis George Cafe;
+    /* font-family: Louis George Cafe; */
+    font-family: Chub Gothic;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 1px 1px black;
+    font-size: 1.3rem;
 }
 
 .about ul {

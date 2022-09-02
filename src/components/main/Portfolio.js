@@ -18,7 +18,6 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
         getConstructions(1)
         getProducts(1)
     },[])
-    // const filteredImages = pageImages.filter(image => image.id !== 1)
 
   return (
     <div className='portfolio'>
