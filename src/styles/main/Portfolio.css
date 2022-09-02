@@ -64,10 +64,6 @@
     margin-right: 10px; 
 }
 
-.portfolio .slider-image-div .product {
-    transform: translateX(1000vw);
-}
-
 .products-and-services {
     display: flex;
     flex-direction: column;
@@ -155,6 +151,8 @@
     height: 30px;
     width: 30px;
 }
+
+
 
 @media (min-width: 1200px) and (max-height:800px){
 .portfolio-slider-inner {
@@ -335,7 +333,7 @@
     .portfolio-slider-inner {
         transform: translateY(-11vh);
     }
-    .portfolio .slider-image-div h3 {
+    .portfolio .slider-image-div .image-title {
         margin-bottom: 0;
         font-size: 1rem;
     }

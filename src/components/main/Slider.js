@@ -4,14 +4,19 @@ import AliceCarousel from 'react-alice-carousel';
 import NextArrow from "../../Assets/icons/rightArrowWhite.png"
 import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
 
-export default function Slider({images}) {
+export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
     console.log(images)
     const pictures = images.map(image => (
         <div className='slider-image-div' key={image.id}>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
-            <h3>{image.title === "Glass"?null:image.title}</h3> 
+            <div className={category==="products"?"product-title-div":'image-title-div'}>
+              {/* <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   */}
+              <h3 className={category==="products"?"product-title":'image-title'}>The New Digitally Printed Glass Era
+for Interior and Exterior Applications,
+                                             Coming soon...</h3>  
+            </div>
         </div>
     ))
     

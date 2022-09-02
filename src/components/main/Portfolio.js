@@ -23,7 +23,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
   return (
     <div className='portfolio'>
         <div className='first-slider'>
-            <Slider images={firstSlider}/>
+            <Slider images={firstSlider} category={'first-slider'}/>
         </div> 
         <div className='products-and-services'>
             <div className='h1-div'>
@@ -105,7 +105,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                         <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
                         <h2>Projects & Designs</h2>
                     </div>
-                    <Slider images={designs} />  
+                    <Slider images={designs} category={'designs'}/>  
                 </div>
             </div>
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
@@ -114,7 +114,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                         <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
                         <h2>Constructions & Developments</h2>
                     </div>
-                    <Slider images={constructions} />  
+                    <Slider images={constructions} category={'constructions'}/>  
                 </div>
             </div>
             <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>
@@ -123,7 +123,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                         <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
                         <h2>Products</h2>
                     </div>
-                    <Slider images={products} />  
+                    <Slider images={products} category={'products'}/>  
                 </div>
             </div>
         </div>

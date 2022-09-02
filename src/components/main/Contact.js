@@ -64,12 +64,12 @@ function Contact() {
                     <h2>/</h2>
                     <h2>FLORIDA</h2>
                 </div>
-                <div className='socials-logo'>
+                {/* <div className='socials-logo'>
                     <img 
                         src={fb} 
                         alt="facebook"
                         onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
-                </div>
+                </div> */}
                 <div className='socials-logo'>
                     <img 
                         src={insta} 
