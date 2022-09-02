@@ -52,15 +52,12 @@
     float: left;
     margin: 0 10px 10px 0;
 }
-.bio-div {
-    /* text-align: justify; */
-}
+
 .about .signature {
-    /* font-family: Louis George Cafe; */
-    font-family: Chub Gothic;
-    color: rgb(255, 255, 255);
-    text-shadow: -1px 1px 1px black;
-    font-size: 1.3rem;
+    font-family: Louis George Cafe;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .about ul {

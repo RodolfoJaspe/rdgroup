@@ -68,10 +68,8 @@
     font-size: 1.3rem;
     transition: 1s;
     font-size: 1rem;
-    color: white;
-    text-shadow: -1px 1px rgb(81, 81, 81);
+    color: rgb(87, 87, 87);
 }
-
 
 @media(max-width: 900px) and (orientation: portrait) {
     .how h1 {
@@ -87,14 +85,11 @@
     }
     .step p{
         font-size: .8rem;
-        color: white;
     }
 }
 @media(max-width: 700px) and (orientation: portrait) {
     .step p{
         font-size: .8rem;
-        color: white;
-        text-shadow: 1px solid black;
     }
     .how .h1-div{
         text-align: center;
