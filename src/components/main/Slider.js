@@ -12,10 +12,7 @@ export default function Slider({images, category}) {
         <div className='slider-image-div' key={image.id}>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation"/>
             <div className={category==="products"?"product-title-div":'image-title-div'}>
-              {/* <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   */}
-              <h3 className={category==="products"?"product-title":'image-title'}>The New Digitally Printed Glass Era
-for Interior and Exterior Applications,
-                                             Coming soon...</h3>  
+              <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   
             </div>
         </div>
     ))
