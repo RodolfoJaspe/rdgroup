@@ -1,18 +1,10 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import '../../styles/main/Contact.css';
-import {pageImages} from "../../Assets/images.js";
 import emailjs from '@emailjs/browser';
 import fb from "../../Assets/icons/fb.png";
 import insta from "../../Assets/icons/insta.png";
 
 function Contact() {
-    
-    const headshot = pageImages.find(image => image.id === 3)
-
-    const openInNewTab = url => {
-        window.open(url, '_blank', 'noopener,noreferrer');
-    };
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -65,20 +57,26 @@ function Contact() {
                     <h2>FLORIDA</h2>
                 </div>
                 <div className='socials-logo'>
-                    <img 
+                    <a href='https://www.facebook.com/RD-consultiong-group-1422172441139858/' target="_blank">
+                        <img 
                         src={fb} 
                         alt="facebook"
                         width={30}
                         height={30}
-                        onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
+                        />
+                    </a>
+                    
                 </div>
                 <div className='socials-logo'>
-                    <img 
-                        src={insta} 
-                        alt="insta" 
-                        width={30}
-                        height={30}
-                        onClick={() => openInNewTab('https://www.instagram.com/rd.group.llc/')}/>                
+                    <a href='https://www.instagram.com/rd.group.llc/' target="_blank">    
+                        <img 
+                            src={insta} 
+                            alt="insta" 
+                            width={30}
+                            height={30}
+                        /> 
+                    </a>
+                               
                 </div>
             </div>
         </div>
