@@ -101,7 +101,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
             <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"/>
                         <h2>Projects & Designs</h2>
                     </div>
                     <Slider images={designs} category={'designs'}/>  
@@ -110,7 +110,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"/>
                         <h2>Constructions & Developments</h2>
                     </div>
                     <Slider images={constructions} category={'constructions'}/>  
@@ -119,7 +119,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
             <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=1Q-qaTTbYVJgxY1pE4-a6dKMu1b0Fj-tn' alt="logo"/>
+                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"/>
                         <h2>Products</h2>
                     </div>
                     <Slider images={products} category={'products'}/>  

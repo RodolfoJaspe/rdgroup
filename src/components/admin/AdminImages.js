@@ -38,6 +38,7 @@ console.log(images)
         addImage({...newImage,
             url: `https://drive.google.com/uc?export=view&id=${newImage.url.slice(32,65)}`
         })
+        setNewImage({...newImage, url: ""})
     }
 
     const changeSubmit = (image) => {
