@@ -26,7 +26,7 @@ export const getFirstSliders = (user_id) => dispatch => {
     axios.get(`${currentUrl}/api/firstslider/${user_id}`,{headers})
         .then(
             res => {
-                console.log(res.data)
+                // console.log(res.data)
                 const sortedFirstFliders = res.data.sort((a, b) => {
                     return a.order_number - b.order_number;
                 });

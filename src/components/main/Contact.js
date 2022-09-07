@@ -40,9 +40,9 @@ function Contact() {
                 <input placeholder='Name' className='input' type="text" name="name" />
                 <input placeholder='Email' className='input' type="email" name="email" />
                 <div className='subject'>
-                    <label for="subject">Subject :</label>
+                    <label htmlFor="subject">Subject :</label>
                         <select name="subject" id="subject" required>
-                            <option value="" disabled selected hidden>Select</option>
+                            <option value="defaultValue" disabled hidden>Select</option>
                             <option value="design">Design</option>
                             <option value="construction">Construction</option>
                             <option value="products">Products</option>
