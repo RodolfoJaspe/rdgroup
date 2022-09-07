@@ -66,7 +66,7 @@ console.log(images)
                 <div className='image-div' key={image.id}>
                     <h1>{image.order_number}</h1>
                     <p>{image.title}</p>
-                    <img src={image.url} alt={image.title}/>
+                    <img src={image.url} alt={image.title} width={200} height={200}/>
                     <input type='number' id='order_number' name='order_number' placeholder='order number' 
                     value={newOrder.order_number}
                     onChange={newOrderChanges}/> 

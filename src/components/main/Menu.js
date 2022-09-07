@@ -22,10 +22,20 @@ export default function Menu() {
             onClick={() => setMenuClosed(!menuClosed)}>
             {menuClosed?
                 <div className='menu-button-div'>
-                    <img src={menu} className='menu-button' alt='Menu'/>
+                    <img 
+                        src={menu} 
+                        className='menu-button' 
+                        alt='Menu' 
+                        width={50} 
+                        height={50}/>
                 </div>
                 : 
-                <img src={close} className='close-button' alt='close'/>
+                <img 
+                    src={close} 
+                    className='close-button' 
+                    alt='close'
+                    width={100} 
+                    height={100}/>
             }
         </div>
         {!menuClosed ? 

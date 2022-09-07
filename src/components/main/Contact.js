@@ -68,12 +68,16 @@ function Contact() {
                     <img 
                         src={fb} 
                         alt="facebook"
+                        width={30}
+                        height={30}
                         onClick={() => openInNewTab('https://www.facebook.com/RD-consultiong-group-1422172441139858/')}/>
                 </div>
                 <div className='socials-logo'>
                     <img 
                         src={insta} 
                         alt="insta" 
+                        width={30}
+                        height={30}
                         onClick={() => openInNewTab('https://www.instagram.com/rd.group.llc/')}/>                
                 </div>
             </div>

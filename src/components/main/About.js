@@ -26,7 +26,7 @@ function About() {
             </div>
             <div className='juan-story'>
                 <div className='image-div'>
-                   <img src= "https://drive.google.com/uc?export=view&id=1m6YODj9WHHq86qS7Noz6WRgFw-NiAPpl" alt='juan manuel' /> 
+                   <img src= "https://drive.google.com/uc?export=view&id=1m6YODj9WHHq86qS7Noz6WRgFw-NiAPpl" alt='juan manuel' width={200} height={350} /> 
                 </div>
                 <div className='bio-div'>
                     <p>    
