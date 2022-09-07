@@ -8,19 +8,18 @@
     border-top: 20vh solid transparent;
 }
 
-.how .h1-div{
+.how .h2-div{
     width: 100%;
     z-index: 1;
     background: transparent;
     height: 0;
 }
 
-.how h1 {
-    /* color: rgba(255, 255, 255, 0.7); */
+.how h2 {
     color: rgba(0, 0, 0, 0.5);
     font-size: 7vw;
     font-family: Chub Gothic;
-    transform: translateY(-112%);
+    transform: translateY(-122%);
     margin-left: 2vw;
     background-color: transparent;
     z-index: 99;
@@ -72,7 +71,7 @@
 }
 
 @media(max-width: 900px) and (orientation: portrait) {
-    .how h1 {
+    .how h2 {
         font-size: 10vw;
     }
 }
@@ -80,7 +79,7 @@
     .how {
         border-top: 30vh solid transparent;
     }
-    .how .h1 {
+    .how .h2 {
         font-size: 8vw;
     }
     .step p{
@@ -91,10 +90,10 @@
     .step p{
         font-size: .8rem;
     }
-    .how .h1-div{
+    .how .h2-div{
         text-align: center;
     }
-    .how .h1{
+    .how .h2{
         font-size: 13vw;
         margin-left: 0
     }
@@ -113,7 +112,7 @@
 }
 
 @media(max-width: 500px) and (orientation: portrait) {
-    .how .h1 {
+    .how .h2 {
         font-size: 12.5vw;
     }
 }

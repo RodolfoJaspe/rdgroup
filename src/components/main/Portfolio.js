@@ -25,8 +25,8 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
             <Slider images={firstSlider} category={'first-slider'}/>
         </div> 
         <div className='products-and-services'>
-            <div className='h1-div'>
-                <h1 className='h1'>WHAT WE DO</h1>
+            <div className='h2-div'>
+                <h2 className='h2'>WHAT WE DO</h2>
             </div>
             <div className='services-outer'>
                 <div className='services-inner'>

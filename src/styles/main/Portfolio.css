@@ -70,18 +70,18 @@
     align-items: center;
     font-family: Louis George Cafe;
 }
-.products-and-services .h1-div {
+.products-and-services .h2-div {
     width: 100%;
     z-index: 1;
     background: transparent;
     height: 0;
 }
 
-.products-and-services .h1-div .h1 {
+.products-and-services .h2-div .h2 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 7vw;
     font-family: Chub Gothic;
-    transform: translateY(-112%);
+    transform: translateY(-122%);
     margin-left: 2vw;
 }
 
@@ -230,7 +230,7 @@
       padding: 2vw 2vw;
     }
 
-    .products-and-services .h1-div .h1 {
+    .products-and-services .h2-div .h2 {
         font-size: 10vw;
     }
 
@@ -287,7 +287,7 @@
         height: 70vh;
     }
 
-    .products-and-services .h1-div .h1 {
+    .products-and-services .h2-div .h2 {
         font-size: 8vw;
     }
 
@@ -322,11 +322,11 @@
         padding-left: 1vw;
         padding-right: 1vw;
     }
-    .products-and-services .h1-div{
+    .products-and-services .h2-div{
         text-align: center;
 
     }
-    .products-and-services .h1-div .h1{
+    .products-and-services .h2-div .h2{
         font-size: 14vw;
         margin-left: 0
     }
@@ -369,11 +369,11 @@
       height: 55px;
     }
 
-    .products-and-services .h1-div{
+    .products-and-services .h2-div{
         text-align: center;
 
     }
-    .products-and-services .h1-div .h1{
+    .products-and-services .h2-div .h2{
         font-size: 14vw;
         margin-left: 0
     }

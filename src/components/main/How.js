@@ -9,8 +9,8 @@ import { Link } from 'react-scroll';
 export default function How() {
   return (
     <div className='how'>
-        <div className='h1-div'>
-           <h1 className='h1'>HOW IT WORKS</h1> 
+        <div className='h2-div'>
+           <h2 className='h2'>HOW IT WORKS</h2> 
         </div>
         <div className='steps-outer'>
             <div className='steps'>
