@@ -10,7 +10,8 @@ export default function Slider({images, category}) {
     // console.log(images)
     const pictures = images.map(image => (
         <div className='slider-image-div' key={image.id}>
-            <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation" width={900} height={600}/>
+            <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation" width={900} height={600} title={image.title}
+                        loading='lazy'/>
             <div className={category==="products"?"product-title-div":'image-title-div'}>
               <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   
             </div>
@@ -18,11 +19,13 @@ export default function Slider({images, category}) {
     ))
     
     const renderNextButton = ({ isDisabled }) => {
-        return <div className='next-arrow'><img src={NextArrow} alt="next-arrow" width={50} height={50}/></div>
+        return <div className='next-arrow'><img src={NextArrow} alt="next-arrow" width={50} height={50} title='next'
+        loading='lazy'/></div>
       };
     
     const renderPrevButton = ({ isDisabled }) => {
-    return <div className='prev-arrow'><img src={PrevArrow} alt="prev-arrow" width={50} height={50}/></div>
+    return <div className='prev-arrow'><img src={PrevArrow} alt="prev-arrow" width={50} height={50} title='prev'
+    loading='lazy'/></div>
     };
 
   return (

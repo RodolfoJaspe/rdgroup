@@ -27,7 +27,9 @@ export default function Menu() {
                         className='menu-button' 
                         alt='Menu' 
                         width={50} 
-                        height={50}/>
+                        height={50}
+                        title='menu'
+                        loading='lazy'/>
                 </div>
                 : 
                 <img 
@@ -35,7 +37,9 @@ export default function Menu() {
                     className='close-button' 
                     alt='close'
                     width={100} 
-                    height={100}/>
+                    height={100}
+                    title='close'
+                    loading='lazy'/>
             }
         </div>
         {!menuClosed ? 

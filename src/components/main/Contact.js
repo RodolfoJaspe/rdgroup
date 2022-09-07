@@ -63,6 +63,7 @@ function Contact() {
                         alt="facebook"
                         width={30}
                         height={30}
+                        title='facebook' loading='lazy'
                         />
                     </a>
                     
@@ -71,9 +72,10 @@ function Contact() {
                     <a href='https://www.instagram.com/rd.group.llc/' target="_blank">    
                         <img 
                             src={insta} 
-                            alt="insta" 
+                            alt="instagram" 
                             width={30}
                             height={30}
+                            title='instagram' loading='lazy'
                         /> 
                     </a>
                                
