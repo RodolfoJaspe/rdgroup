@@ -11,7 +11,6 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    /* background-color: lightcoral; */
 }
 
 .logo{
@@ -19,15 +18,18 @@
     object-fit: contain;
     margin-top: 15vh;
     width: 50vw;
-    /* background-color: lightgreen; */
+    height: 100%;
+}
+.logo img {
+    width: 100%;
 }
 
-.slogan {
+.slogan h1{
     color: #c9c9c9f1;
     display: flex;
     justify-content: space-between;
     font-size: 4.2vw;
-    width: 50.5vw;
+    width: 50vw;
 }
 
 @media(max-width: 1600px) {
@@ -35,7 +37,7 @@
         margin-top: 16vh;
         width: 45vw;
     }
-    .slogan {
+    .slogan h1{
         width: 45vw;
         font-size: 3.8vw;
     }
@@ -47,7 +49,7 @@
         width: 55vw;
         margin-top: 20vh;
     }
-    .slogan {
+    .slogan h1{
         width: 55vw;
         font-size: 4.5vw;
     }
@@ -58,7 +60,7 @@
         margin-top: 20vh;
         width: 80vw;
     }
-    .slogan {
+    .slogan h1{
         font-size: 7vw;
         width: 80vw;
     }
@@ -75,7 +77,7 @@
         width: 36vw;
         margin-top: 22vh;
     }
-    .slogan {
+    .slogan h1{
         width: 36vw;
         font-size: 1.5rem;
     }
