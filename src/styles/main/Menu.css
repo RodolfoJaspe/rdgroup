@@ -19,6 +19,7 @@
 
 .menu-button {
     width: 35px;
+    object-fit: contain;
 }
 
 .close-button {

@@ -9,7 +9,12 @@ function Home() {
   return (
         <div className='home'>
             <div className='logo-slogan'>
-                <img src={logo.url}       className='logo' alt="logo image" width={500} height={500} title={logo.title} loading='lazy'/>
+                <img 
+                    src={logo.url}       
+                    className='logo' 
+                    alt="logo image" 
+                    width={500} height={500} 
+                    title={logo.title}/>
                 <div className='slogan'>
                     <h1><b>r i g h t </b><b> d e s i g n</b></h1>
                 </div>  

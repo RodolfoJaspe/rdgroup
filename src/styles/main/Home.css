@@ -61,14 +61,8 @@
         width: 80vw;
     }
     .slogan h1{
-        font-size: 7vw;
+        font-size: 6.2vw;
         width: 80vw;
-    }
-}
-
-@media(max-width: 500px) and (orientation: portrait) {
-    .logo {
-        margin-top: 30vh;
     }
 }
 
@@ -79,7 +73,16 @@
     }
     .slogan h1{
         width: 36vw;
-        font-size: 1.5rem;
+        font-size: 3vw;
+    }
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+    .logo {
+        margin-top: 30vh;
+    }
+    .slogan h1{
+        font-size: 6.5vw;
     }
 }
 
