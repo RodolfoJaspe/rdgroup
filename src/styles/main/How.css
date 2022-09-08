@@ -54,6 +54,7 @@
     cursor: pointer;
     width: 40%;
     transition: .5s;
+    object-fit: contain;
 }
 
 .step h2{

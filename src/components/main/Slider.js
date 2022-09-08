@@ -11,7 +11,7 @@ export default function Slider({images, category}) {
     const pictures = images.map(image => (
         <div className='slider-image-div' key={image.id}>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation" width={900} height={600} title={image.title}
-                        loading='lazy'/>
+            />
             <div className={category==="products"?"product-title-div":'image-title-div'}>
               <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   
             </div>
