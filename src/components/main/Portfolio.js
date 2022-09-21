@@ -45,7 +45,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                                 <h2>RD Projects & Design:</h2>
                         </Link>
                         <div className='p-div'>
-                            <p>Commercial & residential Desing</p>
+                            <p>Commercial & residential Design</p>
                             <p>
                             Architectural and engineer drawing services, Rendering, 3D Modeling, and plans and permits execution 
                             </p>
