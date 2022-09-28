@@ -7,13 +7,23 @@ import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
 export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
-    // console.log(images)
+
+    const accentoRoute = (image) => {
+        if(image.title === "Accento"){
+            window.location.replace('https://www.myaccento.com')}
+    }
+    
     const pictures = images.map(image => (
         <div className='slider-image-div' key={image.id}>
             <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation" width={900} height={600} title={image.title}
             />
             <div className={category==="products"?"product-title-div":'image-title-div'}>
-              <h3 className={category==="products"?"product-title":'image-title'}>{image.title}</h3>   
+              <h3 
+                className={category==="products"?"product-title":'image-title'}
+                onClick={() => accentoRoute(image)}
+                style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}
+                >{image.title}
+            </h3>   
             </div>
         </div>
     ))
