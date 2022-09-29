@@ -7,11 +7,6 @@ import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
 export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
-
-    const accentoRoute = (image) => {
-        if(image.title === "Accento"){
-            window.location.replace('https://www.myaccento.com')}
-    }
     
     const pictures = images.map(image => (
         <div className='slider-image-div' key={image.id}>
@@ -20,9 +15,8 @@ export default function Slider({images, category}) {
             <div className={category==="products"?"product-title-div":'image-title-div'}>
               <h3 
                 className={category==="products"?"product-title":'image-title'}
-                onClick={() => accentoRoute(image)}
-                style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}
-                >{image.title}
+                style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}>
+                {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank">{image.title}</a> : image.title}
             </h3>   
             </div>
         </div>
@@ -38,21 +32,21 @@ export default function Slider({images, category}) {
     loading='lazy'/></div>
     };
 
-  return (
-    <AliceCarousel 
-        mouseTracking 
-        items={pictures}
-        className="slider"
-        autoPlay
-        autoPlayInterval={2000}
-        animationDuration={1500}
-        infinite
-        keyboardNavigation
-        animationType="linear" 
-        controlsStrategy="alternate"
-        renderPrevButton={renderPrevButton}
-        renderNextButton={renderNextButton}
-        disableDotsControls={true}
-        />
-  )
+    return (
+        <AliceCarousel 
+            mouseTracking 
+            items={pictures}
+            className="slider"
+            autoPlay
+            autoPlayInterval={2000}
+            animationDuration={1500}
+            infinite
+            keyboardNavigation
+            animationType="linear" 
+            controlsStrategy="alternate"
+            renderPrevButton={renderPrevButton}
+            renderNextButton={renderNextButton}
+            disableDotsControls={true}
+            />
+    )
 }
