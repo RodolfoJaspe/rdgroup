@@ -30,7 +30,7 @@ function About() {
                 </div>
                 <div className='bio-div'>
                     <p>    
-                    Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International Univerity of Art and Design with a Post graduate degree in Interior design in 1995.
+                    Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International University of Art and Design with a Post graduate degree in Interior design in 1995.
                     </p>
                     <p>
                     ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><br/><b className='signature'>Juan Manuel Morales CEO</b> 
