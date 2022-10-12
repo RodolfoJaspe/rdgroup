@@ -29,7 +29,7 @@ export default function Menu() {
                         width={50} 
                         height={50}
                         title='menu'
-                        loading='lazy'/>
+                        />
                 </div>
                 : 
                 <img 
@@ -39,7 +39,7 @@ export default function Menu() {
                     width={100} 
                     height={100}
                     title='close'
-                    loading='lazy'/>
+                    />
             }
         </div>
         {!menuClosed ? 

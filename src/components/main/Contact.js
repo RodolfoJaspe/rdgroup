@@ -63,7 +63,7 @@ function Contact() {
                         alt="facebook"
                         width={30}
                         height={30}
-                        title='facebook' loading='lazy'
+                        title='facebook' 
                         />
                     </a>
                     
@@ -75,7 +75,7 @@ function Contact() {
                             alt="instagram" 
                             width={30}
                             height={30}
-                            title='instagram' loading='lazy'
+                            title='instagram' 
                         /> 
                     </a>
                                

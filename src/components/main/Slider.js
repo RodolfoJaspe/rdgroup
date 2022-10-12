@@ -24,12 +24,12 @@ export default function Slider({images, category}) {
     
     const renderNextButton = ({ isDisabled }) => {
         return <div className='next-arrow'><img src={NextArrow} alt="next-arrow" width={50} height={50} title='next'
-        loading='lazy'/></div>
+        /></div>
       };
     
     const renderPrevButton = ({ isDisabled }) => {
     return <div className='prev-arrow'><img src={PrevArrow} alt="prev-arrow" width={50} height={50} title='prev'
-    loading='lazy'/></div>
+    /></div>
     };
 
     return (

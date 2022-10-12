@@ -9,8 +9,6 @@ function About({ getHeadshot, headshot }) {
         getHeadshot()
      },[getHeadshot])
 
-     console.log(headshot)
-
   return (
     <div className='about'>
         <div className='about-inner-div'>
@@ -34,7 +32,7 @@ function About({ getHeadshot, headshot }) {
             </div>
             <div className='juan-story'>
                 <div className='image-div'>
-                   <img src={headshot.url} alt={headshot.title} width={200} height={350} title={headshot.title} loading='lazy'/> 
+                   <img src={headshot.url} alt={headshot.title} width={200} height={350} title={headshot.title}/> 
                 </div>
                 <div className='bio-div'>
                     <p>    

@@ -103,7 +103,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                     <div className='portfolio-title'>
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
-                        loading='lazy'/>
+                        />
                         <h2>Projects & Designs</h2>
                     </div>
                     <Slider images={designs} category={'designs'}/>  
@@ -114,7 +114,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                     <div className='portfolio-title'>
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
-                        loading='lazy'/>
+                        />
                         <h2>Constructions & Developments</h2>
                     </div>
                     <Slider images={constructions} category={'constructions'}/>  
@@ -125,7 +125,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
                     <div className='portfolio-title'>
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
-                        loading='lazy'/>
+                        />
                         <h2>Products</h2>
                     </div>
                     <Slider images={products} category={'products'}/>  

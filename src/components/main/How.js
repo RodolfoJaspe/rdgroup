@@ -20,7 +20,7 @@ export default function How() {
                     smooth={true}
                     offset={0}
                     duration={800}>
-                    <img src={form} alt='form-logo' width={100} height={100} title='form' loading='lazy'/>
+                    <img src={form} alt='form-logo' width={100} height={100} title='form'/>
                     <p>Fill out the form</p>
                 </Link>
                 <Link className='step'
@@ -29,7 +29,7 @@ export default function How() {
                     offset={0}
                     duration={800}>
    
-                    <img src={review} alt='form-logo' width={100} height={100} title='review' loading='lazy'/>
+                    <img src={review} alt='form-logo' width={100} height={100} title='review' />
                     <p>We review your inquiry</p>
                 </Link>
                 <Link 
@@ -38,7 +38,7 @@ export default function How() {
                     smooth={true}
                     offset={0}
                     duration={800}>
-                    <img src={quote} alt='form-logo' width={100} height={100} title='quote' loading='lazy'/>
+                    <img src={quote} alt='form-logo' width={100} height={100} title='quote' />
                     <p>Get the quote</p>
                 </Link>
                 <Link 
@@ -48,7 +48,7 @@ export default function How() {
                     offset={0}
                     duration={800}>
               
-                    <img src={work} alt='form-logo' width={100} height={100} title='work' loading='lazy'/>
+                    <img src={work} alt='form-logo' width={100} height={100} title='work' />
                     <p>Project execution</p>
                 </Link>
             </div>
