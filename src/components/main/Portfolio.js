@@ -17,7 +17,7 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
         getDesigns(1)
         getConstructions(1)
         getProducts(1)
-    },[])
+    },[getFirstSliders, getDesigns, getConstructions, getProducts])
 
   return (
     <div className='portfolio'>

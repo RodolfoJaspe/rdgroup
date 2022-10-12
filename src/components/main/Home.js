@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/main/Home.css';
-import {pageImages} from "../../Assets/images.js";
+import { getLogo } from "../../actions/mainActions";
+import { connect } from 'react-redux';
 
-function Home() {
 
-    const logo = pageImages.find(image => image.id === 1)
+function Home({getLogo, logo}) {
 
-  return (
+    useEffect(()=> {
+       getLogo()
+    },[getLogo])
+
+    return (
         <div className='home'>
             <div className='logo-slogan'>
                 <img 
@@ -20,7 +24,13 @@ function Home() {
                 </div>  
             </div>
         </div>
-  )
+    )
 }
 
-export default Home
+const mapStateToProps = state => {
+    return {
+        logo: state.mainReducer.logo
+    }
+}
+
+export default connect(mapStateToProps, {getLogo}) (Home)

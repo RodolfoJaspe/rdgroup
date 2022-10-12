@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/main/About.css';
-import Slider from './Slider';
+import { getHeadshot } from "../../actions/mainActions.js";
+import { connect } from 'react-redux';
 
-function About() {
+function About({ getHeadshot, headshot }) {
+
+    useEffect(()=> {
+        getHeadshot()
+     },[getHeadshot])
+
+     console.log(headshot)
+
   return (
     <div className='about'>
         <div className='about-inner-div'>
@@ -26,7 +34,7 @@ function About() {
             </div>
             <div className='juan-story'>
                 <div className='image-div'>
-                   <img src= "https://drive.google.com/uc?export=view&id=1m6YODj9WHHq86qS7Noz6WRgFw-NiAPpl" alt='juan manuel' width={200} height={350} title='juan manuel' loading='lazy'/> 
+                   <img src={headshot.url} alt={headshot.title} width={200} height={350} title={headshot.title} loading='lazy'/> 
                 </div>
                 <div className='bio-div'>
                     <p>    
@@ -43,4 +51,10 @@ function About() {
   )
 }
 
-export default About
+const mapStateToProps = state => {
+    return {
+        headshot: state.mainReducer.headshot
+    }
+}
+
+export default connect(mapStateToProps, {getHeadshot})(About)
