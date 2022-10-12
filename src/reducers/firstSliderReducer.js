@@ -1,11 +1,12 @@
-import { GET_FIRSTSLIDERS_START, GET_FIRSTSLIDERS_SUCCESS, GET_FIRSTSLIDERS_FAILURE, ADD_FIRSTSLIDER_START, ADD_FIRSTSLIDER_SUCCESS, ADD_FIRSTSLIDER_FAILURE, DELETE_FIRSTSLIDER_START, DELETE_FIRSTSLIDER_SUCCESS, DELETE_FIRSTSLIDER_FAILURE, CHANGE_ORDER_FIRSTSLIDER_START, CHANGE_ORDER_FIRSTSLIDER_SUCCESS, CHANGE_ORDER_FIRSTSLIDER_FAILURE} from "../actions/firstSliderActions";
+import { GET_FIRSTSLIDERS_START, GET_FIRSTSLIDERS_SUCCESS, GET_FIRSTSLIDERS_FAILURE, GET_SLIDER_FIRSTSLIDERS_START, GET_SLIDER_FIRSTSLIDERS_SUCCESS, GET_SLIDER_FIRSTSLIDERS_FAILURE, ADD_FIRSTSLIDER_START, ADD_FIRSTSLIDER_SUCCESS, ADD_FIRSTSLIDER_FAILURE, DELETE_FIRSTSLIDER_START, DELETE_FIRSTSLIDER_SUCCESS, DELETE_FIRSTSLIDER_FAILURE, CHANGE_ORDER_FIRSTSLIDER_START, CHANGE_ORDER_FIRSTSLIDER_SUCCESS, CHANGE_ORDER_FIRSTSLIDER_FAILURE} from "../actions/firstSliderActions";
 
 
 
 const firstSlider = {
     user_id : "",
     loading: false,
-    images: []
+    images: [],
+    sliderImages : []
 }
 
 export const firstSliderReducer = ( state = firstSlider, action ) => {
@@ -15,6 +16,12 @@ export const firstSliderReducer = ( state = firstSlider, action ) => {
         case GET_FIRSTSLIDERS_SUCCESS:
             return {...state, loading: false, images: action.payload};
         case GET_FIRSTSLIDERS_FAILURE:
+            return {...state, loading: false};
+        case GET_SLIDER_FIRSTSLIDERS_START:
+            return {...state, loading: true};
+        case GET_SLIDER_FIRSTSLIDERS_SUCCESS:
+            return {...state, loading: false, sliderImages: action.payload};
+        case GET_SLIDER_FIRSTSLIDERS_FAILURE:
             return {...state, loading: false};
         case ADD_FIRSTSLIDER_START:
             return {...state, loading: true};

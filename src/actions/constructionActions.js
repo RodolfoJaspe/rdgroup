@@ -5,6 +5,10 @@ export const GET_CONSTRUCTIONS_START = "GET_CONSTRUCTIONS_START";
 export const GET_CONSTRUCTIONS_SUCCESS = "GET_CONSTRUCTIONS_SUCCESS";
 export const GET_CONSTRUCTIONS_FAILURE = "GET_CONSTRUCTIONS_FAILURE";
 
+export const GET_SLIDER_CONSTRUCTIONS_START = "GET_SLIDER_CONSTRUCTIONS_START";
+export const GET_SLIDER_CONSTRUCTIONS_SUCCESS = "GET_SLIDER_CONSTRUCTIONS_SUCCESS";
+export const GET_SLIDER_CONSTRUCTIONS_FAILURE = "GET_SLIDER_CONSTRUCTIONS_FAILURE";
+
 export const ADD_CONSTRUCTION_START = "ADD_CONSTRUCTION_START";
 export const ADD_CONSTRUCTION_SUCCESS = "ADD_CONSTRUCTION_SUCCESS";
 export const ADD_CONSTRUCTION_FAILURE = "ADD_CONSTRUCTION_FAILURE";
@@ -36,6 +40,24 @@ export const getConstructions = (user_id) => dispatch => {
         ).catch(err => {
             // console.log(err)
             dispatch({type: GET_CONSTRUCTIONS_FAILURE})
+        })
+}
+
+export const getSliderConstructions = (user_id) => dispatch => {
+    dispatch({type: GET_SLIDER_CONSTRUCTIONS_START});
+    axios.get(`${currentUrl}/api/constructions/${user_id}/slider`,{headers})
+        .then(
+            res => {
+                // console.log(res.data)
+                const sortedConstructions = res.data.sort((a, b) => {
+                    return a.order_number - b.order_number;
+                });
+                console.log(sortedConstructions)
+                dispatch({type:GET_SLIDER_CONSTRUCTIONS_SUCCESS, payload: sortedConstructions})
+            }
+        ).catch(err => {
+            // console.log(err)
+            dispatch({type: GET_SLIDER_CONSTRUCTIONS_FAILURE})
         })
 }
 

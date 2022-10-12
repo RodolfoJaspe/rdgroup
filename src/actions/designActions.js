@@ -5,6 +5,10 @@ export const GET_DESIGNS_START = "GET_DESIGNS_START";
 export const GET_DESIGNS_SUCCESS = "GET_DESIGNS_SUCCESS";
 export const GET_DESIGNS_FAILURE = "GET_DESIGNS_FAILURE";
 
+export const GET_SLIDER_DESIGNS_START = "GET_SLIDER_DESIGNS_START";
+export const GET_SLIDER_DESIGNS_SUCCESS = "GET_SLIDER_DESIGNS_SUCCESS";
+export const GET_SLIDER_DESIGNS_FAILURE = "GET_SLIDER_DESIGNS_FAILURE";
+
 export const ADD_DESIGN_START = "ADD_DESIGN_START";
 export const ADD_DESIGN_SUCCESS = "ADD_DESIGN_SUCCESS";
 export const ADD_DESIGN_FAILURE = "ADD_DESIGN_FAILURE";
@@ -37,6 +41,25 @@ export const getDesigns = (user_id) => dispatch => {
         ).catch(err => {
             // console.log(err)
             dispatch({type: GET_DESIGNS_FAILURE})
+        })
+}
+
+export const getSliderDesigns = (user_id) => dispatch => {
+    dispatch({type: GET_SLIDER_DESIGNS_START});
+    // console.log(user_id)
+    axios.get(`${currentUrl}/api/designs/${user_id}/slider`,{headers})
+        .then(
+            res => {
+                // console.log(res.data)
+                const sortedDesigns = res.data.sort((a, b) => {
+                    return a.order_number - b.order_number;
+                });
+                // console.log(sortedDesigns)
+                dispatch({type:GET_SLIDER_DESIGNS_SUCCESS, payload: sortedDesigns})
+            }
+        ).catch(err => {
+            // console.log(err)
+            dispatch({type: GET_SLIDER_DESIGNS_FAILURE})
         })
 }
 

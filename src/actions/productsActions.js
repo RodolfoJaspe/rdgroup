@@ -5,6 +5,10 @@ export const GET_PRODUCTS_START = "GET_PRODUCTS_START";
 export const GET_PRODUCTS_SUCCESS = "GET_PRODUCTS_SUCCESS";
 export const GET_PRODUCTS_FAILURE = "GET_PRODUCTS_FAILURE";
 
+export const GET_SLIDER_PRODUCTS_START = "GET_SLIDER_PRODUCTS_START";
+export const GET_SLIDER_PRODUCTS_SUCCESS = "GET_SLIDER_PRODUCTS_SUCCESS";
+export const GET_SLIDER_PRODUCTS_FAILURE = "GET_SLIDER_PRODUCTS_FAILURE";
+
 export const ADD_PRODUCT_START = "ADD_PRODUCT_START";
 export const ADD_PRODUCT_SUCCESS = "ADD_PRODUCT_SUCCESS";
 export const ADD_PRODUCT_FAILURE = "ADD_PRODUCT_FAILURE";
@@ -36,6 +40,25 @@ export const getProducts = (user_id) => dispatch => {
         ).catch(err => {
             // console.log(err)
             dispatch({type: GET_PRODUCTS_FAILURE})
+        })
+}
+
+export const getSliderProducts = (user_id) => dispatch => {
+    dispatch({type: GET_SLIDER_PRODUCTS_START});
+    // console.log(user_id)
+    axios.get(`${currentUrl}/api/products/${user_id}/slider`,{headers})
+        .then(
+            res => {
+                // console.log(res.data)
+                const sortedProducts = res.data.sort((a, b) => {
+                    return a.order_number - b.order_number;
+                });
+                // console.log(sortedProducts)
+                dispatch({type:GET_SLIDER_PRODUCTS_SUCCESS, payload: sortedProducts})
+            }
+        ).catch(err => {
+            // console.log(err)
+            dispatch({type: GET_SLIDER_PRODUCTS_FAILURE})
         })
 }
 

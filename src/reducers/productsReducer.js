@@ -1,11 +1,12 @@
-import { GET_PRODUCTS_START, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_FAILURE, ADD_PRODUCT_START, ADD_PRODUCT_SUCCESS, ADD_PRODUCT_FAILURE, DELETE_PRODUCT_START, DELETE_PRODUCT_SUCCESS, DELETE_PRODUCT_FAILURE,CHANGE_ORDER_PRODUCTS_START, CHANGE_ORDER_PRODUCTS_SUCCESS, CHANGE_ORDER_PRODUCTS_FAILURE} from "../actions/productsActions";
+import { GET_PRODUCTS_START, GET_PRODUCTS_SUCCESS, GET_PRODUCTS_FAILURE, GET_SLIDER_PRODUCTS_START, GET_SLIDER_PRODUCTS_SUCCESS, GET_SLIDER_PRODUCTS_FAILURE, ADD_PRODUCT_START, ADD_PRODUCT_SUCCESS, ADD_PRODUCT_FAILURE, DELETE_PRODUCT_START, DELETE_PRODUCT_SUCCESS, DELETE_PRODUCT_FAILURE,CHANGE_ORDER_PRODUCTS_START, CHANGE_ORDER_PRODUCTS_SUCCESS, CHANGE_ORDER_PRODUCTS_FAILURE} from "../actions/productsActions";
 
 
 
 const products = {
     user_id : "",
     loading: false,
-    images: []
+    images: [],
+    sliderImages: []
 }
 
 export const productsReducer = ( state = products, action ) => {
@@ -15,6 +16,12 @@ export const productsReducer = ( state = products, action ) => {
         case GET_PRODUCTS_SUCCESS:
             return {...state, loading: false, images: action.payload};
         case GET_PRODUCTS_FAILURE:
+            return {...state, loading: false};
+        case GET_SLIDER_PRODUCTS_START:
+            return {...state, loading: true};
+        case GET_SLIDER_PRODUCTS_SUCCESS:
+            return {...state, loading: false, sliderImages: action.payload};
+        case GET_SLIDER_PRODUCTS_FAILURE:
             return {...state, loading: false};
         case ADD_PRODUCT_START:
             return {...state, loading: true};

@@ -1,11 +1,12 @@
-import { GET_CONSTRUCTIONS_START, GET_CONSTRUCTIONS_SUCCESS, GET_CONSTRUCTIONS_FAILURE, ADD_CONSTRUCTION_START, ADD_CONSTRUCTION_SUCCESS, ADD_CONSTRUCTION_FAILURE, DELETE_CONSTRUCTION_START, DELETE_CONSTRUCTION_SUCCESS, DELETE_CONSTRUCTION_FAILURE,CHANGE_ORDER_CONSTRUCTION_START, CHANGE_ORDER_CONSTRUCTION_SUCCESS, CHANGE_ORDER_CONSTRUCTION_FAILURE} from "../actions/constructionActions";
+import { GET_CONSTRUCTIONS_START, GET_CONSTRUCTIONS_SUCCESS, GET_CONSTRUCTIONS_FAILURE, GET_SLIDER_CONSTRUCTIONS_START, GET_SLIDER_CONSTRUCTIONS_SUCCESS, GET_SLIDER_CONSTRUCTIONS_FAILURE,  ADD_CONSTRUCTION_START, ADD_CONSTRUCTION_SUCCESS, ADD_CONSTRUCTION_FAILURE, DELETE_CONSTRUCTION_START, DELETE_CONSTRUCTION_SUCCESS, DELETE_CONSTRUCTION_FAILURE,CHANGE_ORDER_CONSTRUCTION_START, CHANGE_ORDER_CONSTRUCTION_SUCCESS, CHANGE_ORDER_CONSTRUCTION_FAILURE} from "../actions/constructionActions";
 
 
 
 const constructions = {
     user_id : "",
     loading: false,
-    images: []
+    images: [],
+    sliderImages : []
 }
 
 export const constructionReducer = ( state = constructions, action ) => {
@@ -15,6 +16,12 @@ export const constructionReducer = ( state = constructions, action ) => {
         case GET_CONSTRUCTIONS_SUCCESS:
             return {...state, loading: false, images: action.payload};
         case GET_CONSTRUCTIONS_FAILURE:
+            return {...state, loading: false};
+        case GET_SLIDER_CONSTRUCTIONS_START:
+            return {...state, loading: true};
+        case GET_SLIDER_CONSTRUCTIONS_SUCCESS:
+            return {...state, loading: false, sliderImages: action.payload};
+        case GET_SLIDER_CONSTRUCTIONS_FAILURE:
             return {...state, loading: false};
         case ADD_CONSTRUCTION_START:
             return {...state, loading: true};

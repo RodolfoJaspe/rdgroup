@@ -5,19 +5,19 @@ import "../../styles/main/Portfolio.css";
 import { pageImages } from '../../Assets/images';
 import { Link } from 'react-scroll';
 import ScrollTo from '../helpers/ScrollTo';
-import { getFirstSliders } from '../../actions/firstSliderActions';
-import { getDesigns } from '../../actions/designActions';
-import { getConstructions } from '../../actions/constructionActions';
-import { getProducts } from '../../actions/productsActions';
+import { getSliderFirstSliders } from '../../actions/firstSliderActions';
+import { getSliderDesigns } from '../../actions/designActions';
+import { getSliderConstructions } from '../../actions/constructionActions';
+import { getSliderProducts } from '../../actions/productsActions';
 import { connect } from 'react-redux';
 
-function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firstSlider,designs,constructions,products}) {
+function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts,firstSlider,designs,constructions,products}) {
     useEffect(()=>{
-        getFirstSliders(1)
-        getDesigns(1)
-        getConstructions(1)
-        getProducts(1)
-    },[getFirstSliders, getDesigns, getConstructions, getProducts])
+        getSliderFirstSliders(1)
+        getSliderDesigns(1)
+        getSliderConstructions(1)
+        getSliderProducts(1)
+    },[getSliderFirstSliders, getSliderDesigns, getSliderConstructions, getSliderProducts])
 
   return (
     <div className='portfolio'>
@@ -140,11 +140,11 @@ function Portfolio({getFirstSliders,getDesigns,getConstructions,getProducts,firs
 
 const mapStateToProps = state => {
     return {
-        firstSlider : state.firstSliderReducer.images,
-        designs : state.designReducer.images,
-        constructions : state.constructionReducer.images,
-        products: state.productsReducer.images
+        firstSlider : state.firstSliderReducer.sliderImages,
+        designs : state.designReducer.sliderImages,
+        constructions : state.constructionReducer.sliderImages,
+        products: state.productsReducer.sliderImages
     }
 }
 
-export default connect(mapStateToProps, {getFirstSliders,getDesigns,getConstructions,getProducts})(Portfolio)
+export default connect(mapStateToProps, {getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts})(Portfolio)

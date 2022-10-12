@@ -5,6 +5,10 @@ export const GET_FIRSTSLIDERS_START = "GET_FIRSTSLIDERS_START";
 export const GET_FIRSTSLIDERS_SUCCESS = "GET_FIRSTSLIDERS_SUCCESS";
 export const GET_FIRSTSLIDERS_FAILURE = "GET_FIRSTSLIDERS_FAILURE";
 
+export const GET_SLIDER_FIRSTSLIDERS_START = "GET_SLIDER_FIRSTSLIDERS_START";
+export const GET_SLIDER_FIRSTSLIDERS_SUCCESS = "GET_SLIDER_FIRSTSLIDERS_SUCCESS";
+export const GET_SLIDER_FIRSTSLIDERS_FAILURE = "GET_SLIDER_FIRSTSLIDERS_FAILURE";
+
 export const ADD_FIRSTSLIDER_START = "ADD_FIRSTSLIDER_START";
 export const ADD_FIRSTSLIDER_SUCCESS = "ADD_FIRSTSLIDER_SUCCESS";
 export const ADD_FIRSTSLIDER_FAILURE = "ADD_FIRSTSLIDER_FAILURE";
@@ -36,6 +40,24 @@ export const getFirstSliders = (user_id) => dispatch => {
         ).catch(err => {
             // console.log(err)
             dispatch({type: GET_FIRSTSLIDERS_FAILURE})
+        })
+}
+
+export const getSliderFirstSliders = (user_id) => dispatch => {
+    dispatch({type: GET_SLIDER_FIRSTSLIDERS_START});
+    axios.get(`${currentUrl}/api/firstslider/${user_id}/slider`,{headers})
+        .then(
+            res => {
+                // console.log(res.data)
+                const sortedFirstFliders = res.data.sort((a, b) => {
+                    return a.order_number - b.order_number;
+                });
+                // console.log(sortedFirstFliders)
+                dispatch({type:GET_SLIDER_FIRSTSLIDERS_SUCCESS, payload: sortedFirstFliders})
+            }
+        ).catch(err => {
+            // console.log(err)
+            dispatch({type: GET_SLIDER_FIRSTSLIDERS_FAILURE})
         })
 }
 

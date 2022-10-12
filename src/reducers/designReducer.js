@@ -1,11 +1,12 @@
-import { GET_DESIGNS_START, GET_DESIGNS_SUCCESS, GET_DESIGNS_FAILURE, ADD_DESIGN_START, ADD_DESIGN_SUCCESS, ADD_DESIGN_FAILURE, DELETE_DESIGN_START, DELETE_DESIGN_SUCCESS, DELETE_DESIGN_FAILURE,CHANGE_ORDER_DESIGN_START, CHANGE_ORDER_DESIGN_SUCCESS, CHANGE_ORDER_DESIGN_FAILURE} from "../actions/designActions";
+import { GET_DESIGNS_START, GET_DESIGNS_SUCCESS, GET_DESIGNS_FAILURE, GET_SLIDER_DESIGNS_START, GET_SLIDER_DESIGNS_SUCCESS, GET_SLIDER_DESIGNS_FAILURE, ADD_DESIGN_START, ADD_DESIGN_SUCCESS, ADD_DESIGN_FAILURE, DELETE_DESIGN_START, DELETE_DESIGN_SUCCESS, DELETE_DESIGN_FAILURE,CHANGE_ORDER_DESIGN_START, CHANGE_ORDER_DESIGN_SUCCESS, CHANGE_ORDER_DESIGN_FAILURE} from "../actions/designActions";
 
 
 
 const designs = {
     user_id : "",
     loading: false,
-    images: []
+    images: [],
+    sliderImages: []
 }
 
 export const designReducer = ( state = designs, action ) => {
@@ -15,6 +16,12 @@ export const designReducer = ( state = designs, action ) => {
         case GET_DESIGNS_SUCCESS:
             return {...state, loading: false, images: action.payload};
         case GET_DESIGNS_FAILURE:
+            return {...state, loading: false};
+        case GET_SLIDER_DESIGNS_START:
+            return {...state, loading: true};
+        case GET_SLIDER_DESIGNS_SUCCESS:
+            return {...state, loading: false, sliderImages: action.payload};
+        case GET_SLIDER_DESIGNS_FAILURE:
             return {...state, loading: false};
         case ADD_DESIGN_START:
             return {...state, loading: true};
