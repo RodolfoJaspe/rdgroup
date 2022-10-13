@@ -39,7 +39,7 @@ function About({ getHeadshot, headshot }) {
                     Received an architectural degree from "Universidad Central de Venezuela in 1992 and continued education at Miami International University of Art and Design with a Post graduate degree in Interior design in 1995.
                     </p>
                     <p>
-                    ..." I'm taking your ideas and creating the best design that will last you through time#... <br/><br/><b className='signature'>Juan Manuel Morales CEO</b> 
+                    ..." I'm taking your ideas and creating the best design that will last you through time... <br/><br/><b className='signature'>Juan Manuel Morales CEO</b> 
                     </p>
                 </div>
                 

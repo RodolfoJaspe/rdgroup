@@ -132,8 +132,6 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                 </div>
             </div>
         </div>
-
-
     </div>
   )
 }
