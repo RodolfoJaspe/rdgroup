@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './components/main/App';
+
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import App from './components/main/App';
+import Gallery from './components/main/Gallery';
 import Login from './components/admin/Login';
 import Dashboard from './components/admin/Dashboard';
+
 import { rootReducer } from './reducers';
 import  { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -19,6 +23,7 @@ root.render(
         <Router>
             <Routes>
                 <Route exact path='/' element={<App />} />
+                {/* <Route path="/gallery/:category/:title" element={<Gallery />} /> */}
                 <Route path="/admin/login" element={<Login />} />
                 <Route path="/admin/:id/dashboard" element={<Dashboard />} />
             </Routes>

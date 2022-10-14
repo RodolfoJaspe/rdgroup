@@ -1,23 +1,38 @@
 import React from 'react';
 import "../../styles/main/Slider.css";
+// import {useNavigate} from "react-router-dom";
 import AliceCarousel from 'react-alice-carousel';
-import NextArrow from "../../Assets/icons/rightArrowWhite.png"
-import PrevArrow from "../../Assets/icons/leftArrowWhite.png"
+import NextArrow from "../../Assets/icons/rightArrowWhite.png";
+import PrevArrow from "../../Assets/icons/leftArrowWhite.png";
 
 export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
+
+    // const navigate = useNavigate();
     
     const pictures = images.map(image => (
-        <div className='slider-image-div' key={image.id}>
-            <img className="slider-image" src={image.url} alt={image.title} onDragStart={handleDragStart} role="presentation" width={900} height={600} title={image.title}
+        <div 
+            className='slider-image-div' 
+            key={image.id}
+            // onClick = {category != "products" && category != "first-slider" ? () => navigate(`/gallery/${category}/${image.title}`) : null}
+            >
+            <img 
+                className="slider-image" 
+                src={image.url} alt={image.title} 
+                onDragStart={handleDragStart} 
+                role="presentation" 
+                width={900} 
+                height={600} 
+                title={image.title}
             />
-            <div className={category==="products"?"product-title-div":'image-title-div'}>
-              <h3 
-                className={category==="products"?"product-title":'image-title'}
-                style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}>
-                {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank">{image.title}</a> : image.title}
-            </h3>   
+            <div 
+                className={category==="products"?"product-title-div":'image-title-div'}>
+                <h3 
+                    className={category==="products"?"product-title":'image-title'}
+                    style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}>
+                    {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank">{image.title}</a> : image.title}
+                </h3>   
             </div>
         </div>
     ))

@@ -5,13 +5,13 @@ import "../../styles/main/Portfolio.css";
 import { pageImages } from '../../Assets/images';
 import { Link } from 'react-scroll';
 import ScrollTo from '../helpers/ScrollTo';
-import { getSliderFirstSliders } from '../../actions/firstSliderActions';
+import { getFirstSliders, getSliderFirstSliders } from '../../actions/firstSliderActions';
 import { getSliderDesigns } from '../../actions/designActions';
 import { getSliderConstructions } from '../../actions/constructionActions';
 import { getSliderProducts } from '../../actions/productsActions';
 import { connect } from 'react-redux';
 
-function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts,firstSlider,designs,constructions,products}) {
+function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts, getDesigns, getConstructions,firstSlider,designs,constructions,products}) {
     useEffect(()=>{
         getSliderFirstSliders(1)
         getSliderDesigns(1)
