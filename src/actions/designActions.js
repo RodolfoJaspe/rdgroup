@@ -25,7 +25,7 @@ const headers = {
     Accept: "application/json"
 }
 
-export const getDesigns = (user_id) => dispatch => {
+export const getDesigns = (user_id,setImages) => dispatch => {
     dispatch({type: GET_DESIGNS_START});
     // console.log(user_id)
     axios.get(`${currentUrl}/api/designs/${user_id}`,{headers})
@@ -36,6 +36,7 @@ export const getDesigns = (user_id) => dispatch => {
                     return a.order_number - b.order_number;
                 });
                 // console.log(sortedDesigns)
+                setImages(sortedDesigns)
                 dispatch({type:GET_DESIGNS_SUCCESS, payload: sortedDesigns})
             }
         ).catch(err => {

@@ -1,0 +1,100 @@
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.gallery .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.gallery .image-div{
+    width: 20vw;
+    height: 15vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery .image-div img {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    transition: 1s;
+    opacity: 1;
+}
+
+.gallery .image-div img:hover {
+    transform: scale(.95);
+    transition: 1s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.gallery .logo-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 5vh 0;
+}
+
+.gallery .logo{
+    object-position:top;
+    object-fit: contain;
+    margin-top: 2vh;
+    width: 30vw;
+    height: 100%;
+    cursor: pointer;
+}
+.gallery .logo img {
+    width: 100%;
+}
+
+.gallery .slogan h1{
+    color: #c9c9c9f1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5vw;
+    width: 30vw;
+    font-family: Chub Gothic;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .gallery .image-list {
+        width: 90%;
+    }
+    .gallery .image-div{
+        width: 22.5vw;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .gallery {
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 500px){
+    .gallery .image-list {
+        width: 100%;
+    }
+    .gallery .image-div{
+        width: 50vw;
+        height: 35vw;
+    }
+    
+    .gallery .logo{
+        width: 60vw;
+    }
+
+    .gallery .slogan h1{
+        font-size: 5vw;
+        width: 60vw;
+    }
+}

@@ -13,7 +13,7 @@
     font-family: Chub Gothic;
 }
 
-.nav-menu {
+.navbar .nav-menu {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -21,21 +21,21 @@
     width:100%;
 }
 
-.nav-item {
+.navbar .nav-item {
     transition: 1s;
     cursor:pointer;
     color: rgb(220, 220, 220);
     text-shadow: -1px 1px 1px black;
 }
 
-.nav-item.active {
+.navbar .nav-item.active {
     font-size: 1.8rem;
     font-weight: 900;
     transition: 1s;
     color: rgb(255, 255, 255);
 }
 
-.nav-item:hover {
+.navbar .nav-item:hover {
     font-size: 1.8rem;
     transition: 1s;
     color: rgb(255, 255, 255);
@@ -43,10 +43,10 @@
 }
 
 @media(max-width: 900px){ 
-    .nav-item {
+    .navbar .nav-item {
         font-size: 2.7vw;
     }
-    .nav-item.active {
+    .navbar .nav-item.active {
         font-size: 4.2vw;
     }
 }

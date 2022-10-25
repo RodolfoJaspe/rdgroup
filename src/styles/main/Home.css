@@ -4,7 +4,7 @@
     object-fit: cover;
 }
 
-.logo-slogan {
+.home .logo-slogan {
     position: fixed;
     z-index: -1;
     display: flex;
@@ -13,18 +13,18 @@
     width: 100vw;
 }
 
-.logo{
+.home .logo{
     object-position:top;
     object-fit: contain;
     margin-top: 15vh;
     width: 50vw;
     height: 100%;
 }
-.logo img {
+.home .logo img {
     width: 100%;
 }
 
-.slogan h1{
+.home .slogan h1{
     color: #c9c9c9f1;
     display: flex;
     justify-content: space-between;
@@ -33,11 +33,11 @@
 }
 
 @media(max-width: 1600px) {
-    .logo{
+    .home .logo{
         margin-top: 16vh;
         width: 45vw;
     }
-    .slogan h1{
+    .home .slogan h1{
         width: 45vw;
         font-size: 3.8vw;
     }
@@ -45,43 +45,43 @@
 }
 
 @media(max-width: 1100px) and (orientation: landscape) {
-    .logo {
+    .home .logo {
         width: 55vw;
         margin-top: 20vh;
     }
-    .slogan h1{
+    .home .slogan h1{
         width: 55vw;
         font-size: 4.5vw;
     }
 }
 
 @media(max-width: 1000px) and (orientation: portrait) {
-    .logo {
+    .home .logo {
         margin-top: 20vh;
         width: 80vw;
     }
-    .slogan h1{
+    .home .slogan h1{
         font-size: 6.2vw;
         width: 80vw;
     }
 }
 
 @media(max-width: 900px) and (orientation: landscape) {
-    .logo {
+    .home .logo {
         width: 36vw;
         margin-top: 22vh;
     }
-    .slogan h1{
+    .home .slogan h1{
         width: 36vw;
         font-size: 3vw;
     }
 }
 
 @media(max-width: 500px) and (orientation: portrait) {
-    .logo {
+    .home .logo {
         margin-top: 30vh;
     }
-    .slogan h1{
+    .home .slogan h1{
         font-size: 6.5vw;
     }
 }

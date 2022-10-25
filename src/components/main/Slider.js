@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../styles/main/Slider.css";
-// import {useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import AliceCarousel from 'react-alice-carousel';
 import NextArrow from "../../Assets/icons/rightArrowWhite.png";
 import PrevArrow from "../../Assets/icons/leftArrowWhite.png";
@@ -9,13 +9,12 @@ export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     
     const pictures = images.map(image => (
         <div 
             className='slider-image-div' 
             key={image.id}
-            // onClick = {category != "products" && category != "first-slider" ? () => navigate(`/gallery/${category}/${image.title}`) : null}
             >
             <img 
                 className="slider-image" 
@@ -29,6 +28,7 @@ export default function Slider({images, category}) {
             <div 
                 className={category==="products"?"product-title-div":'image-title-div'}>
                 <h3 
+                    onClick = {category != "products" && category != "first-slider" ? () => navigate(`/${category}`) : null}
                     className={category==="products"?"product-title":'image-title'}
                     style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}>
                     {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank">{image.title}</a> : image.title}
@@ -62,6 +62,8 @@ export default function Slider({images, category}) {
             renderPrevButton={renderPrevButton}
             renderNextButton={renderNextButton}
             disableDotsControls={true}
+            swipeDelta={100}
+            touchMoveDefaultEvents={false}
             />
     )
 }

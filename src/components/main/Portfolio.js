@@ -106,7 +106,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         />
                         <h2>Projects & Designs</h2>
                     </div>
-                    <Slider images={designs} category={'designs'}/>  
+                    <Slider images={designs} category={'projects&designs'}/>  
                 </div>
             </div>
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
@@ -117,7 +117,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         />
                         <h2>Constructions & Developments</h2>
                     </div>
-                    <Slider images={constructions} category={'constructions'}/>  
+                    <Slider images={constructions} category={'constructions&developments'}/>  
                 </div>
             </div>
             <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>

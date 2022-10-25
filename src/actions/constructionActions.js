@@ -25,20 +25,18 @@ const headers = {
     Accept: "application/json"
 }
 
-export const getConstructions = (user_id) => dispatch => {
+export const getConstructions = (user_id,setImages) => dispatch => {
     dispatch({type: GET_CONSTRUCTIONS_START});
     axios.get(`${currentUrl}/api/constructions/${user_id}`,{headers})
         .then(
             res => {
-                // console.log(res.data)
                 const sortedConstructions = res.data.sort((a, b) => {
                     return a.order_number - b.order_number;
                 });
-                console.log(sortedConstructions)
+                setImages(sortedConstructions)
                 dispatch({type:GET_CONSTRUCTIONS_SUCCESS, payload: sortedConstructions})
             }
         ).catch(err => {
-            // console.log(err)
             dispatch({type: GET_CONSTRUCTIONS_FAILURE})
         })
 }

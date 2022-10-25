@@ -33,6 +33,7 @@ function Dashboard({
 }) {
 
     useEffect(() => {
+        console.log("dashboard")
         getDesigns(user_id)
         getConstructions(user_id)
         getProducts(user_id)

@@ -333,9 +333,9 @@
     .service h2 {
         font-size: 1.8rem;
     }
-    .portfolio-slider-inner {
+    /* .portfolio-slider-inner {
         transform: translateY(-11vh);
-    }
+    } */
     .portfolio .slider-image-div .image-title {
         margin-bottom: 0;
         font-size: 1rem;
@@ -350,7 +350,7 @@
 
 @media(max-width: 500px) {
     .portfolio-slider-outer {
-        height: 40vh;
+        height: 30vh;
     }
     .service p {
         font-size: 1rem;

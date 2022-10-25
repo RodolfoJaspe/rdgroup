@@ -1,50 +1,67 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getConstructions } from '../../actions/constructionActions'
 import { getDesigns } from '../../actions/designActions'
-import { constructionReducer } from '../../reducers/constructionReducer'
-import { designReducer } from '../../reducers/designReducer'
+import { getLogo } from "../../actions/mainActions";
+import "../../styles/main/Gallery.css"
+import GalleryNavBar from './GalleryNavBar'
+import GallerySlider from './GallerySlider';
 
-function Gallery({designs, constructions, getConstructions, getDesigns}) {
+
+function Gallery({designs, constructions, getConstructions, getDesigns, getLogo, logo}) {
 
     const {category, title} = useParams()
 
     const [images, setImages] = useState()
-    const [largeImage, setLargeImage] = useState(images?images[0]:{})
+    const [sliderImage, setSliderImage] = useState()
 
-    console.log(largeImage)
+    const navigate = useNavigate()
+
 
     useEffect(() => {
-        getConstructions(1)
-        getDesigns(1)
+        console.log("gallery")
+        getLogo()
+        if(category === "projects&designs"){
+            getDesigns(1,setImages)
+        } else if (category === "constructions&developments"){
+            getConstructions(1,setImages)
+        }          
 
-        setImages(() => {
-            if(category === "desings"){
-                return designs.filter(image => image.title === title)
-            } else {
-                return constructions.filter(image => image.title === title)
-            }          
-        })
+    },[getConstructions, getDesigns, getLogo])
 
-    },[getDesigns, getConstructions])
-
-    console.log(images)
-    console.log(largeImage)
+  const openImage = (image) => {
+        setSliderImage(image)
+  }
 
   return (
     <div className='gallery'>
-        {/* {largeImage?<div className='large-image'>
+        <GalleryNavBar 
+            setImages={setImages}
+            category={category}/>
+        <div 
+            className='logo-slogan'
+            >
             <img 
-                src={largeImage.url} 
-                alt={largeImage.title}
-                width="500"
-                height="500"/>
-        </div>: null} */}
+                src={logo.url}       
+                className='logo' 
+                alt="logo image" 
+                width={500} height={500} 
+                title='Home'
+                onClick={()=>navigate('/')}/>
+            <div 
+                className='slogan'
+                title='Home'
+                onClick={()=>navigate('/')}>
+                <h1><b>r i g h t </b><b> d e s i g n</b></h1>
+            </div>  
+        </div>
         <div className='image-list'>
             {images?images.map(image => (
                 <div 
-                    // onClick={()=>setLargeImage(image)}
+                    onClick={() => openImage(image)}
+                    className='image-div'
+                    key={image.id}
                     >
                     <img 
                         src={image.url} 
@@ -55,6 +72,7 @@ function Gallery({designs, constructions, getConstructions, getDesigns}) {
                 </div>
             )): null}
         </div>
+        {sliderImage? <GallerySlider image={sliderImage} close={setSliderImage} /> : null}
     </div>
   )
 }
@@ -62,8 +80,9 @@ function Gallery({designs, constructions, getConstructions, getDesigns}) {
 const mapStateToProps = state => {
     return {
         designs : state.designReducer.images,
-        constructions : state.constructionReducer.images
+        constructions : state.constructionReducer.images,
+        logo: state.mainReducer.logo
     }
 }
 
-export default connect(mapStateToProps, {getConstructions, getDesigns})(Gallery)
+export default connect(mapStateToProps, {getConstructions, getDesigns, getLogo})(Gallery)

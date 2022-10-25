@@ -23,7 +23,7 @@ root.render(
         <Router>
             <Routes>
                 <Route exact path='/' element={<App />} />
-                {/* <Route path="/gallery/:category/:title" element={<Gallery />} /> */}
+                <Route path="/:category" element={<Gallery />} />
                 <Route path="/admin/login" element={<Login />} />
                 <Route path="/admin/:id/dashboard" element={<Dashboard />} />
             </Routes>
