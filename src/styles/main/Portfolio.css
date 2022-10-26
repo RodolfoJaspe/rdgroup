@@ -51,6 +51,11 @@
     font-family: Louis George Cafe;
     color: rgb(154, 154, 154);
     font-size: 2.6rem;
+    cursor: pointer;
+}
+
+.portfolio-slider-inner h2:hover{
+    color: rgb(187, 187, 187);
 }
 
 .portfolio-title {

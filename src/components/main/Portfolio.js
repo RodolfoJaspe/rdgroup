@@ -10,6 +10,7 @@ import { getSliderDesigns } from '../../actions/designActions';
 import { getSliderConstructions } from '../../actions/constructionActions';
 import { getSliderProducts } from '../../actions/productsActions';
 import { connect } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts, getDesigns, getConstructions,firstSlider,designs,constructions,products}) {
     useEffect(()=>{
@@ -18,6 +19,8 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
         getSliderConstructions(1)
         getSliderProducts(1)
     },[getSliderFirstSliders, getSliderDesigns, getSliderConstructions, getSliderProducts])
+
+    const navigate = useNavigate()
 
   return (
     <div className='portfolio'>
@@ -104,7 +107,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2>Projects & Designs</h2>
+                        <h2 onClick={()=>navigate('/projects&designs')}>Projects & Designs</h2>
                     </div>
                     <Slider images={designs} category={'projects&designs'}/>  
                 </div>
@@ -115,7 +118,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2>Constructions & Developments</h2>
+                        <h2 onClick={()=>navigate('/constructions&developments')}>Constructions & Developments</h2>
                     </div>
                     <Slider images={constructions} category={'constructions&developments'}/>  
                 </div>
