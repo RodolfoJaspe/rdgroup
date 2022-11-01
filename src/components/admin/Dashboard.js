@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {getDesigns, addDesign, deleteDesign, changeOrderDesign
 } from "../../actions/designActions";
 import {getConstructions, addConstruction, deleteConstruction, changeOrderConstruction} from "../../actions/constructionActions";
@@ -32,10 +32,13 @@ function Dashboard({
     changeOrderProducts
 }) {
 
+    const [designPics, setDesignPics] = useState()
+    const [constructionPics, setConstructionPics] = useState()
+
     useEffect(() => {
         console.log("dashboard")
-        getDesigns(user_id)
-        getConstructions(user_id)
+        getDesigns(user_id, setDesignPics)
+        getConstructions(user_id, setConstructionPics)
         getProducts(user_id)
         getFirstSliders(user_id)
     },[])
@@ -48,13 +51,13 @@ function Dashboard({
         </div>
         <div className='category2'>
             <h2>Design</h2>
-            <AdminImages images={designs} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}
+            <AdminImages images={designPics} addImage={addDesign} user_id={user_id} deleteImage={deleteDesign}
             changeOrder={changeOrderDesign}
             />  
         </div>
         <div className='category3' >
             <h2>Construction</h2>
-            <AdminImages images={constructions} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}
+            <AdminImages images={constructionPics} addImage={addConstruction} user_id={user_id} deleteImage={deleteConstruction}
             changeOrder={changeOrderConstruction}
             />  
         </div>

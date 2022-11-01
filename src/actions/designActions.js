@@ -25,7 +25,7 @@ const headers = {
     Accept: "application/json"
 }
 
-export const getDesigns = (user_id,setImages) => dispatch => {
+export const getDesigns = (user_id, setImages) => dispatch => {
     dispatch({type: GET_DESIGNS_START});
     // console.log(user_id)
     axios.get(`${currentUrl}/api/designs/${user_id}`,{headers})
