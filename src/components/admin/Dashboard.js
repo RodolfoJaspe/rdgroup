@@ -36,12 +36,12 @@ function Dashboard({
     const [constructionPics, setConstructionPics] = useState()
 
     useEffect(() => {
-        console.log("dashboard")
         getDesigns(user_id, setDesignPics)
         getConstructions(user_id, setConstructionPics)
         getProducts(user_id)
         getFirstSliders(user_id)
-    },[])
+    },[getDesigns, getConstructions])
+
   return (
     <div className='dashboard'>
         <div className='category1'>
