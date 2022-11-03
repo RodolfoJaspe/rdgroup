@@ -20,8 +20,8 @@
 }
 
 .gallery .image-div img {
-    width: 99%;
-    height: 99%;
+    width: 98.5%;
+    height: 98.5%;
     object-fit: cover;
     transition: 1s;
     opacity: 1;
