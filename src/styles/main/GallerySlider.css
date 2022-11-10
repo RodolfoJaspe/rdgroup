@@ -9,11 +9,12 @@
     overflow: scroll;
     position: fixed;
 
+
 }
 .gallery-slider {
     height: 80%;
     width: 90%;
-    /* background-color: white; */
+    margin-top: 50px;
 }
 
 .gallery-slider .slider-image {
@@ -26,7 +27,7 @@
 
 .gallery-slider .image-title{
     position: absolute;
-    /* bottom: 10%; */
+    bottom: 12%;
     right: 5%;
     color: white;
     text-shadow: -1px 1px black;
@@ -37,8 +38,8 @@
 }
 
 .gallery-slider .close-button {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding: 5px;
     border-radius: 50%;
     position: absolute;
