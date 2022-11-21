@@ -54,3 +54,9 @@
     color: rgb(255, 255, 255);
 }
 
+@media(max-height: 800px){
+    .menu-button {
+        width: 5vh;
+        height: 5vh;
+    }
+}
