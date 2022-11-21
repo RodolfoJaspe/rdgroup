@@ -81,6 +81,10 @@
 }
 
 @media (max-width: 500px){
+    .gallery {
+        margin-top: 12vh;        
+    }
+
     .gallery .image-list {
         width: 100%;
     }
