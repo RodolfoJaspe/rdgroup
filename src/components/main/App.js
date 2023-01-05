@@ -22,9 +22,9 @@ function App() {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
+}, []);
 
-  return (
+return (
     <div className="App">
       {windowSize.innerWidth >= 500 ? <Navbar /> : <Menu />}
       <Home />

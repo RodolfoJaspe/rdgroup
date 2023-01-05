@@ -9,11 +9,12 @@
 .gallery .image-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 80%;
 }
 
 .gallery .image-div{
-    width: 20vw;
+    width: 24.9%;
     height: 15vw;
     text-align: center;
     overflow: hidden;
