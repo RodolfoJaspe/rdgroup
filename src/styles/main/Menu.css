@@ -23,7 +23,7 @@
     object-fit: contain;
 }
 
-.close-button {
+.menu .close-button {
     margin-left: 10px;
     margin-top: 10px;
     width: 25px;

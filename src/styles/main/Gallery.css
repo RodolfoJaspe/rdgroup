@@ -13,14 +13,14 @@
     width: 80%;
 }
 
-.gallery .image-div{
+.gallery .image-list .image-div{
     width: 24.9%;
     height: 15vw;
     text-align: center;
     overflow: hidden;
 }
 
-.gallery .image-div img {
+.gallery .image-list .image-div img {
     width: 98.5%;
     height: 98.5%;
     object-fit: cover;
@@ -28,7 +28,7 @@
     opacity: 1;
 }
 
-.gallery .image-div img:hover {
+.gallery .image-list .image-div img:hover {
     transform: scale(.95);
     transition: 1s;
     opacity: 1;
@@ -70,7 +70,7 @@
     .gallery .image-list {
         width: 90%;
     }
-    .gallery .image-div{
+    .gallery .image-list .image-div{
         width: 22.5vw;
     }
 }
@@ -89,7 +89,7 @@
     .gallery .image-list {
         width: 100%;
     }
-    .gallery .image-div{
+    .gallery .image-list .image-div{
         width: 50vw;
         height: 35vw;
     }

@@ -78,7 +78,7 @@
     .about {
         font-size: larger;
     }
-    .image-div img {
+    .about .image-div img {
         width: 22vw;
         height: 30vw; 
     }
@@ -94,7 +94,7 @@
         width: 50%;
 
     }
-    .image-div img {
+    .about .image-div img {
         width: 30vw;
         height: 40vw;
     }
@@ -115,7 +115,7 @@
         width: 96%;
         margin: 10vh 2vw 0 2vw;
     }
-    .image-div img {
+    .about .image-div img {
         width: 50vw;
         height: 70vw;
     }

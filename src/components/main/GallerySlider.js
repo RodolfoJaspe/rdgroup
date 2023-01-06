@@ -4,15 +4,23 @@ import closeButton from "../../Assets/icons/blackClose.png"
 
 export default function GallerySlider({image, close}) {
 
-    console.log(image)
   return (
     <div className='gallery-slider-outer'>
         <div className='gallery-slider'>
-            <img className="slider-image" src={image.url} alt={image.title}/>
-            <h3 className='image-title'>{image.title}</h3>
-            <img className="close-button"src={closeButton} alt="close" onClick={()=>close("")} />
+            <div className='button-div'>
+                <img className="close-button"src={closeButton} alt="close" onClick={()=>close("")} />
+            </div>
+            <div className='image-title-div'>
+                <div className='image-div'>
+                    <img className="slider-image" src={image.url} alt={image.title}/>
+                </div>
+                <div className='title-div'>
+                    <h3>{image.title}</h3>
+                </div>
+            </div>
         </div> 
     </div>
 
   )
 }
+
