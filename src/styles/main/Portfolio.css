@@ -61,9 +61,18 @@
 .portfolio-title {
     display: flex;
     flex-direction: row;
-    /* width: 80vw; */
     align-items: center;
 }
+
+.portfolio-title a {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+}
+
+.portfolio-title a:hover {
+    color: rgb(187, 187, 187);
+}
+
 .portfolio-title img{
     height: 35px;
     margin-right: 10px; 
