@@ -129,7 +129,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2>Products</h2>
+                        <h2><a href='https://www.myaccento.com' target="_blank">Products</a></h2>
                     </div>
                     <Slider images={products} category={'products'}/>  
                 </div>
