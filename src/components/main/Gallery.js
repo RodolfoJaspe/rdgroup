@@ -43,7 +43,7 @@ function Gallery({designs, constructions, getConstructions, getDesigns, getLogo,
             className='logo-slogan'
             >
             <img 
-                src={logo.url.includes("https://drive.google.com/uc?export=view&id=")?`https://lh3.google.com/u/0/d/${logo.url.slice(43,logo.url.length)}`:logo.url}      
+                src={logo.url}       
                 className='logo' 
                 alt="logo image" 
                 width={500} height={500} 
@@ -64,7 +64,7 @@ function Gallery({designs, constructions, getConstructions, getDesigns, getLogo,
                     key={image.id}
                     >
                     <img 
-                        src={image.url.includes("https://drive.google.com/uc?export=view&id=")?`https://lh3.google.com/u/0/d/${image.url.slice(43,image.url.length)}`:image.url} 
+                        src={image.url} 
                         alt={image.title} 
                         width="200" 
                         height="200" 

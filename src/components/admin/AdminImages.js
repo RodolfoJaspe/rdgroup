@@ -33,10 +33,7 @@ console.log(images)
 
     const formSubmit = e => {
         e.preventDefault()
-        console.log(newImage)
-        addImage({...newImage,
-            url: `https://lh3.google.com/u/0/d/${newImage.url.slice(32,65)}`
-        })
+        addImage(newImage)
         setNewImage({...newImage, url: ""})
     }
 
