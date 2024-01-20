@@ -65,7 +65,12 @@ console.log(images)
                 <div className='image-div' key={image.id}>
                     <h2>{image.order_number}</h2>
                     <p>{image.title}</p>
-                    <img src={image.url} alt={image.title} width={200} height={200} title={image.title} loading='lazy'/>
+                    <img src={image.url.includes("https://drive.google.com/uc?export=view&id=")?`https://lh3.google.com/u/0/d/${image.url.slice(43,image.url.length)}`:image.url}
+                        alt={image.title} 
+                        width={200} 
+                        height={200} 
+                        title={image.title} 
+                        loading='lazy'/>
                     <input type='number' id='order_number' name='order_number' placeholder='order number' 
                     value={newOrder.order_number}
                     onChange={newOrderChanges}/> 
