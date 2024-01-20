@@ -1,16 +1,14 @@
-import React,{useEffect, useState} from 'react';
-import { portfolio } from '../../Assets/images';
-import Slider from './Slider';
-import "../../styles/main/Portfolio.css";
-import { pageImages } from '../../Assets/images';
-import { Link } from 'react-scroll';
-import ScrollTo from '../helpers/ScrollTo';
-import { getFirstSliders, getSliderFirstSliders } from '../../actions/firstSliderActions';
-import { getSliderDesigns } from '../../actions/designActions';
-import { getSliderConstructions } from '../../actions/constructionActions';
-import { getSliderProducts } from '../../actions/productsActions';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import { getSliderConstructions } from '../../actions/constructionActions';
+import { getSliderDesigns } from '../../actions/designActions';
+import { getSliderFirstSliders } from '../../actions/firstSliderActions';
+import { getSliderProducts } from '../../actions/productsActions';
+import "../../styles/main/Portfolio.css";
+import ScrollTo from '../helpers/ScrollTo';
+import Slider from './Slider';
 
 function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstructions,getSliderProducts, getDesigns, getConstructions,firstSlider,designs,constructions,products}) {
     useEffect(()=>{
@@ -104,7 +102,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2 onClick={()=>navigate('/projects&designs')}>Projects & Designs</h2>
@@ -115,7 +113,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2 onClick={()=>navigate('/constructions&developments')}>Constructions & Developments</h2>
@@ -126,7 +124,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://drive.google.com/uc?export=view&id=10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2><a href='https://www.myaccento.com' target="_blank">Products</a></h2>

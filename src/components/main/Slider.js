@@ -1,15 +1,16 @@
 import React from 'react';
-import "../../styles/main/Slider.css";
-import {useNavigate} from "react-router-dom";
 import AliceCarousel from 'react-alice-carousel';
-import NextArrow from "../../Assets/icons/rightArrowWhite.png";
+import { useNavigate } from "react-router-dom";
 import PrevArrow from "../../Assets/icons/leftArrowWhite.png";
+import NextArrow from "../../Assets/icons/rightArrowWhite.png";
+import "../../styles/main/Slider.css";
 
 export default function Slider({images, category}) {
 
     const handleDragStart = (e) => (e.preventDefault());
 
     const navigate = useNavigate();
+    console.log(images)
     
     const pictures = images.map(image => (
         <div 
@@ -18,7 +19,8 @@ export default function Slider({images, category}) {
             >
             <img 
                 className="slider-image" 
-                src={image.url} alt={image.title} 
+                src={image.url.includes("https://drive.google.com/uc?export=view&id=")?`https://lh3.google.com/u/0/d/${image.url.slice(43,image.url.length)}`:image.url} 
+                alt={image.title} 
                 onDragStart={handleDragStart} 
                 role="presentation" 
                 width={900} 

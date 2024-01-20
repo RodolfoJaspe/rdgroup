@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "../../styles/main/About.css";
-import { getHeadshot } from "../../actions/mainActions.js";
 import { connect } from "react-redux";
+import { getHeadshot } from "../../actions/mainActions.js";
+import "../../styles/main/About.css";
 
 function About({ getHeadshot, headshot }) {
   useEffect(() => {

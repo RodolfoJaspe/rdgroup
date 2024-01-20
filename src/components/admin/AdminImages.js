@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import "../../styles/admin/AdminImages.css";
 
 export default function AdminImages({images, addImage, deleteImage, changeOrder, user_id}) {
@@ -36,7 +35,7 @@ console.log(images)
         e.preventDefault()
         console.log(newImage)
         addImage({...newImage,
-            url: `https://drive.google.com/uc?export=view&id=${newImage.url.slice(32,65)}`
+            url: `https://lh3.google.com/u/0/d/${newImage.url.slice(32,65)}`
         })
         setNewImage({...newImage, url: ""})
     }
