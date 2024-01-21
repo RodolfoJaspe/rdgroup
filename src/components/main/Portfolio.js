@@ -102,7 +102,9 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                        <img 
+                        src="https://lh3.googleusercontent.com/pw/ABLVV852BS6A-FackcNASgeXBklSCoDBAPLsWHNWVcWs0O8ipLEwsVqcz9uEYFGJSgd5A-e4enYOEYKUWBDzVTK5ILzEvnEcSMMSHh-ERBdOp6K3ovqJqX_QRCTAYdq6au85acw4oX4-RHwhCu_79CG9mEAx=w2364-h1532-s-no-gm?authuser=0" 
+                        alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2 onClick={()=>navigate('/projects&designs')}>Projects & Designs</h2>
@@ -113,7 +115,9 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                    <img 
+                        src="https://lh3.googleusercontent.com/pw/ABLVV852BS6A-FackcNASgeXBklSCoDBAPLsWHNWVcWs0O8ipLEwsVqcz9uEYFGJSgd5A-e4enYOEYKUWBDzVTK5ILzEvnEcSMMSHh-ERBdOp6K3ovqJqX_QRCTAYdq6au85acw4oX4-RHwhCu_79CG9mEAx=w2364-h1532-s-no-gm?authuser=0" 
+                        alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2 onClick={()=>navigate('/constructions&developments')}>Constructions & Developments</h2>
@@ -124,7 +128,9 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
             <div className='portfolio-slider-outer' style={{background:`#00009cc7`}}>
                 <div className='portfolio-slider-inner'>
                     <div className='portfolio-title'>
-                        <img src='https://lh3.google.com/u/0/d/10zaF3juTzTEjietUm_chQO0VHPQi46nt' alt="logo"
+                    <img 
+                        src="https://lh3.googleusercontent.com/pw/ABLVV852BS6A-FackcNASgeXBklSCoDBAPLsWHNWVcWs0O8ipLEwsVqcz9uEYFGJSgd5A-e4enYOEYKUWBDzVTK5ILzEvnEcSMMSHh-ERBdOp6K3ovqJqX_QRCTAYdq6au85acw4oX4-RHwhCu_79CG9mEAx=w2364-h1532-s-no-gm?authuser=0" 
+                        alt="logo"
                         width={50} height={50} title='logo'
                         />
                         <h2><a href='https://www.myaccento.com' target="_blank">Products</a></h2>
