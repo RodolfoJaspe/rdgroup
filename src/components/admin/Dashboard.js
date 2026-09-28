@@ -58,7 +58,7 @@ function Dashboard({
     getConstructions(user_id, setConstructionPics);
     getProducts(user_id);
     getFirstSliders(user_id);
-  }, [getDesigns, getConstructions.designPics, constructionPics]);
+  }, [getDesigns, getConstructions, getProducts, getFirstSliders, user_id]);
 
   return (
     <div className="dashboard">

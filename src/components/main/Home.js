@@ -15,7 +15,7 @@ function Home({ getLogo, logo }) {
           <img
             src={logo.url}
             className="logo"
-            alt="logo image"
+            alt="logo"
             width={500}
             height={500}
             title={logo.title}

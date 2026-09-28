@@ -11,7 +11,7 @@ import GallerySlider from './GallerySlider'
 
 function Gallery({designs, constructions, getConstructions, getDesigns, getLogo, logo}) {
 
-    const {category, title} = useParams()
+    const {category} = useParams()
 
     const [images, setImages] = useState()
     const [sliderImage, setSliderImage] = useState()
@@ -28,7 +28,7 @@ function Gallery({designs, constructions, getConstructions, getDesigns, getLogo,
             getConstructions(1,setImages)
         }          
 
-    },[getConstructions, getDesigns, getLogo])
+    },[category, getConstructions, getDesigns, getLogo])
 
   const openImage = (image) => {
         setSliderImage(image)
@@ -45,7 +45,7 @@ function Gallery({designs, constructions, getConstructions, getDesigns, getLogo,
             <img 
                 src={logo.url}       
                 className='logo' 
-                alt="logo image" 
+                alt="logo" 
                 width={500} height={500} 
                 title='Home'
                 onClick={()=>navigate('/')}/>

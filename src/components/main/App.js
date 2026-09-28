@@ -7,7 +7,6 @@ import Portfolio from "./Portfolio";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import How from "./How";
-import Videos from "./Videos.js";
 
 function App() {
   const [windowSize, setWindowSize] = useState(getWindowSize());

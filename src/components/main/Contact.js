@@ -55,7 +55,7 @@ function Contact() {
                     </h2>
                 </div>
                 <div className='socials-logo'>
-                    <a href='https://www.facebook.com/RD-consultiong-group-1422172441139858/' target="_blank">
+                    <a href='https://www.facebook.com/RD-consultiong-group-1422172441139858/' target="_blank" rel="noreferrer">
                         <img 
                         src={fb} 
                         alt="facebook"
@@ -67,7 +67,7 @@ function Contact() {
                     
                 </div>
                 <div className='socials-logo'>
-                    <a href='https://www.instagram.com/rd.group.llc/' target="_blank">    
+                    <a href='https://www.instagram.com/rd.group.llc/' target="_blank" rel="noreferrer">    
                         <img 
                             src={insta} 
                             alt="instagram" 

@@ -28,10 +28,10 @@ export default function Slider({images, category}) {
             <div 
                 className={category==="products"?"product-title-div":'image-title-div'}>
                 <h3 
-                    onClick = {category != "products" && category != "first-slider" ? () => navigate(`/${category}`) : null}
+                    onClick = {category !== "products" && category !== "first-slider" ? () => navigate(`/${category}`) : null}
                     className={category==="products"?"product-title":'image-title'}
                     style={image.title === "Accento" && image.order_number === 1?{fontSize:'0px'}:null}>
-                    {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank">{image.title}</a> : image.title}
+                    {image.title === "Accento"? <a href='https://www.myaccento.com' target="_blank" rel="noreferrer">{image.title}</a> : image.title}
                 </h3>   
             </div>
         </div>

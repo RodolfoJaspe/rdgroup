@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import Navbar from './Navbar';
 import menu from "../../Assets/icons/menu.png";
 import close from "../../Assets/icons/close.png";
 import "../../styles/main/Menu.css";
@@ -11,7 +10,6 @@ export default function Menu() {
     const [menuClosed, setMenuClosed] = useState(true);
 
     const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
 
     const closeMenu = () => setClick(false);
 
