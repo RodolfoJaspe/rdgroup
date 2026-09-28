@@ -1,7 +1,7 @@
 .menu {
     position: fixed;
     z-index: 99;
-    width: 100vw;
+    width: 100%;
     height: 7vh;
 }
 
@@ -14,7 +14,7 @@
     padding-top: 5px;
     background: linear-gradient(to right, rgba(22, 38, 52, 0.5),rgba(200, 200, 200, 0.6),rgba(200, 200, 200, 0.6),rgba(22, 38, 52, 0.5));
     height: 5vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .menu-button {

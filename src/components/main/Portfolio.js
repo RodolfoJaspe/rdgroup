@@ -101,26 +101,28 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
         <div className='portfolio-main'>
             <div className='portfolio-slider-outer' style={{background:`#ff0000de`}}>
                 <div className='portfolio-slider-inner'>
-                    <div className='portfolio-title'>
+                    <div className='portfolio-title' onClick={()=>navigate('/projects&designs')}>
                         <img 
                         src="https://lh3.googleusercontent.com/pw/ABLVV852BS6A-FackcNASgeXBklSCoDBAPLsWHNWVcWs0O8ipLEwsVqcz9uEYFGJSgd5A-e4enYOEYKUWBDzVTK5ILzEvnEcSMMSHh-ERBdOp6K3ovqJqX_QRCTAYdq6au85acw4oX4-RHwhCu_79CG9mEAx=w2364-h1532-s-no-gm?authuser=0" 
                         alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2 onClick={()=>navigate('/projects&designs')}>Projects & Designs</h2>
+                        <h2>Projects & Designs</h2>
+                        <span className='view-gallery'>View Gallery →</span>
                     </div>
                     <Slider images={designs} category={'projects&designs'}/>  
                 </div>
             </div>
             <div className='portfolio-slider-outer' style={{background:`#ffff1ebd`}}>
                 <div className='portfolio-slider-inner'>
-                    <div className='portfolio-title'>
+                    <div className='portfolio-title' onClick={()=>navigate('/constructions&developments')}>
                     <img 
                         src="https://lh3.googleusercontent.com/pw/ABLVV852BS6A-FackcNASgeXBklSCoDBAPLsWHNWVcWs0O8ipLEwsVqcz9uEYFGJSgd5A-e4enYOEYKUWBDzVTK5ILzEvnEcSMMSHh-ERBdOp6K3ovqJqX_QRCTAYdq6au85acw4oX4-RHwhCu_79CG9mEAx=w2364-h1532-s-no-gm?authuser=0" 
                         alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2 onClick={()=>navigate('/constructions&developments')}>Constructions & Developments</h2>
+                        <h2>Constructions & Developments</h2>
+                        <span className='view-gallery'>View Gallery →</span>
                     </div>
                     <Slider images={constructions} category={'constructions&developments'}/>  
                 </div>
@@ -133,7 +135,7 @@ function Portfolio({getSliderFirstSliders,getSliderDesigns,getSliderConstruction
                         alt="logo"
                         width={50} height={50} title='logo'
                         />
-                        <h2><a href='https://www.myaccento.com' target="_blank">Products</a></h2>
+                        <h2 className='no-link'>Products</h2>
                     </div>
                     <Slider images={products} category={'products'}/>  
                 </div>

@@ -25,7 +25,7 @@ function Contact() {
         <div className='banner-contact-div'>
             <div className='contact-info'>
                 <h2>RD Group</h2>
-                <p>4400 Memorial drive, <br/>Suite 2066<br/>Houston, TX 77007<br/><br/>juanmanuel@rdgroup-usa.com</p>
+                <p>4611 North Federal Highway<br/>Suite 523<br/>Pompano Beach, FL 33064<br/><br/>juanmanuel@rdgroup-usa.com</p>
                 <p>713.815.1803</p>
             </div>
             <form ref={form} onSubmit={sendEmail} className='form'>
@@ -51,10 +51,8 @@ function Contact() {
             <div className='footer'>
                 <div className='fl-tx'>
                     <h2>
-                        TEXAS
+                        FLORIDA
                     </h2>
-                    <h2>/</h2>
-                    <h2>FLORIDA</h2>
                 </div>
                 <div className='socials-logo'>
                     <a href='https://www.facebook.com/RD-consultiong-group-1422172441139858/' target="_blank">

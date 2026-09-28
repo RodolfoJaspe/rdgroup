@@ -52,10 +52,19 @@
     color: rgb(154, 154, 154);
     font-size: 2.6rem;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .portfolio-slider-inner h2:hover{
     color: rgb(187, 187, 187);
+}
+
+.portfolio-slider-inner h2.no-link {
+    cursor: default;
+}
+
+.portfolio-slider-inner h2.no-link:hover {
+    color: rgb(154, 154, 154);
 }
 
 .portfolio-title {
@@ -76,6 +85,30 @@
 .portfolio-title img{
     height: 35px;
     margin-right: 10px; 
+}
+
+.view-gallery {
+    font-family: Louis George Cafe;
+    font-size: 1rem;
+    color: rgb(170, 170, 170);
+    margin-left: auto;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.view-gallery:hover {
+    color: rgb(110, 110, 110);
+}
+
+@media(max-width: 700px) {
+    .portfolio-title {
+        flex-wrap: wrap;
+    }
+    .view-gallery {
+        flex-basis: 100%;
+        text-align: right;
+    }
 }
 
 .products-and-services {
@@ -355,10 +388,13 @@
         font-size: 1rem;
     }
     .portfolio-title h2 {
-        font-size: 5.8vw;
+        font-size: 5.2vw;
     }
     .portfolio-title img {
         margin-right: 5px;
+    }
+    .view-gallery {
+        font-size: 3.5vw;
     }
 }
 

@@ -4,7 +4,7 @@ export const GET_LOGO = "GET_LOGO";
 export const getHeadshot = () => dispatch => {
     let headshot = {
         title: "Juan Manuel",
-        url: "https://lh3.googleusercontent.com/pw/ABLVV84kbSpzCzVaQYkHvYiS2_n_rrAkG6K23SRISfEHNffM8M6DaCrL_S9VtR4s-z_qStvRrutUI9HL-tQhGQff1b2Ozjb3MLFMBIWDK7wfhYXEjqIKz7Xa3B1qdf4JB6a6PReJc_WrzVDMelbSLrSfgdXs=w400-h400-s-no-gm?authuser=0"
+        url: process.env.PUBLIC_URL + "/JuanManuelMorales.png"
     }
     dispatch({type: GET_HEADSHOT, payload: headshot})
 }
