@@ -63,7 +63,7 @@ export default function Slider({images, category}) {
             renderNextButton={renderNextButton}
             disableDotsControls={true}
             swipeDelta={100}
-            touchMoveDefaultEvents={false}
+            touchMoveDefaultEvents
             />
     )
 }
