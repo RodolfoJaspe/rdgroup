@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import { useEffect, useState } from "react";
-import Menu from "./Menu";
 import How from "./How";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
 
 return (
     <div className="App">
-      {windowSize.innerWidth >= 500 ? <Navbar /> : <Menu />}
+      {windowSize.innerWidth >= 700 ? <Navbar /> : null}
       <Home />
       <div className="main-content">
         <Portfolio />
