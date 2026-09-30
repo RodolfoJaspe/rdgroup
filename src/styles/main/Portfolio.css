@@ -237,7 +237,7 @@
     .portfolio-slider-outer{
         height: 60vh;
     }
-    .portfolio-slider-outer .slider-image {
+    .portfolio .portfolio-slider-outer .slider-image {
         height: 70vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
@@ -290,7 +290,7 @@
     .portfolio-slider-outer{
         height: 80vh;
     }
-    .portfolio-slider-outer .slider-image {
+    .portfolio .portfolio-slider-outer .slider-image {
         height: 80vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
