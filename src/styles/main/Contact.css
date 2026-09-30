@@ -45,8 +45,10 @@
     margin: 2vh 0;
 }
 
-.input:hover {
-    background-color: #d9d9d9;
+@media (hover: hover) {
+    .input:hover {
+        background-color: #d9d9d9;
+    }
 }
 
 .input.message{
@@ -74,12 +76,14 @@
     border: 1px solid rgba(66, 66, 66, 0.853);
 }
 
-.submit-button-div input:hover {
-    background-color: #c9c9c9f1;
-    cursor: pointer;
-    color:rgb(60, 60, 60);
-    transition: .3s;
-    border: 1px solid rgb(60, 60, 60);
+@media (hover: hover) {
+    .submit-button-div input:hover {
+        background-color: #c9c9c9f1;
+        cursor: pointer;
+        color:rgb(60, 60, 60);
+        transition: .3s;
+        border: 1px solid rgb(60, 60, 60);
+    }
 }
 
 .footer-outer {
@@ -127,9 +131,11 @@
     margin: 2vw;
 }
 
-.socials-logo:hover {
-    background-color: rgb(103, 103, 103);
-    transform: scale(1.2);
+@media (hover: hover) {
+    .socials-logo:hover {
+        background-color: rgb(103, 103, 103);
+        transform: scale(1.2);
+    }
 }
 
 .subject {
@@ -141,11 +147,13 @@
     margin: 2vh 0;
 }
 
-.subject:hover {
-    background-color: #d9d9d9;
-    cursor: pointer;
-    color:rgb(60, 60, 60);
-    border: 1px solid rgb(60, 60, 60);
+@media (hover: hover) {
+    .subject:hover {
+        background-color: #d9d9d9;
+        cursor: pointer;
+        color:rgb(60, 60, 60);
+        border: 1px solid rgb(60, 60, 60);
+    }
 }
 
 .subject label{

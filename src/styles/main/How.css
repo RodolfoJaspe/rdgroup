@@ -45,9 +45,11 @@
     text-align: center;
 }
 
-.step:hover img {
-    transition: .5s;
-    transform: scale(1.1);
+@media (hover: hover) {
+    .step:hover img {
+        transition: .5s;
+        transform: scale(1.1);
+    }
 }
 
 .step img{

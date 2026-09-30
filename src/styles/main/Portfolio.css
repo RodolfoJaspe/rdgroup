@@ -55,16 +55,20 @@
     white-space: nowrap;
 }
 
-.portfolio-slider-inner h2:hover{
-    color: rgb(187, 187, 187);
+@media (hover: hover) {
+    .portfolio-slider-inner h2:hover{
+        color: rgb(187, 187, 187);
+    }
 }
 
 .portfolio-slider-inner h2.no-link {
     cursor: default;
 }
 
-.portfolio-slider-inner h2.no-link:hover {
-    color: rgb(154, 154, 154);
+@media (hover: hover) {
+    .portfolio-slider-inner h2.no-link:hover {
+        color: rgb(154, 154, 154);
+    }
 }
 
 .portfolio-title {
@@ -78,8 +82,10 @@
     text-decoration: none;
 }
 
-.portfolio-title a:hover {
-    color: rgb(187, 187, 187);
+@media (hover: hover) {
+    .portfolio-title a:hover {
+        color: rgb(187, 187, 187);
+    }
 }
 
 .portfolio-title img{
@@ -97,8 +103,10 @@
     transition: .3s;
 }
 
-.view-gallery:hover {
-    color: rgb(110, 110, 110);
+@media (hover: hover) {
+    .view-gallery:hover {
+        color: rgb(110, 110, 110);
+    }
 }
 
 @media(max-width: 700px) {
@@ -173,10 +181,12 @@
 .title h2 {
     margin: 0 20px ;
 }
-.title:hover {
-    color: white;
-    text-shadow: -1px 2px 1px black;
-    cursor: pointer;
+@media (hover: hover) {
+    .title:hover {
+        color: white;
+        text-shadow: -1px 2px 1px black;
+        cursor: pointer;
+    }
 }
 
 .red-square {

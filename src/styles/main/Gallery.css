@@ -28,11 +28,13 @@
     opacity: 1;
 }
 
-.gallery .image-list .image-div img:hover {
-    transform: scale(.95);
-    transition: 1s;
-    opacity: 1;
-    cursor: pointer;
+@media (hover: hover) {
+    .gallery .image-list .image-div img:hover {
+        transform: scale(.95);
+        transition: 1s;
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 
 

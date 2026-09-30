@@ -35,11 +35,12 @@
     color: rgb(255, 255, 255);
 }
 
-.navbar .nav-item:hover {
-    font-size: 1.8rem;
-    transition: 1s;
-    color: rgb(255, 255, 255);
-
+@media (hover: hover) {
+    .navbar .nav-item:hover {
+        font-size: 1.8rem;
+        transition: 1s;
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media(max-width: 900px){ 

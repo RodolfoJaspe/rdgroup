@@ -35,11 +35,12 @@
     color: rgb(255, 255, 255);
 }
 
-.gallery-navbar .nav-item:hover {
-    font-size: 1.5rem;
-    transition: 1s;
-    color: rgb(255, 255, 255);
-
+@media (hover: hover) {
+    .gallery-navbar .nav-item:hover {
+        font-size: 1.5rem;
+        transition: 1s;
+        color: rgb(255, 255, 255);
+    }
 }
 
 .home-btn-div{
@@ -52,9 +53,11 @@
     left: 30px;
 }
 
-.home-btn-div:hover {
-    opacity: 1;
-    transition: .2s;
+@media (hover: hover) {
+    .home-btn-div:hover {
+        opacity: 1;
+        transition: .2s;
+    }
 }
 
 .home-btn-div img {
