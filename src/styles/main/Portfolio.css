@@ -235,14 +235,14 @@
         margin-bottom: 30vh;
     }
     .portfolio-slider-outer{
-        height: 30vh;
+        height: 60vh;
     }
     .portfolio-slider-outer .slider-image {
-        height: 30vh;
+        height: 70vh;
     }
     .portfolio-slider-inner .alice-carousel__wrapper {
         border: 3px solid rgb(225, 225, 225);
-        height: 30vh;
+        height: 70vh;
     }
     .portfolio-slider-inner h2{
         font-family: Louis George Cafe;
@@ -271,7 +271,7 @@
     
     .portfolio .alice-carousel__prev-btn img,
     .portfolio .alice-carousel__next-btn img{
-      transform: translateY(27vh);
+      transform: translateY(8vh);
       height: 2vh;
       width: 2vh;
       padding: 2vw 2vw;
@@ -400,7 +400,7 @@
 
 @media(max-width: 500px) {
     .portfolio-slider-outer {
-        height: 30vh;
+        height: 60vh;
     }
     .service p {
         font-size: 1rem;
